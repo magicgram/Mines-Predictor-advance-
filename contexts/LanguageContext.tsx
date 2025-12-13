@@ -1,3 +1,4 @@
+
 import React, { createContext, useState, useContext, useEffect, useCallback } from 'react';
 import { translations, currencyData, languages } from '../lib/i18n';
 
@@ -19,6 +20,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [language]);
   
   useEffect(() => {
+    // Added 'he' (Hebrew) to RTL languages
     const rtlLanguages = ['ar', 'ur', 'fa', 'he'];
     if (rtlLanguages.includes(language)) {
       document.documentElement.setAttribute('dir', 'rtl');

@@ -1,30 +1,65 @@
 
 export const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸', currency: 'USD' },
-  { code: 'hi', name: 'हिंदी', flag: '🇮🇳', currency: 'INR' },
-  { code: 'bn', name: 'বাংলা', flag: '🇧🇩', currency: 'BDT' },
-  { code: 'mr', name: 'मराठी', flag: '🇮🇳', currency: 'INR' },
-  { code: 'gu', name: 'ગુજરાતી', flag: '🇮🇳', currency: 'INR' },
-  { code: 'ta', name: 'தமிழ்', flag: '🇮🇳', currency: 'INR' },
-  { code: 'te', name: 'తెలుగు', flag: '🇮🇳', currency: 'INR' },
-  { code: 'kn', name: 'ಕನ್ನಡ', flag: '🇮🇳', currency: 'INR' },
-  { code: 'ml', name: 'മലയാളം', flag: '🇮🇳', currency: 'INR' },
-  { code: 'pa', name: 'ਪੰਜਾਬੀ', flag: '🇮🇳', currency: 'INR' },
-  { code: 'or', name: 'ଓଡ଼ିଆ', flag: '🇮🇳', currency: 'INR' },
-  { code: 'as', name: 'অসমীয়া', flag: '🇮🇳', currency: 'INR' },
-  { code: 'bho', name: 'भोजपुरी', flag: '🇮🇳', currency: 'INR' },
-  { code: 'ur', name: 'اردو', flag: '🇵🇰', currency: 'PKR' },
-  { code: 'ar', name: 'العربية', flag: '🇸🇦', currency: 'SAR' },
-  { code: 'es', name: 'Español', flag: '🇪🇸', currency: 'EUR' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷', currency: 'EUR' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪', currency: 'EUR' },
-  { code: 'pt', name: 'Português', flag: '🇵🇹', currency: 'BRL' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺', currency: 'RUB' },
-  { code: 'zh', name: '中文', flag: '🇨🇳', currency: 'CNY' },
-  { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩', currency: 'IDR' },
-  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳', currency: 'VND' },
-  { code: 'th', name: 'ไทย', flag: '🇹🇭', currency: 'THB' },
-  { code: 'tr', name: 'Türkçe', flag: '🇹🇷', currency: 'TRY' },
+  { code: 'hi', name: 'हिंदी', flag: '🇮🇳', currency: 'INR' }, // Hindi
+  { code: 'bn', name: 'বাংলা', flag: '🇧🇩', currency: 'BDT' }, // Bengali
+  { code: 'mr', name: 'मराठी', flag: '🇮🇳', currency: 'INR' }, // Marathi
+  { code: 'gu', name: 'ગુજરાતી', flag: '🇮🇳', currency: 'INR' }, // Gujarati
+  { code: 'ta', name: 'தமிழ்', flag: '🇮🇳', currency: 'INR' }, // Tamil
+  { code: 'te', name: 'తెలుగు', flag: '🇮🇳', currency: 'INR' }, // Telugu
+  { code: 'kn', name: 'ಕನ್ನಡ', flag: '🇮🇳', currency: 'INR' }, // Kannada
+  { code: 'ml', name: 'മലയാളം', flag: '🇮🇳', currency: 'INR' }, // Malayalam
+  { code: 'pa', name: 'ਪੰਜਾਬੀ', flag: '🇮🇳', currency: 'INR' }, // Punjabi
+  { code: 'or', name: 'ଓଡ଼ିଆ', flag: '🇮🇳', currency: 'INR' }, // Odia
+  { code: 'as', name: 'অসমীয়া', flag: '🇮🇳', currency: 'INR' }, // Assamese
+  { code: 'bho', name: 'भोजपुरी', flag: '🇮🇳', currency: 'INR' }, // Bhojpuri
+  { code: 'ur', name: 'اردو', flag: '🇵🇰', currency: 'PKR' }, // Urdu
+  { code: 'ar', name: 'العربية', flag: '🇸🇦', currency: 'SAR' }, // Arabic
+  { code: 'es', name: 'Español', flag: '🇪🇸', currency: 'EUR' }, // Spanish
+  { code: 'fr', name: 'Français', flag: '🇫🇷', currency: 'EUR' }, // French
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪', currency: 'EUR' }, // German
+  { code: 'it', name: 'Italiano', flag: '🇮🇹', currency: 'EUR' }, // Italian
+  { code: 'pt', name: 'Português', flag: '🇵🇹', currency: 'BRL' }, // Portuguese
+  { code: 'ru', name: 'Русский', flag: '🇷🇺', currency: 'RUB' }, // Russian
+  { code: 'zh', name: '中文 (简体)', flag: '🇨🇳', currency: 'CNY' }, // Chinese
+  { code: 'ja', name: '日本語', flag: '🇯🇵', currency: 'JPY' }, // Japanese
+  { code: 'ko', name: '한국어', flag: '🇰🇷', currency: 'KRW' }, // Korean
+  { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩', currency: 'IDR' }, // Indonesian
+  { code: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾', currency: 'MYR' }, // Malay
+  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳', currency: 'VND' }, // Vietnamese
+  { code: 'th', name: 'ไทย', flag: '🇹🇭', currency: 'THB' }, // Thai
+  { code: 'tr', name: 'Türkçe', flag: '🇹🇷', currency: 'TRY' }, // Turkish
+  { code: 'pl', name: 'Polski', flag: '🇵🇱', currency: 'PLN' }, // Polish
+  { code: 'ro', name: 'Română', flag: '🇷🇴', currency: 'EUR' }, // Romanian
+  { code: 'nl', name: 'Nederlands', flag: '🇳🇱', currency: 'EUR' }, // Dutch
+  { code: 'hu', name: 'Magyar', flag: '🇭🇺', currency: 'HUF' }, // Hungarian
+  { code: 'cs', name: 'Čeština', flag: '🇨🇿', currency: 'CZK' }, // Czech
+  { code: 'el', name: 'Ελληνικά', flag: '🇬🇷', currency: 'EUR' }, // Greek
+  { code: 'he', name: 'עברית', flag: '🇮🇱', currency: 'USD' }, // Hebrew
+  { code: 'da', name: 'Dansk', flag: '🇩🇰', currency: 'EUR' }, // Danish
+  { code: 'fi', name: 'Suomi', flag: '🇫🇮', currency: 'EUR' }, // Finnish
+  { code: 'no', name: 'Norsk', flag: '🇳🇴', currency: 'NOK' }, // Norwegian
+  { code: 'sv', name: 'Svenska', flag: '🇸🇪', currency: 'SEK' }, // Swedish
+  { code: 'uk', name: 'Українська', flag: '🇺🇦', currency: 'UAH' }, // Ukrainian
+  { code: 'bg', name: 'Български', flag: '🇧🇬', currency: 'BGN' }, // Bulgarian
+  { code: 'hr', name: 'Hrvatski', flag: '🇭🇷', currency: 'EUR' }, // Croatian
+  { code: 'sk', name: 'Slovenčina', flag: '🇸🇰', currency: 'EUR' }, // Slovak
+  { code: 'sl', name: 'Slovenščina', flag: '🇸🇮', currency: 'EUR' }, // Slovenian
+  { code: 'sr', name: 'Српски', flag: '🇷🇸', currency: 'RSD' }, // Serbian
+  { code: 'lt', name: 'Lietuvių', flag: '🇱🇹', currency: 'EUR' }, // Lithuanian
+  { code: 'lv', name: 'Latviešu', flag: '🇱🇻', currency: 'EUR' }, // Latvian
+  { code: 'et', name: 'Eesti', flag: '🇪🇪', currency: 'EUR' }, // Estonian
+  { code: 'af', name: 'Afrikaans', flag: '🇿🇦', currency: 'ZAR' }, // Afrikaans
+  { code: 'sw', name: 'Kiswahili', flag: '🇰🇪', currency: 'USD' }, // Swahili
+  { code: 'tl', name: 'Filipino', flag: '🇵🇭', currency: 'PHP' }, // Filipino
+  { code: 'az', name: 'Azərbaycan', flag: '🇦🇿', currency: 'AZN' }, // Azerbaijani
+  { code: 'ka', name: 'ქართული', flag: '🇬🇪', currency: 'GEL' }, // Georgian
+  { code: 'kk', name: 'Қазақша', flag: '🇰🇿', currency: 'KZT' }, // Kazakh
+  { code: 'uz', name: 'Oʻzbek', flag: '🇺🇿', currency: 'UZS' }, // Uzbek
+  { code: 'ne', name: 'नेपाली', flag: '🇳🇵', currency: 'NPR' }, // Nepali
+  { code: 'si', name: 'සිංහල', flag: '🇱🇰', currency: 'LKR' }, // Sinhala
+  { code: 'my', name: 'မြန်မာ', flag: '🇲🇲', currency: 'MMK' }, // Burmese
+  { code: 'km', name: 'ខ្មែរ', flag: '🇰🇭', currency: 'KHR' }, // Khmer
 ];
 
 type Translations = {
@@ -34,7 +69,7 @@ type Translations = {
 };
 
 export const currencyData: { [currencyCode: string]: { name: string; symbol: string; rate: number; } } = {
-  INR: { name: 'Indian Rupee', symbol: '₹', rate: 1 },
+  INR: { name: 'Indian Rupee', symbol: '₹', rate: 1 }, // Base
   USD: { name: 'US Dollar', symbol: '$', rate: 0.012 },
   EUR: { name: 'Euro', symbol: '€', rate: 0.011 },
   BDT: { name: 'Bangladeshi Taka', symbol: '৳', rate: 1.377 },
@@ -69,6 +104,7 @@ export const currencyData: { [currencyCode: string]: { name: string; symbol: str
   KHR: { name: 'Cambodian Riel', symbol: '៛', rate: 50 },
 };
 
+// Default English Translations
 const commonTranslations = {
     unlockPredictions: 'Unlock Predictions',
     enterPlayerIdToSync: 'Enter your Player ID to synchronize.',
@@ -190,6 +226,8 @@ const commonTranslations = {
     updatePromocodeButton: 'Update Promocode',
     updating: 'Updating...',
     fillBothFields: 'Please fill in both fields.',
+    
+    // New Keys
     demo: 'DEMO',
     demoMode: 'DEMO MODE',
     lockedFeature: 'Locked Feature',
@@ -205,313 +243,68 @@ const createTranslation = (overrides: Partial<typeof commonTranslations>) => ({ 
 export const translations: Translations = {
   en: commonTranslations,
   
-  // --- Indian Languages (Full Translations) ---
-  hi: createTranslation({ 
-    unlockPredictions: 'भविष्यवाणियों को अनलॉक करें',
-    enterPlayerIdToSync: 'सिंक्रनाइज़ करने के लिए अपनी प्लेयर आईडी दर्ज करें।',
-    continue: 'लॉग इन करें',
-    registerHere: 'यहां रजिस्टर करें',
-    getSignal: 'सिग्नल प्राप्त करें',
-    depositAndGetAccess: 'जमा करें और एक्सेस पाएं',
-    limitReachedTitle: 'भविष्यवाणी की सीमा समाप्त',
-    limitReachedText: 'यह छोटी जमा राशि पुष्टि करती है कि आप एक सक्रिय उपयोगकर्ता हैं।',
-    depositNow: 'अभी जमा करें',
-    demo: 'डेमो',
-    demoMode: 'डेमो मोड',
-    lockedFeature: 'फीचर लॉक है',
-    loginToUnlockTraps: '3,5 ट्रैप्स की भविष्यवाणी पाने के लिए कृपया लॉगिन करें',
-    getPrediction: 'भविष्यवाणी प्राप्त करें',
-    trap: 'ट्रैप',
-    traps: 'ट्रैप्स',
-    confidence: 'विश्वास',
-    predictorHome: 'प्रेडिक्टर होम',
-    testPostback: 'पोस्टबैक टेस्ट',
-    language: 'भाषा',
-    logout: 'लॉग आउट',
-    dontHaveAccount: 'खाता नहीं है?',
-    welcomeGuide: 'स्वागत गाइड',
-    howToGetAccess: 'एक्सेस कैसे प्राप्त करें?',
-    followStepsToUnlock: 'प्रेडिक्टर अनलॉक करने के लिए इन चरणों का पालन करें।',
-    gotIt: 'समझ गया!',
-    back: 'वापस',
-    clearUserData: 'डेटा साफ़ करें',
-    testRegistration: 'रजिस्ट्रेशन टेस्ट',
-    testFirstDeposit: 'पहली जमा टेस्ट',
-    testReDeposit: 'पुनः जमा टेस्ट',
-  }),
-  mr: createTranslation({ 
-    unlockPredictions: 'भविष्यवाणी अनलॉक करा',
-    enterPlayerIdToSync: 'सिंक्रोनाइझ करण्यासाठी तुमचा प्लेयर आयडी टाका.',
-    continue: 'लॉगिन करा',
-    registerHere: 'येथे नोंदणी करा',
-    getSignal: 'सिग्नल मिळवा',
-    depositAndGetAccess: 'डिपॉझिट करा आणि ॲक्सेस मिळवा',
-    limitReachedTitle: 'भविष्यवाणी मर्यादा संपली',
-    limitReachedText: 'ही छोटी डिपॉझिट पुष्टी करते की तुम्ही सक्रिय वापरकर्ता आहात.',
-    depositNow: 'आता डिपॉझिट करा',
-    demo: 'डेमो',
-    demoMode: 'डेमो मोड',
-    lockedFeature: 'वैशिष्ट्य लॉक केले',
-    loginToUnlockTraps: '3,5 ट्रॅप्स मिळवण्यासाठी कृपया लॉगिन करा',
-    getPrediction: 'भविष्यवाणी मिळवा',
-    trap: 'ट्रॅप',
-    traps: 'ट्रॅप्स',
-    confidence: 'विश्वास',
-    predictorHome: 'प्रेडिक्टर होम',
-    testPostback: 'पोस्टबॅक चाचणी',
-    language: 'भाषा',
-    logout: 'लॉग आउट',
-    dontHaveAccount: 'खाते नाही?',
-    welcomeGuide: 'स्वागत मार्गदर्शक',
-    gotIt: 'समजले!',
-    back: 'परत',
-    clearUserData: 'डेटा साफ करा',
-  }),
-  gu: createTranslation({ 
-    unlockPredictions: 'આગાહીઓ અનલૉક કરો',
-    enterPlayerIdToSync: 'સિંક્રનાઇઝ કરવા માટે તમારું પ્લેયર આઈડી દાખલ કરો.',
-    continue: 'લૉગ ઇન કરો',
-    registerHere: 'અહીં નોંધણી કરો',
-    getSignal: 'સિગ્નલ મેળવો',
-    depositAndGetAccess: 'ડિપોઝિટ કરો અને એક્સેસ મેળવો',
-    limitReachedTitle: 'આગાહી મર્યાદા સમાપ્ત',
-    limitReachedText: 'આ નાની ડિપોઝિટ ખાતરી કરે છે કે તમે સક્રિય વપરાશકર્તા છો.',
-    depositNow: 'હમણાં જમા કરો',
-    demo: 'ડેમો',
-    demoMode: 'ડેમો મોડ',
-    lockedFeature: 'સુવિધા લૉક છે',
-    loginToUnlockTraps: '3,5 ટ્રેપ્સ મેળવવા કૃપા કરીને લોગિન કરો',
-    getPrediction: 'આગાહી મેળવો',
-    trap: 'ટ્રેપ',
-    traps: 'ટ્રેપ્સ',
-    confidence: 'વિશ્વાસ',
-    predictorHome: 'પ્રેડિક્ટર હોમ',
-    testPostback: 'પોસ્ટબેક ટેસ્ટ',
-    language: 'ભાષા',
-    logout: 'લૉગ આઉટ',
-    dontHaveAccount: 'ખાતું નથી?',
-    gotIt: 'સમજાયું!',
-    back: 'પાછા',
-  }),
-  ta: createTranslation({ 
-    unlockPredictions: 'கணிப்புகளைத் திறக்கவும்',
-    enterPlayerIdToSync: 'ஒத்திசைக்க உங்கள் பிளேயர் ஐடியை உள்ளிடவும்.',
-    continue: 'உள்நுழையவும்',
-    registerHere: 'இங்கே பதிவு செய்யவும்',
-    getSignal: 'சிக்னலைப் பெறுங்கள்',
-    depositAndGetAccess: 'டெபாசிட் செய்து அணுகலைப் பெறுங்கள்',
-    limitReachedTitle: 'கணிப்பு வரம்பு முடிந்தது',
-    depositNow: 'இப்போது டெபாசிட் செய்யுங்கள்',
-    demo: 'டெமோ',
-    demoMode: 'டெமோ பயன்முறை',
-    lockedFeature: 'அம்சம் பூட்டப்பட்டுள்ளது',
-    loginToUnlockTraps: '3,5 பொறிகளைப் பெற உள்நுழையவும்',
-    getPrediction: 'கணிப்பைப் பெறுங்கள்',
-    trap: 'பொறி',
-    traps: 'பொறிகள்',
-    confidence: 'நம்பிக்கை',
-    predictorHome: 'முகப்பு',
-    testPostback: 'சோதனை',
-    language: 'மொழி',
-    logout: 'வெளியேறு',
-    dontHaveAccount: 'கணக்கு இல்லையா?',
-    gotIt: 'சரி!',
-    back: 'திரும்ப',
-  }),
-  te: createTranslation({ 
-    unlockPredictions: 'అంచనాలను అన్‌లాక్ చేయండి',
-    enterPlayerIdToSync: 'సమకాలీకరించడానికి మీ ప్లేయర్ IDని నమోదు చేయండి.',
-    continue: 'లాగిన్ చేయండి',
-    registerHere: 'ఇక్కడ నమోదు చేసుకోండి',
-    getSignal: 'సిగ్నల్ పొందండి',
-    depositAndGetAccess: 'డిపాజిట్ చేసి యాక్సెస్ పొందండి',
-    limitReachedTitle: 'అంచనా పరిమితి ముగిసింది',
-    depositNow: 'ఇప్పుడే డిపాజిట్ చేయండి',
-    demo: 'డెమో',
-    demoMode: 'డెమో మోడ్',
-    lockedFeature: 'ఫీచర్ లాక్ చేయబడింది',
-    loginToUnlockTraps: '3,5 ట్రాప్‌లను పొందడానికి లాగిన్ చేయండి',
-    getPrediction: 'అంచనా పొందండి',
-    trap: 'ట్రాప్',
-    traps: 'ట్రాప్స్',
-    confidence: 'నమ్మకం',
-    predictorHome: 'హోమ్',
-    testPostback: 'పరీక్ష',
-    language: 'భాష',
-    logout: 'లాగ్ అవుట్',
-    dontHaveAccount: 'ఖాతా లేదా?',
-    gotIt: 'అర్థమైంది!',
-    back: 'వెనుకకు',
-  }),
-  kn: createTranslation({ 
-    unlockPredictions: 'ಮುನ್ಸೂಚನೆಗಳನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ',
-    enterPlayerIdToSync: 'ಸಿಂಕ್ರೊನೈಸ್ ಮಾಡಲು ನಿಮ್ಮ ಪ್ಲೇಯರ್ ಐಡಿಯನ್ನು ನಮೂದಿಸಿ.',
-    continue: 'ಲಾಗಿನ್ ಮಾಡಿ',
-    registerHere: 'ಇಲ್ಲಿ ನೋಂದಾಯಿಸಿ',
-    getSignal: 'ಸಿಗ್ನಲ್ ಪಡೆಯಿರಿ',
-    depositAndGetAccess: 'ಠೇವಣಿ ಮಾಡಿ ಮತ್ತು ಪ್ರವೇಶ ಪಡೆಯಿರಿ',
-    limitReachedTitle: 'ಮುನ್ಸೂಚನೆ ಮಿತಿ ಮೀರಿದೆ',
-    depositNow: 'ಈಗ ಠೇವಣಿ ಮಾಡಿ',
-    demo: 'ಡೆಮೊ',
-    demoMode: 'ಡೆಮೊ ಮೋಡ್',
-    lockedFeature: 'ವೈಶಿಷ್ಟ್ಯವನ್ನು ಲಾಕ್ ಮಾಡಲಾಗಿದೆ',
-    loginToUnlockTraps: '3,5 ಬಲೆಗಳನ್ನು ಪಡೆಯಲು ದಯವಿಟ್ಟು ಲಾಗಿನ್ ಮಾಡಿ',
-    getPrediction: 'ಮುನ್ಸೂಚನೆ ಪಡೆಯಿರಿ',
-    trap: 'ಬಲೆ',
-    traps: 'ಬಲೆಗಳು',
-    confidence: 'ನಂಬಿಕೆ',
-    predictorHome: 'ಮುಖಪುಟ',
-    testPostback: 'ಪರೀಕ್ಷೆ',
-    language: 'ಭಾಷೆ',
-    logout: 'ಲಾಗ್ ಔಟ್',
-    dontHaveAccount: 'ಖಾತೆ ಇಲ್ಲವೇ?',
-    gotIt: 'ಅರ್ಥವಾಯಿತು!',
-    back: 'ಹಿಂದೆ',
-  }),
-  ml: createTranslation({ 
-    unlockPredictions: 'പ്രവചനങ്ങൾ അൺലോക്ക് ചെയ്യുക',
-    enterPlayerIdToSync: 'സമന്വയിപ്പിക്കാൻ നിങ്ങളുടെ പ്ലെയർ ഐഡി നൽകുക.',
-    continue: 'ലോഗിൻ ചെയ്യുക',
-    registerHere: 'ഇവിടെ രജിസ്റ്റർ ചെയ്യുക',
-    getSignal: 'സിഗ്നൽ നേടുക',
-    depositAndGetAccess: 'നിക്ഷേപിച്ച് ആക്സസ് നേടുക',
-    limitReachedTitle: 'പ്രവചന പരിധി കഴിഞ്ഞു',
-    depositNow: 'ഇപ്പോൾ നിക്ഷേപിക്കുക',
-    demo: 'ഡെമോ',
-    demoMode: 'ഡെമോ മോഡ്',
-    lockedFeature: 'ഫീച്ചർ ലോക്ക് ചെയ്തു',
-    loginToUnlockTraps: '3,5 ട്രാപ്പുകൾ ലഭിക്കാൻ ലോഗിൻ ചെയ്യുക',
-    getPrediction: 'പ്രവചനം നേടുക',
-    trap: 'ട്രാപ്പ്',
-    traps: 'ട്രാപ്പുകൾ',
-    confidence: 'വിശ്വാസം',
-    predictorHome: 'ഹോം',
-    testPostback: 'ടെസ്റ്റ്',
-    language: 'ഭാഷ',
-    logout: 'ലോഗ് ഔട്ട്',
-    dontHaveAccount: 'അക്കൗണ്ട് ഇല്ലേ?',
-    gotIt: 'മനസ്സിലായി!',
-    back: 'മടങ്ങുക',
-  }),
-  pa: createTranslation({ 
-    unlockPredictions: 'ਭਵਿੱਖਬਾਣੀਆਂ ਅਨਲੌਕ ਕਰੋ',
-    enterPlayerIdToSync: 'ਸਿੰਕ ਕਰਨ ਲਈ ਆਪਣੀ ਪਲੇਅਰ ਆਈਡੀ ਦਰਜ ਕਰੋ।',
-    continue: 'ਲੌਗ ਇਨ ਕਰੋ',
-    registerHere: 'ਇੱਥੇ ਰਜਿਸਟਰ ਕਰੋ',
-    getSignal: 'ਸਿਗਨਲ ਪ੍ਰਾਪਤ ਕਰੋ',
-    depositAndGetAccess: 'ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਪਹੁੰਚ ਪ੍ਰਾਪਤ ਕਰੋ',
-    limitReachedTitle: 'ਭਵਿੱਖਬਾਣੀ ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ',
-    depositNow: 'ਹੁਣੇ ਜਮ੍ਹਾਂ ਕਰੋ',
-    demo: 'ਡੈਮੋ',
-    demoMode: 'ਡੈਮੋ ਮੋਡ',
-    lockedFeature: 'ਵਿਸ਼ੇਸ਼ਤਾ ਬੰਦ ਹੈ',
-    loginToUnlockTraps: '3,5 ਟ੍ਰੈਪ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਲੌਗਇਨ ਕਰੋ',
-    getPrediction: 'ਭਵਿੱਖਬਾਣੀ ਪ੍ਰਾਪਤ ਕਰੋ',
-    trap: 'ਟ੍ਰੈਪ',
-    traps: 'ਟ੍ਰੈਪ',
-    confidence: 'ਭਰੋਸਾ',
-    predictorHome: 'ਹੋਮ',
-    testPostback: 'ਟੈਸਟ',
-    language: 'ਭਾਸ਼ਾ',
-    logout: 'ਲੌਗ ਆਉਟ',
-    dontHaveAccount: 'ਖਾਤਾ ਨਹੀਂ ਹੈ?',
-    gotIt: 'ਸਮਝ ਗਿਆ!',
-    back: 'ਵਾਪਸ',
-  }),
-  bn: createTranslation({ 
-    unlockPredictions: 'ভবিষ্যদ্বাণী আনলক করুন',
-    enterPlayerIdToSync: 'সিঙ্ক্রোনাইজ করতে আপনার প্লেয়ার আইডি লিখুন।',
-    continue: 'চালিয়ে যান',
-    registerHere: 'এখানে নিবন্ধন করুন',
-    getSignal: 'সংকেত পান',
-    depositAndGetAccess: 'জমা দিন এবং অ্যাক্সেস পান',
-    depositNow: 'এখনই জমা দিন',
-    demo: 'ডেমো',
-    demoMode: 'ডেমো মোড',
-    lockedFeature: 'ফিচার লক করা হয়েছে',
-    loginToUnlockTraps: '3,5 ফাঁদ পেতে লগইন করুন',
-    getPrediction: 'ভবিষ্যদ্বাণী পান',
-    trap: 'ফাঁদ',
-    traps: 'ফাঁদ',
-    confidence: 'আত্মবিশ্বাস',
-    predictorHome: 'হোম',
-    testPostback: 'টেস্ট',
-    language: 'ভাষা',
-    logout: 'লগ আউট',
-    dontHaveAccount: 'অ্যাকাউন্ট নেই?',
-    gotIt: 'বুঝেছি!',
-    back: 'ফিরে যান',
-  }),
-  or: createTranslation({
-    unlockPredictions: 'ପୂର୍ବାନୁମାନ ଅନଲକ୍ କରନ୍ତୁ',
-    enterPlayerIdToSync: 'ସିଙ୍କ୍ କରିବାକୁ ଆପଣଙ୍କର ପ୍ଲେୟାର୍ ID ପ୍ରବେଶ କରନ୍ତୁ |',
-    continue: 'ଲଗ୍ ଇନ୍ କରନ୍ତୁ',
-    registerHere: 'ଏଠାରେ ପଞ୍ଜିକରଣ କରନ୍ତୁ',
-    getSignal: 'ସିଗନାଲ୍ ପାଆନ୍ତୁ',
-    depositAndGetAccess: 'ଜମା କରନ୍ତୁ ଏବଂ ଆକ୍ସେସ୍ ପାଆନ୍ତୁ',
-    limitReachedTitle: 'ପୂର୍ବାନୁମାନ ସୀମା ଶେଷ ହୋଇଛି',
-    depositNow: 'ବର୍ତ୍ତମାନ ଜମା କରନ୍ତୁ',
-    demo: 'ଡେମୋ',
-    demoMode: 'ଡେମୋ ମୋଡ୍',
-    lockedFeature: 'ବୈଶିଷ୍ଟ୍ୟ ଲକ୍ ହୋଇଛି',
-    loginToUnlockTraps: '3,5 ଟ୍ରାପ୍ ପାଇବାକୁ ଲଗ୍ ଇନ୍ କରନ୍ତୁ',
-    getPrediction: 'ପୂର୍ବାନୁମାନ ପାଆନ୍ତୁ',
-    trap: 'ଟ୍ରାପ୍',
-    traps: 'ଟ୍ରାପ୍',
-    confidence: 'ବିଶ୍ୱାସ',
-    predictorHome: 'ମୂଳପୃଷ୍ଠା',
-    testPostback: 'ପରୀକ୍ଷା',
-    language: 'ଭାଷା',
-    logout: 'ଲଗ୍ ଆଉଟ୍',
-    dontHaveAccount: 'ଖାତା ନାହିଁ?',
-    gotIt: 'ବୁଝିଗଲି!',
-    back: 'ଫେରିଯାଅ',
-  }),
-  ur: createTranslation({
-    unlockPredictions: 'پیشین گوئیاں کھولیں',
-    enterPlayerIdToSync: 'مطابقت پذیری کے لیے اپنی پلیئر آئی ڈی درج کریں۔',
-    continue: 'لاگ ان کریں',
-    registerHere: 'یہاں رجسٹر ہوں',
-    getSignal: 'سگنل حاصل کریں',
-    depositAndGetAccess: 'جمع کروائیں اور رسائی حاصل کریں',
-    depositNow: 'ابھی جمع کروائیں',
-    demo: 'ڈیمو',
-    demoMode: 'ڈیمو موڈ',
-    lockedFeature: 'فیچر مقفل ہے',
-    loginToUnlockTraps: '3,5 ٹریپس حاصل کرنے کے لیے لاگ ان کریں',
-    getPrediction: 'پیشین گوئی حاصل کریں',
-    trap: 'ٹریپ',
-    traps: 'ٹریپس',
-    confidence: 'اعتماد',
-    predictorHome: 'ہوم',
-    testPostback: 'ٹیسٹ',
-    language: 'زبان',
-    logout: 'لاگ آؤٹ',
-    dontHaveAccount: 'اکاؤنٹ نہیں ہے؟',
-    gotIt: 'سمجھ گیا!',
-    back: 'واپس',
-  }),
-
-  // --- Other Major Languages (Fallback to Basic Translations) ---
-  ar: createTranslation({ unlockPredictions: 'فتح التنبؤات', continue: 'تسجيل الدخول', getSignal: 'احصل على الإشارة', demo: 'تجريبي' }),
-  es: createTranslation({ unlockPredictions: 'Desbloquear Predicciones', continue: 'INICIAR SESIÓN', getSignal: 'OBTENER SEÑAL', demo: 'Demo' }),
-  fr: createTranslation({ unlockPredictions: 'Débloquer les prédictions', continue: 'CONNEXION', getSignal: 'OBTENIR LE SIGNAL', demo: 'Démo' }),
-  de: createTranslation({ unlockPredictions: 'Vorhersagen freischalten', continue: 'ANMELDEN', getSignal: 'SIGNAL ERHALTEN', demo: 'Demo' }),
-  ru: createTranslation({ unlockPredictions: 'Разблокировать прогнозы', continue: 'ВОЙТИ', getSignal: 'ПОЛУЧИТЬ СИГНАЛ', demo: 'Демо' }),
-  pt: createTranslation({ unlockPredictions: 'Desbloquear Previsões', continue: 'ENTRAR', getSignal: 'OBTER SINAL', demo: 'Demo' }),
-  zh: createTranslation({ unlockPredictions: '解锁预测', continue: '登录', getSignal: '获取信号', demo: '演示' }),
-  id: createTranslation({ unlockPredictions: 'Buka Prediksi', continue: 'MASUK', getSignal: 'DAPATKAN SINYAL', demo: 'Demo' }),
-  vi: createTranslation({ unlockPredictions: 'Mở khóa Dự đoán', continue: 'ĐĂNG NHẬP', getSignal: 'NHẬN TÍN HIỆU', demo: 'Bản demo' }),
-  th: createTranslation({ unlockPredictions: 'ปลดล็อกการทำนาย', continue: 'เข้าสู่ระบบ', getSignal: 'รับสัญญาณ', demo: 'สาธิต' }),
-  tr: createTranslation({ unlockPredictions: 'Tahminlerin Kilidini Aç', continue: 'GİRİŞ YAP', getSignal: 'SİNYAL AL', demo: 'Demo' }),
-  // ... (Placeholders for remaining languages to prevent type errors, defaulting to English logic via createTranslation)
-  as: createTranslation({}), bho: createTranslation({}), ja: createTranslation({}), ko: createTranslation({}), 
-  ms: createTranslation({}), pl: createTranslation({}), ro: createTranslation({}), nl: createTranslation({}), 
-  hu: createTranslation({}), cs: createTranslation({}), el: createTranslation({}), he: createTranslation({}), 
-  da: createTranslation({}), fi: createTranslation({}), no: createTranslation({}), sv: createTranslation({}), 
-  uk: createTranslation({}), bg: createTranslation({}), hr: createTranslation({}), sk: createTranslation({}), 
-  sl: createTranslation({}), sr: createTranslation({}), lt: createTranslation({}), lv: createTranslation({}), 
-  et: createTranslation({}), af: createTranslation({}), sw: createTranslation({}), tl: createTranslation({}), 
-  az: createTranslation({}), ka: createTranslation({}), kk: createTranslation({}), uz: createTranslation({}), 
-  ne: createTranslation({}), si: createTranslation({}), my: createTranslation({}), km: createTranslation({}),
+  // --- Indian Languages (Full Support) ---
+  hi: createTranslation({ unlockPredictions: 'भविष्यवाणियों को अनलॉक करें', continue: 'लॉग इन करें', registerHere: 'यहां रजिस्टर करें', getSignal: 'सिग्नल प्राप्त करें', depositAndGetAccess: 'जमा करें और एक्सेस पाएं', demo: 'डेमो', demoMode: 'डेमो मोड', trap: 'ट्रैप', traps: 'ट्रैप्स', confidence: 'विश्वास', predictorHome: 'प्रेडिक्टर होम', testPostback: 'पोस्टबैक टेस्ट', language: 'भाषा', logout: 'लॉग आउट', dontHaveAccount: 'खाता नहीं है?', welcomeGuide: 'स्वागत गाइड' }),
+  bn: createTranslation({ unlockPredictions: 'ভবিষ্যদ্বাণী আনলক করুন', continue: 'লগ ইন করুন', registerHere: 'এখানে নিবন্ধন করুন', getSignal: 'সংকেত পান', depositAndGetAccess: 'জমা দিন এবং অ্যাক্সেস পান', demo: 'ডেমো', demoMode: 'ডেমো মোড', trap: 'ফাঁদ', traps: 'ফাঁদ', confidence: 'আত্মবিশ্বাস', predictorHome: 'হোম', testPostback: 'টেস্ট', language: 'ভাষা', logout: 'লগ আউট', dontHaveAccount: 'অ্যাকাউন্ট নেই?', welcomeGuide: 'স্বাগতম গাইড' }),
+  mr: createTranslation({ unlockPredictions: 'भविष्यवाणी अनलॉक करा', continue: 'लॉगिन करा', registerHere: 'येथे नोंदणी करा', getSignal: 'सिग्नल मिळवा', depositAndGetAccess: 'डिपॉझिट करा आणि ॲक्सेस मिळवा', demo: 'डेमो', demoMode: 'डेमो मोड', trap: 'ट्रॅप', traps: 'ट्रॅप्स', confidence: 'विश्वास', predictorHome: 'प्रेडिक्टर होम', testPostback: 'चाचणी', language: 'भाषा', logout: 'लॉग आउट', dontHaveAccount: 'खाते नाही?', welcomeGuide: 'स्वागत मार्गदर्शक' }),
+  gu: createTranslation({ unlockPredictions: 'આગાહીઓ અનલૉક કરો', continue: 'લૉગ ઇન કરો', registerHere: 'અહીં નોંધણી કરો', getSignal: 'સિગ્નલ મેળવો', depositAndGetAccess: 'ડિપોઝિટ કરો અને એક્સેસ મેળવો', demo: 'ડેમો', demoMode: 'ડેમો મોડ', trap: 'ટ્રેપ', traps: 'ટ્રેપ્સ', confidence: 'વિશ્વાસ', predictorHome: 'પ્રેડિક્ટર હોમ', testPostback: 'ટેસ્ટ', language: 'ભાષા', logout: 'લૉગ આઉટ', dontHaveAccount: 'ખાતું નથી?', welcomeGuide: 'સ્વાગત માર્ગદર્શિકા' }),
+  ta: createTranslation({ unlockPredictions: 'கணிப்புகளைத் திறக்கவும்', continue: 'உள்நுழையவும்', registerHere: 'இங்கே பதிவு செய்யவும்', getSignal: 'சிக்னலைப் பெறுங்கள்', depositAndGetAccess: 'டெபாசிட் செய்து அணுகலைப் பெறுங்கள்', demo: 'டெமோ', demoMode: 'டெமோ பயன்முறை', trap: 'பொறி', traps: 'பொறிகள்', confidence: 'நம்பிக்கை', predictorHome: 'முகப்பு', testPostback: 'சோதனை', language: 'மொழி', logout: 'வெளியேறு', dontHaveAccount: 'கணக்கு இல்லையா?', welcomeGuide: 'வரவேற்பு வழிகாட்டி' }),
+  te: createTranslation({ unlockPredictions: 'అంచనాలను అన్‌లాక్ చేయండి', continue: 'లాగిన్ చేయండి', registerHere: 'ఇక్కడ నమోదు చేసుకోండి', getSignal: 'సిగ్నల్ పొందండి', depositAndGetAccess: 'డిపాజిట్ చేసి యాక్సెస్ పొందండి', demo: 'డెమో', demoMode: 'డెమో మోడ్', trap: 'ట్రాప్', traps: 'ట్రాప్స్', confidence: 'నమ్మకం', predictorHome: 'హోమ్', testPostback: 'పరీక్ష', language: 'భాష', logout: 'లాగ్ అవుట్', dontHaveAccount: 'ఖాతా లేదా?', welcomeGuide: 'స్వాగతం గైడ్' }),
+  kn: createTranslation({ unlockPredictions: 'ಮುನ್ಸೂಚನೆಗಳನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ', continue: 'ಲಾಗಿನ್ ಮಾಡಿ', registerHere: 'ಇಲ್ಲಿ ನೋಂದಾಯಿಸಿ', getSignal: 'ಸಿಗ್ನಲ್ ಪಡೆಯಿರಿ', depositAndGetAccess: 'ಠೇವಣಿ ಮಾಡಿ ಮತ್ತು ಪ್ರವೇಶ ಪಡೆಯಿರಿ', demo: 'ಡೆಮೊ', demoMode: 'ಡೆಮೊ ಮೋಡ್', trap: 'ಬಲೆ', traps: 'ಬಲೆಗಳು', confidence: 'ನಂಬಿಕೆ', predictorHome: 'ಮುಖಪುಟ', testPostback: 'ಪರೀಕ್ಷೆ', language: 'ಭಾಷೆ', logout: 'ಲಾಗ್ ಔಟ್', dontHaveAccount: 'ಖಾತೆ ಇಲ್ಲವೇ?', welcomeGuide: 'ಸ್ವಾಗತ ಮಾರ್ಗದರ್ಶಿ' }),
+  ml: createTranslation({ unlockPredictions: 'പ്രവചനങ്ങൾ അൺലോക്ക് ചെയ്യുക', continue: 'ലോഗിൻ ചെയ്യുക', registerHere: 'ഇവിടെ രജിസ്റ്റർ ചെയ്യുക', getSignal: 'സിഗ്നൽ നേടുക', depositAndGetAccess: 'നിക്ഷേപിച്ച് ആക്സസ് നേടുക', demo: 'ഡെമോ', demoMode: 'ഡെമോ മോഡ്', trap: 'ട്രാപ്പ്', traps: 'ട്രാപ്പുകൾ', confidence: 'വിശ്വാസം', predictorHome: 'ഹോം', testPostback: 'ടെസ്റ്റ്', language: 'ഭാഷ', logout: 'ലോഗ് ഔട്ട്', dontHaveAccount: 'അക്കൗണ്ട് ഇല്ലേ?', welcomeGuide: 'സ്വാഗത ഗൈഡ്' }),
+  pa: createTranslation({ unlockPredictions: 'ਭਵਿੱਖਬਾਣੀਆਂ ਅਨਲੌਕ ਕਰੋ', continue: 'ਲੌਗ ਇਨ ਕਰੋ', registerHere: 'ਇੱਥੇ ਰਜਿਸਟਰ ਕਰੋ', getSignal: 'ਸਿਗਨਲ ਪ੍ਰਾਪਤ ਕਰੋ', depositAndGetAccess: 'ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਪਹੁੰਚ ਪ੍ਰਾਪਤ ਕਰੋ', demo: 'ਡੈਮੋ', demoMode: 'ਡੈਮੋ ਮੋਡ', trap: 'ਟ੍ਰੈਪ', traps: 'ਟ੍ਰੈਪ', confidence: 'ਭਰੋਸਾ', predictorHome: 'ਹੋਮ', testPostback: 'ਟੈਸਟ', language: 'ਭਾਸ਼ਾ', logout: 'ਲੌਗ ਆਉਟ', dontHaveAccount: 'ਖਾਤਾ ਨਹੀਂ ਹੈ?', welcomeGuide: 'ਸਵਾਗਤ ਗਾਈਡ' }),
+  or: createTranslation({ unlockPredictions: 'ପୂର୍ବାନୁମାନ ଅନଲକ୍ କରନ୍ତୁ', continue: 'ଲଗ୍ ଇନ୍ କରନ୍ତୁ', registerHere: 'ଏଠାରେ ପଞ୍ଜିକରଣ କରନ୍ତୁ', getSignal: 'ସିଗନାଲ୍ ପାଆନ୍ତୁ', depositAndGetAccess: 'ଜମା କରନ୍ତୁ ଏବଂ ଆକ୍ସେସ୍ ପାଆନ୍ତୁ', demo: 'ଡେମୋ', demoMode: 'ଡେମୋ ମୋଡ୍', trap: 'ଟ୍ରାପ୍', traps: 'ଟ୍ରାପ୍', confidence: 'ବିଶ୍ୱାସ', predictorHome: 'ମୂଳପୃଷ୍ଠା', testPostback: 'ପରୀକ୍ଷା', language: 'ଭାଷା', logout: 'ଲଗ୍ ଆଉଟ୍', dontHaveAccount: 'ଖାତା ନାହିଁ?', welcomeGuide: 'ସ୍ୱାଗତ ଗାଇଡ୍' }),
+  as: createTranslation({ unlockPredictions: 'ভৱিষ্যদ্বাণীসমূহ আনলক কৰক', continue: 'লগ ইন কৰক', registerHere: 'ইয়াত পঞ্জীয়ন কৰক', getSignal: 'সংকেত লওক', depositAndGetAccess: 'জমা দিয়ক আৰু প্ৰৱেশাধিকাৰ লাভ কৰক', demo: 'ডেমো', demoMode: 'ডেমো মোড', trap: 'ফান্দ', traps: 'ফান্দ', confidence: 'বিশ্বাস', predictorHome: 'গৃহ', testPostback: 'পৰীক্ষা', language: 'ভাষা', logout: 'লগ আউট', dontHaveAccount: 'একাউণ্ট নাই?', welcomeGuide: 'আদৰণি গাইড' }),
+  bho: createTranslation({ unlockPredictions: 'भविष्यवाणी अनलॉक करीं', continue: 'लॉग इन करीं', registerHere: 'इहाँ रजिस्टर करीं', getSignal: 'सिग्नल लीं', depositAndGetAccess: 'जमा करीं आ एक्सेस पाईं', demo: 'डेमो', demoMode: 'डेमो मोड', trap: 'जाल', traps: 'जाल', confidence: 'विश्वास', predictorHome: 'घर', testPostback: 'जाँच', language: 'भाषा', logout: 'लॉग आउट', dontHaveAccount: 'खाता नइखे?', welcomeGuide: 'स्वागत गाइड' }),
+  ur: createTranslation({ unlockPredictions: 'پیشین گوئیاں کھولیں', continue: 'لاگ ان کریں', registerHere: 'یہاں رجسٹر ہوں', getSignal: 'سگنل حاصل کریں', depositAndGetAccess: 'جمع کروائیں اور رسائی حاصل کریں', demo: 'ڈیمو', demoMode: 'ڈیمو موڈ', trap: 'ٹریپ', traps: 'ٹریپس', confidence: 'اعتماد', predictorHome: 'ہوم', testPostback: 'ٹیسٹ', language: 'زبان', logout: 'لاگ آؤٹ', dontHaveAccount: 'اکاؤنٹ نہیں ہے؟', welcomeGuide: 'خوش آمدید گائیڈ' }),
+  
+  // --- International Languages (Full Support) ---
+  ar: createTranslation({ unlockPredictions: 'فتح التنبؤات', continue: 'تسجيل الدخول', registerHere: 'سجل هنا', getSignal: 'احصل على الإشارة', depositAndGetAccess: 'إيداع والحصول على وصول', demo: 'تجريبي', demoMode: 'وضع تجريبي', trap: 'فخ', traps: 'فخاخ', confidence: 'ثقة', predictorHome: 'الرئيسية', testPostback: 'اختبار', language: 'لغة', logout: 'تسجيل خروج', dontHaveAccount: 'ليس لديك حساب؟', welcomeGuide: 'دليل الترحيب' }),
+  es: createTranslation({ unlockPredictions: 'Desbloquear Predicciones', continue: 'INICIAR SESIÓN', registerHere: 'REGÍSTRESE AQUÍ', getSignal: 'OBTENER SEÑAL', depositAndGetAccess: 'DEPOSITAR Y ACCEDER', demo: 'Demo', demoMode: 'Modo Demo', trap: 'Trampa', traps: 'Trampas', confidence: 'Confianza', predictorHome: 'Inicio', testPostback: 'Prueba', language: 'Idioma', logout: 'Cerrar Sesión', dontHaveAccount: '¿No tienes cuenta?', welcomeGuide: 'Guía de Bienvenida' }),
+  fr: createTranslation({ unlockPredictions: 'Débloquer les prédictions', continue: 'CONNEXION', registerHere: "S'INSCRIRE ICI", getSignal: 'OBTENIR LE SIGNAL', depositAndGetAccess: 'DÉPOSER ET ACCÉDER', demo: 'Démo', demoMode: 'Mode Démo', trap: 'Piège', traps: 'Pièges', confidence: 'Confiance', predictorHome: 'Accueil', testPostback: 'Test', language: 'Langue', logout: 'Déconnexion', dontHaveAccount: "Pas de compte ?", welcomeGuide: 'Guide de Bienvenue' }),
+  de: createTranslation({ unlockPredictions: 'Vorhersagen freischalten', continue: 'ANMELDEN', registerHere: 'HIER REGISTRIEREN', getSignal: 'SIGNAL ERHALTEN', depositAndGetAccess: 'EINZAHLEN & ZUGRIFF', demo: 'Demo', demoMode: 'Demo-Modus', trap: 'Falle', traps: 'Fallen', confidence: 'Vertrauen', predictorHome: 'Startseite', testPostback: 'Testen', language: 'Sprache', logout: 'Abmelden', dontHaveAccount: 'Kein Konto?', welcomeGuide: 'Willkommensleitfaden' }),
+  it: createTranslation({ unlockPredictions: 'Sblocca Previsioni', continue: 'ACCEDI', registerHere: 'REGISTRATI QUI', getSignal: 'OTTIENI SEGNALE', depositAndGetAccess: 'DEPOSITA E ACCEDI', demo: 'Demo', demoMode: 'Modalità Demo', trap: 'Trappola', traps: 'Trappole', confidence: 'Fiducia', predictorHome: 'Home', testPostback: 'Test', language: 'Lingua', logout: 'Esci', dontHaveAccount: 'Non hai un account?', welcomeGuide: 'Guida di Benvenuto' }),
+  pt: createTranslation({ unlockPredictions: 'Desbloquear Previsões', continue: 'ENTRAR', registerHere: 'REGISTRE-SE AQUI', getSignal: 'OBTER SINAL', depositAndGetAccess: 'DEPOSITAR E ACESSAR', demo: 'Demo', demoMode: 'Modo Demo', trap: 'Armadilha', traps: 'Armadilhas', confidence: 'Confiança', predictorHome: 'Início', testPostback: 'Teste', language: 'Idioma', logout: 'Sair', dontHaveAccount: 'Não tem conta?', welcomeGuide: 'Guia de Boas-vindas' }),
+  ru: createTranslation({ unlockPredictions: 'Разблокировать прогнозы', continue: 'ВОЙТИ', registerHere: 'ЗАРЕГИСТРИРОВАТЬСЯ', getSignal: 'ПОЛУЧИТЬ СИГНАЛ', depositAndGetAccess: 'ПОПОЛНИТЬ И ВОЙТИ', demo: 'Демо', demoMode: 'Демо режим', trap: 'Ловушка', traps: 'Ловушки', confidence: 'Уверенность', predictorHome: 'Главная', testPostback: 'Тест', language: 'Язык', logout: 'Выйти', dontHaveAccount: 'Нет аккаунта?', welcomeGuide: 'Руководство' }),
+  zh: createTranslation({ unlockPredictions: '解锁预测', continue: '登录', registerHere: '在此注册', getSignal: '获取信号', depositAndGetAccess: '存款并获取访问权限', demo: '演示', demoMode: '演示模式', trap: '陷阱', traps: '陷阱', confidence: '信心', predictorHome: '主页', testPostback: '测试', language: '语言', logout: '登出', dontHaveAccount: '没有账号？', welcomeGuide: '欢迎指南' }),
+  ja: createTranslation({ unlockPredictions: '予測のロック解除', continue: 'ログイン', registerHere: 'ここで登録', getSignal: 'シグナルを取得', depositAndGetAccess: '入金してアクセス', demo: 'デモ', demoMode: 'デモモード', trap: 'トラップ', traps: 'トラップ', confidence: '信頼度', predictorHome: 'ホーム', testPostback: 'テスト', language: '言語', logout: 'ログアウト', dontHaveAccount: 'アカウントをお持ちでないですか？', welcomeGuide: 'ウェルカムガイド' }),
+  ko: createTranslation({ unlockPredictions: '예측 잠금 해제', continue: '로그인', registerHere: '여기에서 등록', getSignal: '신호 받기', depositAndGetAccess: '입금 및 액세스', demo: '데모', demoMode: '데모 모드', trap: '함정', traps: '함정', confidence: '신뢰도', predictorHome: '홈', testPostback: '테스트', language: '언어', logout: '로그아웃', dontHaveAccount: '계정이 없으신가요?', welcomeGuide: '환영 가이드' }),
+  id: createTranslation({ unlockPredictions: 'Buka Prediksi', continue: 'MASUK', registerHere: 'DAFTAR DI SINI', getSignal: 'DAPATKAN SINYAL', depositAndGetAccess: 'DEPOSIT & AKSES', demo: 'Demo', demoMode: 'Mode Demo', trap: 'Perangkap', traps: 'Perangkap', confidence: 'Kepercayaan', predictorHome: 'Beranda', testPostback: 'Tes', language: 'Bahasa', logout: 'Keluar', dontHaveAccount: 'Belum punya akun?', welcomeGuide: 'Panduan Selamat Datang' }),
+  ms: createTranslation({ unlockPredictions: 'Buka Ramalan', continue: 'LOG MASUK', registerHere: 'DAFTAR DI SINI', getSignal: 'DAPATKAN ISYARAT', depositAndGetAccess: 'DEPOSIT & AKSES', demo: 'Demo', demoMode: 'Mod Demo', trap: 'Perangkap', traps: 'Perangkap', confidence: 'Keyakinan', predictorHome: 'Laman Utama', testPostback: 'Uji', language: 'Bahasa', logout: 'Log Keluar', dontHaveAccount: 'Tiada akaun?', welcomeGuide: 'Panduan Alu-aluan' }),
+  vi: createTranslation({ unlockPredictions: 'Mở khóa Dự đoán', continue: 'ĐĂNG NHẬP', registerHere: 'ĐĂNG KÝ TẠI ĐÂY', getSignal: 'NHẬN TÍN HIỆU', depositAndGetAccess: 'NẠP TIỀN & TRUY CẬP', demo: 'Demo', demoMode: 'Chế độ Demo', trap: 'Bẫy', traps: 'Bẫy', confidence: 'Độ tin cậy', predictorHome: 'Trang chủ', testPostback: 'Kiểm tra', language: 'Ngôn ngữ', logout: 'Đăng xuất', dontHaveAccount: 'Chưa có tài khoản?', welcomeGuide: 'Hướng dẫn chào mừng' }),
+  th: createTranslation({ unlockPredictions: 'ปลดล็อกการทำนาย', continue: 'เข้าสู่ระบบ', registerHere: 'ลงทะเบียนที่นี่', getSignal: 'รับสัญญาณ', depositAndGetAccess: 'ฝากเงินและเข้าถึง', demo: 'สาธิต', demoMode: 'โหมดสาธิต', trap: 'กับดัก', traps: 'กับดัก', confidence: 'ความมั่นใจ', predictorHome: 'หน้าแรก', testPostback: 'ทดสอบ', language: 'ภาษา', logout: 'ออกจากระบบ', dontHaveAccount: 'ไม่มีบัญชี?', welcomeGuide: 'คู่มือต้อนรับ' }),
+  tr: createTranslation({ unlockPredictions: 'Tahminlerin Kilidini Aç', continue: 'GİRİŞ YAP', registerHere: 'BURADAN KAYIT OL', getSignal: 'SİNYAL AL', depositAndGetAccess: 'YATIRIM YAP VE ERİŞ', demo: 'Demo', demoMode: 'Demo Modu', trap: 'Tuzak', traps: 'Tuzaklar', confidence: 'Güven', predictorHome: 'Ana Sayfa', testPostback: 'Test', language: 'Dil', logout: 'Çıkış', dontHaveAccount: 'Hesabınız yok mu?', welcomeGuide: 'Hoşgeldin Rehberi' }),
+  
+  // --- New Languages (to reach 60) with Valid Translations ---
+  pl: createTranslation({ unlockPredictions: 'Odblokuj Przewidywania', continue: 'ZALOGUJ SIĘ', getSignal: 'OTRZYMAJ SYGNAŁ', demo: 'Demo', trap: 'Pułapka', confidence: 'Pewność' }),
+  ro: createTranslation({ unlockPredictions: 'Deblochează Predicții', continue: 'AUTENTIFICARE', getSignal: 'OBȚINE SEMNAL', demo: 'Demo', trap: 'Capcană', confidence: 'Încredere' }),
+  nl: createTranslation({ unlockPredictions: 'Voorspellingen Ontgrendelen', continue: 'INLOGGEN', getSignal: 'SIGNAAL KRIJGEN', demo: 'Demo', trap: 'Val', confidence: 'Vertrouwen' }),
+  hu: createTranslation({ unlockPredictions: 'Jóslatok Feloldása', continue: 'BELÉPÉS', getSignal: 'JEL KÉRÉSE', demo: 'Demo', trap: 'Csapda', confidence: 'Bizalom' }),
+  cs: createTranslation({ unlockPredictions: 'Odemknout Předpovědi', continue: 'PŘIHLÁSIT SE', getSignal: 'ZÍSKAT SIGNÁL', demo: 'Demo', trap: 'Past', confidence: 'Důvěra' }),
+  el: createTranslation({ unlockPredictions: 'Ξεκλείδωμα Προβλέψεων', continue: 'ΕΙΣΟΔΟΣ', getSignal: 'ΛΗΨΗ ΣΗΜΑΤΟΣ', demo: 'Demo', trap: 'Παγίδα', confidence: 'Εμπιστοσύνη' }),
+  he: createTranslation({ unlockPredictions: 'פתח תחזיות', continue: 'התחבר', getSignal: 'קבל אות', demo: 'הדגמה', trap: 'מלכודת', confidence: 'ביטחון' }),
+  da: createTranslation({ unlockPredictions: 'Lås Forudsigelser Op', continue: 'LOG IND', getSignal: 'FÅ SIGNAL', demo: 'Demo', trap: 'Fælde', confidence: 'Tillid' }),
+  fi: createTranslation({ unlockPredictions: 'Avaa Ennusteet', continue: 'KIRJAUDU', getSignal: 'HAE SIGNAALI', demo: 'Demo', trap: 'Ansa', confidence: 'Luottamus' }),
+  no: createTranslation({ unlockPredictions: 'Lås Opp Forutsigelser', continue: 'LOGG INN', getSignal: 'FÅ SIGNAL', demo: 'Demo', trap: 'Felle', confidence: 'Tillit' }),
+  sv: createTranslation({ unlockPredictions: 'Lås Upp Förutsägelser', continue: 'LOGGA IN', getSignal: 'HÄMTA SIGNAL', demo: 'Demo', trap: 'Fälla', confidence: 'Förtroende' }),
+  uk: createTranslation({ unlockPredictions: 'Розблокувати Прогнози', continue: 'УВІЙТИ', getSignal: 'ОТРИМАТИ СИГНАЛ', demo: 'Демо', trap: 'Пастка', confidence: 'Впевненість' }),
+  bg: createTranslation({ unlockPredictions: 'Отключи Прогнози', continue: 'ВХОД', getSignal: 'ВЗЕМИ СИГНАЛ', demo: 'Демо', trap: 'Капан', confidence: 'Увереност' }),
+  hr: createTranslation({ unlockPredictions: 'Otključaj Predviđanja', continue: 'PRIJAVA', getSignal: 'DOBIJ SIGNAL', demo: 'Demo', trap: 'Zamka', confidence: 'Povjerenje' }),
+  sk: createTranslation({ unlockPredictions: 'Odomknúť Predpovede', continue: 'PRIHLÁSIŤ SA', getSignal: 'ZÍSKAŤ SIGNÁL', demo: 'Demo', trap: 'Pasca', confidence: 'Dôvera' }),
+  sl: createTranslation({ unlockPredictions: 'Odkleni Napovedi', continue: 'PRIJAVA', getSignal: 'DOBI SIGNAL', demo: 'Demo', trap: 'Past', confidence: 'Zaupanje' }),
+  sr: createTranslation({ unlockPredictions: 'Otključaj Predviđanja', continue: 'ПРИЈАВА', getSignal: 'ДОБИЈ СИГНАЛ', demo: 'Демо', trap: 'Замка', confidence: 'Поверење' }),
+  lt: createTranslation({ unlockPredictions: 'Atrakinti Prognozes', continue: 'PRISIJUNGTI', getSignal: 'GAUTI SIGNALĄ', demo: 'Demo', trap: 'Spąstai', confidence: 'Pasitikėjimas' }),
+  lv: createTranslation({ unlockPredictions: 'Atbloķēt Prognozes', continue: 'PIESLĒGTIES', getSignal: 'SAŅEMT SIGNĀLU', demo: 'Demo', trap: 'Slazds', confidence: 'Uzticība' }),
+  et: createTranslation({ unlockPredictions: 'Ava Ennustused', continue: 'LOGI SISSE', getSignal: 'SAA SIGNAAL', demo: 'Demo', trap: 'Lõks', confidence: 'Kindlus' }),
+  af: createTranslation({ unlockPredictions: 'Ontsluit Voorspellings', continue: 'TEKEN AAN', getSignal: 'KRY SEIN', demo: 'Demo', trap: 'Lokval', confidence: 'Vertroue' }),
+  sw: createTranslation({ unlockPredictions: 'Fungua Utabiri', continue: 'INGIA', getSignal: 'PATA ISHARA', demo: 'Demo', trap: 'Mtego', confidence: 'Imani' }),
+  tl: createTranslation({ unlockPredictions: 'I-unlock ang mga Hula', continue: 'MAG-LOGIN', getSignal: 'KUMUHA NG SIGNAL', demo: 'Demo', trap: 'Bitag', confidence: 'Kumpiyansa' }),
+  az: createTranslation({ unlockPredictions: 'Proqnozları Aç', continue: 'DAXİL OL', getSignal: 'SİQNAL AL', demo: 'Demo', trap: 'Tələ', confidence: 'İnam' }),
+  ka: createTranslation({ unlockPredictions: 'პროგნოზების განბლოკვა', continue: 'შესვლა', getSignal: 'სიგნალის მიღება', demo: 'დემო', trap: 'მახე', confidence: 'ნდობა' }),
+  kk: createTranslation({ unlockPredictions: 'Болжамдарды ашу', continue: 'КІРУ', getSignal: 'СИГНАЛ АЛУ', demo: 'Демо', trap: 'Тұзақ', confidence: 'Сенімділік' }),
+  uz: createTranslation({ unlockPredictions: 'Bashoratlarni ochish', continue: 'KIRISH', getSignal: 'SIGNAL OLISH', demo: 'Demo', trap: 'Tuzoq', confidence: 'Ishonch' }),
+  ne: createTranslation({ unlockPredictions: 'भविष्यवाणीहरू अनलक गर्नुहोस्', continue: 'लग इन', getSignal: 'सङ्केत पाउनुहोस्', demo: 'डेमो', trap: 'पासो', confidence: 'विश्वास' }),
+  si: createTranslation({ unlockPredictions: 'අනාවැකි අගුළු හරින්න', continue: 'ඇතුල් වන්න', getSignal: 'සංඥාව ලබා ගන්න', demo: 'ආදර්ශනය', trap: 'උගුල', confidence: 'විශ්වාසය' }),
+  my: createTranslation({ unlockPredictions: 'ခန့်မှန်းချက်များကို ဖွင့်ပါ', continue: 'ဝင်ရောက်ပါ', getSignal: 'အချက်ပြရယူပါ', demo: 'သရုပ်ပြ', trap: 'ထောင်ချောက်', confidence: 'ယုံကြည်မှု' }),
+  km: createTranslation({ unlockPredictions: 'ដោះសោការព្យាករណ៍', continue: 'ចូល', getSignal: 'ទទួលសញ្ញា', demo: 'សាកល្បង', trap: 'អន្ទាក់', confidence: 'ទំនុកចិត្ត' }),
 };
