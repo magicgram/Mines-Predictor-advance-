@@ -76,7 +76,7 @@ const DepositMessage: React.FC<{
         <button
           onClick={onRegister}
           disabled={isRegistering}
-          className="w-full py-3 bg-gradient-to-r from-[#4ade80] to-[#16a34a] text-[#064e3b] font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 border-b-4 border-[#14532d] active:border-b-0 active:translate-y-1"
+          className="w-full py-3 px-4 min-h-[56px] h-auto whitespace-normal break-words leading-tight bg-gradient-to-r from-[#4ade80] to-[#16a34a] text-[#064e3b] font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 border-b-4 border-[#14532d] active:border-b-0 active:translate-y-1 flex items-center justify-center"
         >
           {isRegistering ? (
             <div className="flex justify-center items-center">
@@ -92,7 +92,7 @@ const DepositMessage: React.FC<{
         </button>
         <button
           onClick={onBack}
-          className="w-full py-3 bg-[#083344]/50 border-2 border-[#38bdf8]/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-[#083344]/80"
+          className="w-full py-3 px-4 min-h-[56px] h-auto whitespace-normal break-words leading-tight bg-[#083344]/50 border-2 border-[#38bdf8]/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-[#083344]/80 flex items-center justify-center"
         >
           {t('back').toUpperCase()}
         </button>
@@ -124,7 +124,7 @@ const ReDepositMessage: React.FC<{
         <button
           onClick={onRegister}
           disabled={isRegistering}
-          className="w-full py-3 bg-gradient-to-r from-[#4ade80] to-[#16a34a] text-[#064e3b] font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 border-b-4 border-[#14532d] active:border-b-0 active:translate-y-1"
+          className="w-full py-3 px-4 min-h-[56px] h-auto whitespace-normal break-words leading-tight bg-gradient-to-r from-[#4ade80] to-[#16a34a] text-[#064e3b] font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 border-b-4 border-[#14532d] active:border-b-0 active:translate-y-1 flex items-center justify-center"
         >
           {isRegistering ? (
             <div className="flex justify-center items-center">
@@ -140,7 +140,7 @@ const ReDepositMessage: React.FC<{
         </button>
         <button
           onClick={onBack}
-          className="w-full py-3 bg-[#083344]/50 border-2 border-[#38bdf8]/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-[#083344]/80"
+          className="w-full py-3 px-4 min-h-[56px] h-auto whitespace-normal break-words leading-tight bg-[#083344]/50 border-2 border-[#38bdf8]/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-[#083344]/80 flex items-center justify-center"
         >
           {t('back').toUpperCase()}
         </button>
@@ -159,6 +159,7 @@ const DemoView: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [showLoginPrompt, setShowLoginPrompt] = useState(false);
     const [demoAttempts, setDemoAttempts] = useState(0);
+    const { t } = useLanguage();
 
     // Initial load of demo attempts
     useEffect(() => {
@@ -216,7 +217,7 @@ const DemoView: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             {/* Header */}
             <div className="w-full flex justify-center items-center mb-6 relative">
                  <h1 className="text-3xl font-russo text-transparent bg-clip-text bg-gradient-to-b from-[#ffffff] to-[#cceeff] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] tracking-wide">
-                    DEMO MODE
+                    {t('demoMode')}
                 </h1>
                 <button 
                     onClick={onExit}
@@ -257,22 +258,22 @@ const DemoView: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             {/* Traps */}
             <div className="flex justify-between w-full max-w-[320px] gap-3 mb-5">
                 <button className="flex-1 py-2 rounded-full font-russo text-sm tracking-wider bg-[#0ea5e9] border border-white/50 text-white shadow-[0_0_15px_rgba(14,165,233,0.6)] scale-105">
-                    1 TRAP
+                    1 {t('trap')}
                 </button>
                 <button onClick={handleTrapClick} className="flex-1 py-2 rounded-full font-russo text-sm tracking-wider bg-[#0c4a6e] border border-[#075985] text-gray-400 hover:bg-[#0f5c85] opacity-60">
-                    3 TRAPS
+                    3 {t('traps')}
                 </button>
                 <button onClick={handleTrapClick} className="flex-1 py-2 rounded-full font-russo text-sm tracking-wider bg-[#0c4a6e] border border-[#075985] text-gray-400 hover:bg-[#0f5c85] opacity-60">
-                    5 TRAPS
+                    5 {t('traps')}
                 </button>
             </div>
 
             {/* Buttons */}
-             <div className="w-full max-w-[320px] flex gap-3 mb-5 h-[56px]">
+             <div className="w-full max-w-[320px] flex gap-3 mb-5 min-h-[56px] h-auto items-stretch">
                 <button
                     onClick={handleRefresh}
                     disabled={!isSignalActive}
-                    className={`h-full aspect-square rounded-2xl flex items-center justify-center border-b-4 transition-all
+                    className={`min-h-[56px] h-auto w-[56px] rounded-2xl flex items-center justify-center border-b-4 transition-all flex-shrink-0
                         ${isSignalActive 
                             ? 'bg-[#3b82f6] border-[#1d4ed8] text-white shadow-lg active:border-b-0 active:translate-y-1 hover:brightness-110 cursor-pointer' 
                             : 'bg-[#1e293b] border-[#0f172a] text-gray-600 cursor-not-allowed'}
@@ -285,7 +286,7 @@ const DemoView: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                     onClick={handleGetSignal}
                     disabled={isSignalActive || isLoading}
                     className={`
-                        flex-1 h-full rounded-2xl flex items-center justify-center gap-2 font-russo text-xl tracking-wide border-b-4 transition-all shadow-xl
+                        flex-1 min-h-[56px] h-auto py-2 px-2 rounded-2xl flex items-center justify-center gap-2 font-russo text-xl tracking-wide border-b-4 transition-all shadow-xl whitespace-normal break-words leading-tight
                         ${!isSignalActive && !isLoading
                             ? 'bg-gradient-to-r from-[#4ade80] to-[#16a34a] border-[#14532d] text-[#064e3b] hover:brightness-110 active:border-b-0 active:translate-y-1'
                             : 'bg-[#1e293b] border-[#0f172a] text-gray-500 cursor-not-allowed'}
@@ -299,8 +300,8 @@ const DemoView: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         </div>
                     ) : (
                          <>
-                            <PlayIcon className="w-7 h-7" />
-                            GET SIGNAL
+                            <PlayIcon className="w-7 h-7 flex-shrink-0" />
+                            <span>{t('getSignal')}</span>
                         </>
                     )}
                 </button>
@@ -316,15 +317,15 @@ const DemoView: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                          >
                             <CloseIcon className="w-5 h-5" />
                          </button>
-                         <h3 className="text-xl font-russo text-white text-center mb-2">Locked Feature</h3>
+                         <h3 className="text-xl font-russo text-white text-center mb-2">{t('lockedFeature')}</h3>
                          <p className="text-gray-300 text-center font-poppins text-sm mb-6">
-                            Please login to get Prediction 3,5 traps
+                            {t('loginToUnlockTraps')}
                          </p>
                          <button
                             onClick={onExit}
-                            className="w-full py-3 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] text-white font-poppins font-bold text-sm uppercase rounded-xl shadow-lg border-b-4 border-[#1e40af] active:border-b-0 active:translate-y-1 hover:brightness-110"
+                            className="w-full py-3 px-4 min-h-[50px] h-auto whitespace-normal break-words leading-tight bg-gradient-to-r from-[#3b82f6] to-[#2563eb] text-white font-poppins font-bold text-sm uppercase rounded-xl shadow-lg border-b-4 border-[#1e40af] active:border-b-0 active:translate-y-1 hover:brightness-110"
                          >
-                            GET PREDICTION
+                            {t('getPrediction')}
                          </button>
                     </div>
                 </div>
@@ -486,7 +487,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                 aria-label="Demo Mode"
             >
                 <GamepadIcon className="w-5 h-5" />
-                <span>DEMO</span>
+                <span>{t('demo')}</span>
             </button>
         )}
       </div>
@@ -552,7 +553,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                 <button
                     onClick={handleContinue}
                     disabled={isLoading || !playerId}
-                    className="w-full py-3 bg-gradient-to-r from-[#4ade80] to-[#16a34a] text-[#064e3b] font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 border-b-4 border-[#14532d] active:border-b-0 active:translate-y-1"
+                    className="w-full py-3 px-4 min-h-[56px] h-auto whitespace-normal break-words leading-tight bg-gradient-to-r from-[#4ade80] to-[#16a34a] text-[#064e3b] font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 border-b-4 border-[#14532d] active:border-b-0 active:translate-y-1 flex items-center justify-center"
                 >
                     {isLoading ? (
                         <div className="flex justify-center items-center h-[28px]">
@@ -573,7 +574,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
               <button
                   onClick={handleRegister}
                   disabled={isRegistering}
-                  className="w-full py-3 bg-[#083344]/50 border-2 border-[#38bdf8]/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:bg-[#083344]/80 disabled:opacity-50"
+                  className="w-full py-3 px-4 min-h-[56px] h-auto whitespace-normal break-words leading-tight bg-[#083344]/50 border-2 border-[#38bdf8]/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:bg-[#083344]/80 disabled:opacity-50 flex items-center justify-center"
               >
                 {isRegistering ? (
                     <div className="flex justify-center items-center h-[28px]">

@@ -93,6 +93,8 @@ const PredictorView = React.memo((props: {
     confidence: number | null;
     isLoading: boolean;
 }) => {
+    const { t } = useLanguage();
+    
     return (
         <div className="w-full min-h-screen flex flex-col relative font-poppins overflow-hidden bg-[#0088ff]">
             {/* Gradient Background matching reference */}
@@ -171,19 +173,19 @@ const PredictorView = React.memo((props: {
                                 ${props.isSignalActive ? 'opacity-50 cursor-not-allowed' : 'active:scale-95'}
                             `}
                         >
-                            {traps} TRAPS
+                            {traps} {traps === 1 ? t('trap') : t('traps')}
                         </button>
                     ))}
                 </div>
 
                 {/* Controls */}
-                <div className="w-full max-w-[360px] flex gap-3 mb-5 h-[64px]">
+                <div className="w-full max-w-[360px] flex gap-3 mb-5 min-h-[64px] h-auto items-stretch">
                     {/* Refresh Button */}
                     <button
                         onClick={props.onRefresh}
                         disabled={!props.isSignalActive} // Only enabled when signal is showing
                         className={`
-                            h-full aspect-square rounded-2xl flex items-center justify-center border-b-4 transition-all
+                            w-[64px] min-h-[64px] h-auto rounded-2xl flex items-center justify-center border-b-4 transition-all flex-shrink-0
                             ${props.isSignalActive 
                                 ? 'bg-[#3b82f6] border-[#1d4ed8] text-white shadow-lg active:border-b-0 active:translate-y-1 hover:brightness-110 cursor-pointer' 
                                 : 'bg-[#1e293b] border-[#0f172a] text-gray-600 cursor-not-allowed'}
@@ -197,7 +199,7 @@ const PredictorView = React.memo((props: {
                         onClick={props.onGetSignal}
                         disabled={props.isSignalActive || props.isLoading} // Locked when signal is active or loading
                         className={`
-                            flex-1 h-full rounded-2xl flex items-center justify-center gap-2 font-russo text-2xl tracking-wide border-b-4 transition-all shadow-xl
+                            flex-1 min-h-[64px] h-auto py-2 px-2 rounded-2xl flex items-center justify-center gap-2 font-russo text-2xl tracking-wide border-b-4 transition-all shadow-xl whitespace-normal break-words leading-tight
                             ${!props.isSignalActive && !props.isLoading
                                 ? 'bg-gradient-to-r from-[#4ade80] to-[#16a34a] border-[#14532d] text-[#064e3b] hover:brightness-110 active:border-b-0 active:translate-y-1'
                                 : 'bg-[#1e293b] border-[#0f172a] text-gray-500 cursor-not-allowed'}
@@ -211,8 +213,8 @@ const PredictorView = React.memo((props: {
                             </div>
                         ) : (
                             <>
-                                <PlayIcon className="w-8 h-8" />
-                                GET SIGNAL
+                                <PlayIcon className="w-8 h-8 flex-shrink-0" />
+                                <span>{t('getSignal')}</span>
                             </>
                         )}
                     </button>
@@ -221,7 +223,7 @@ const PredictorView = React.memo((props: {
                 {/* Confidence Meter */}
                 <div className="w-full max-w-[360px] bg-[#0c4a6e]/80 backdrop-blur rounded-xl border border-[#38bdf8]/30 py-3 px-6 text-center shadow-lg">
                     <p className="font-russo text-lg text-white tracking-widest">
-                        CONFIDENCE:- <span className="text-[#4ade80] text-xl filter drop-shadow-[0_0_5px_rgba(74,222,128,0.5)]">
+                        {t('confidence')}:- <span className="text-[#4ade80] text-xl filter drop-shadow-[0_0_5px_rgba(74,222,128,0.5)]">
                             {props.confidence ? `${props.confidence}%` : '--%'}
                         </span>
                     </p>
