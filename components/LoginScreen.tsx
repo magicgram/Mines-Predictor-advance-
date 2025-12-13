@@ -405,13 +405,13 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                 if (newAttemptsCount >= 3) {
                     setError(t('noRegistrationFoundAfterAttempts'));
                 } else {
-                    setError(response.message || t('youAreNotRegistered'));
+                    setError(t('notRegisteredError'));
                 }
             } else {
                  if (response.success) {
                     setError(t('loginFailedNoCount'));
                 } else {
-                    setError(response.message || t('unknownErrorOccurred'));
+                    setError(response.message || t('unexpectedErrorOccurred'));
                 }
             }
         }
