@@ -457,7 +457,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
       const attempts = stored ? parseInt(stored, 10) : 0;
       
       if (attempts >= 2) {
-          setError("Demo limit reached. Please login.");
+          setError(t('demoLimitReached'));
           return;
       }
       setIsDemoMode(true);
