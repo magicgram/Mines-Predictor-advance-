@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -98,23 +99,23 @@ const PostbackGuide: React.FC<PostbackGuideProps> = ({ onBack }) => {
                 )}
                 
                 <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-                    <h2 className="font-bold text-lg text-blue-300">Step 1: Find Your Network's Macros</h2>
+                    <h2 className="font-bold text-lg text-blue-300">{t('postbackGuideStep1Title')}</h2>
                     <p className="text-sm text-white/80 mt-2">
-                        In your affiliate panel, find the list of available "macros" or "placeholders". These are special codes that your network replaces with real data. You need to find the macros for:
+                        {t('postbackGuideStep1Desc')}
                     </p>
                     <ul className="list-disc list-inside text-sm text-white/80 mt-2 space-y-1">
-                        <li><strong>User ID:</strong> This is usually <code>{'{user_id}'}</code> or sometimes <code>{'{sub1}'}</code>.</li>
-                        <li><strong>Deposit Amount:</strong> This is almost always <code>{'{amount}'}</code>.</li>
+                        <li dangerouslySetInnerHTML={{ __html: t('postbackGuideStep1List1') }} />
+                        <li dangerouslySetInnerHTML={{ __html: t('postbackGuideStep1List2') }} />
                     </ul>
                     <p className="text-sm text-white/80 mt-2">
-                        The URLs below use these standard macros. If your network uses different ones, you must replace them.
+                        {t('postbackGuideStep1Bottom')}
                     </p>
                 </div>
 
                 <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                  <h2 className="font-bold text-lg text-green-300">Step 2: Set Up Your Postback URLs</h2>
+                  <h2 className="font-bold text-lg text-green-300">{t('postbackGuideStep2Title')}</h2>
                    <p className="text-sm text-white/80 mt-2">
-                        Your affiliate panel should have separate sections or fields to set a postback for each event (Registration, First Deposit, etc.). Copy the full URL below and paste it into the correct field.
+                        {t('postbackGuideStep2Desc')}
                     </p>
                 </div>
 
@@ -124,8 +125,8 @@ const PostbackGuide: React.FC<PostbackGuideProps> = ({ onBack }) => {
                       description={t('postbackGuideRegistrationDesc')}
                       baseUrl={`${domain}/api/postback`}
                       params={[
-                        { key: 'event_type', value: 'registration', desc: 'This tells our app it was a registration. This part is static and you type it exactly as shown.' },
-                        { key: 'user_id', value: '{user_id}', desc: "This is your network's macro for the user's Player ID." }
+                        { key: 'event_type', value: 'registration', desc: t('postbackGuideRegistrationParamDesc') },
+                        { key: 'user_id', value: '{user_id}', desc: t('postbackGuideUserIdParamDesc') }
                       ]}
                     />
 
@@ -134,9 +135,9 @@ const PostbackGuide: React.FC<PostbackGuideProps> = ({ onBack }) => {
                       description={t('postbackGuideFtdDesc')}
                       baseUrl={`${domain}/api/postback`}
                       params={[
-                        { key: 'event_type', value: 'first_deposit', desc: 'Tells our app it was a first deposit. Type it exactly as shown.' },
-                        { key: 'user_id', value: '{user_id}', desc: "Your network's macro for the Player ID." },
-                        { key: 'amount', value: '{amount}', desc: "Your network's macro for the deposit amount." }
+                        { key: 'event_type', value: 'first_deposit', desc: t('postbackGuideFtdParamDesc') },
+                        { key: 'user_id', value: '{user_id}', desc: t('postbackGuideUserIdParamDesc') },
+                        { key: 'amount', value: '{amount}', desc: t('postbackGuideAmountParamDesc') }
                       ]}
                     />
 
@@ -145,25 +146,21 @@ const PostbackGuide: React.FC<PostbackGuideProps> = ({ onBack }) => {
                       description={t('postbackGuideDepDesc')}
                       baseUrl={`${domain}/api/postback`}
                       params={[
-                        { key: 'event_type', value: 'recurring_deposit', desc: 'Tells our app it was another deposit. Type it exactly as shown.' },
-                        { key: 'user_id', value: '{user_id}', desc: "Your network's macro for the Player ID." },
-                        { key: 'amount', value: '{amount}', desc: "Your network's macro for the deposit amount." }
+                        { key: 'event_type', value: 'recurring_deposit', desc: t('postbackGuideDepParamDesc') },
+                        { key: 'user_id', value: '{user_id}', desc: t('postbackGuideUserIdParamDesc') },
+                        { key: 'amount', value: '{amount}', desc: t('postbackGuideAmountParamDesc') }
                       ]}
                     />
                 </div>
                 
                 <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
-                    <h2 className="font-bold text-lg text-red-300">Troubleshooting: Still not working?</h2>
+                    <h2 className="font-bold text-lg text-red-300">{t('postbackGuideTroubleTitle')}</h2>
                     <p className="text-sm text-white/80 mt-2">
-                        If users are still not being registered, try these common fixes:
+                        {t('postbackGuideTroubleDesc')}
                     </p>
                     <ol className="list-decimal list-inside text-sm text-white/80 mt-2 space-y-2">
-                        <li>
-                            <strong>Check the Player ID macro:</strong> In your affiliate link setup (the one you give to users), make sure you are passing the Player ID correctly. Many platforms require you to set this in a parameter like `sub1`. If you set it as `sub1=PLAYER_ID`, then your postback macro for the ID might be <code>{'{sub1}'}</code> instead of <code>{'{user_id}'}</code>. Try replacing <code>user_id={'{user_id}'}</code> with <code>user_id={'{sub1}'}</code> in the URLs above.
-                        </li>
-                        <li>
-                            <strong>Check the event type parameter:</strong> Some networks use `event` instead of `event_type`. Our server now accepts both, but try changing `event_type=registration` to `event=registration` in your URL if the first option doesn't work.
-                        </li>
+                        <li dangerouslySetInnerHTML={{ __html: t('postbackGuideTroubleList1') }} />
+                        <li dangerouslySetInnerHTML={{ __html: t('postbackGuideTroubleList2') }} />
                     </ol>
                 </div>
             </div>

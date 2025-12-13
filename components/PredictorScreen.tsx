@@ -159,14 +159,14 @@ const PredictorView = React.memo((props: {
                 </div>
 
                 {/* Trap Selection Buttons */}
-                <div className="flex justify-between w-full max-w-[360px] gap-3 mb-5">
+                <div className="flex justify-between w-full max-w-[360px] gap-3 mb-5 items-stretch">
                     {[1, 3, 5].map((traps) => (
                         <button
                             key={traps}
                             onClick={() => !props.isSignalActive && props.setSelectedTraps(traps)}
                             disabled={props.isSignalActive}
                             className={`
-                                flex-1 py-2.5 rounded-full font-russo text-sm md:text-base tracking-wider transition-all duration-200 border
+                                flex-1 py-2 px-2 rounded-2xl font-russo text-sm md:text-base tracking-wider transition-all duration-200 border whitespace-normal h-auto min-h-[44px] flex items-center justify-center text-center leading-tight
                                 ${props.selectedTraps === traps 
                                     ? 'bg-[#0ea5e9] border-white/50 text-white shadow-[0_0_15px_rgba(14,165,233,0.6)] scale-105' 
                                     : 'bg-[#0c4a6e] border-[#075985] text-gray-400 hover:bg-[#0f5c85]'}
@@ -199,7 +199,7 @@ const PredictorView = React.memo((props: {
                         onClick={props.onGetSignal}
                         disabled={props.isSignalActive || props.isLoading} // Locked when signal is active or loading
                         className={`
-                            flex-1 min-h-[64px] h-auto py-2 px-2 rounded-2xl flex items-center justify-center gap-2 font-russo text-2xl tracking-wide border-b-4 transition-all shadow-xl whitespace-normal break-words leading-tight
+                            flex-1 min-h-[64px] h-auto py-2 px-2 rounded-2xl flex items-center justify-center gap-2 font-russo text-2xl tracking-wide border-b-4 transition-all shadow-xl whitespace-normal break-words leading-tight text-center
                             ${!props.isSignalActive && !props.isLoading
                                 ? 'bg-gradient-to-r from-[#4ade80] to-[#16a34a] border-[#14532d] text-[#064e3b] hover:brightness-110 active:border-b-0 active:translate-y-1'
                                 : 'bg-[#1e293b] border-[#0f172a] text-gray-500 cursor-not-allowed'}
