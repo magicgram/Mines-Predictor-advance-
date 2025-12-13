@@ -107,10 +107,10 @@ const PredictorView = React.memo((props: {
                 
                 {/* Guide and Menu (Top Right as requested) */}
                 <div className="flex items-center gap-3">
-                    <button onClick={props.onOpenGuide} className="p-2 rounded-full bg-black/20 text-white hover:bg-black/30 transition active:scale-90">
+                    <button onClick={props.onOpenGuide} className="p-2 rounded-full bg-black/20 text-white hover:bg-black/30 transition active:scale-90" aria-label={t('openGuide')}>
                         <GuideIcon className="w-7 h-7 drop-shadow-md" />
                     </button>
-                    <button onClick={props.onOpenSidebar} className="p-2 rounded-full bg-black/20 text-white hover:bg-black/30 transition active:scale-90">
+                    <button onClick={props.onOpenSidebar} className="p-2 rounded-full bg-black/20 text-white hover:bg-black/30 transition active:scale-90" aria-label={t('openMenu')}>
                         <MenuIcon className="w-7 h-7 drop-shadow-md" />
                     </button>
                 </div>
@@ -166,7 +166,7 @@ const PredictorView = React.memo((props: {
                             onClick={() => !props.isSignalActive && props.setSelectedTraps(traps)}
                             disabled={props.isSignalActive}
                             className={`
-                                flex-1 py-2 px-2 rounded-2xl font-russo text-sm md:text-base tracking-wider transition-all duration-200 border whitespace-normal h-auto min-h-[44px] flex items-center justify-center text-center leading-tight
+                                flex-1 py-2 px-1 rounded-2xl font-russo text-sm md:text-base tracking-wider transition-all duration-200 border whitespace-normal h-auto min-h-[44px] flex items-center justify-center text-center leading-tight break-words
                                 ${props.selectedTraps === traps 
                                     ? 'bg-[#0ea5e9] border-white/50 text-white shadow-[0_0_15px_rgba(14,165,233,0.6)] scale-105' 
                                     : 'bg-[#0c4a6e] border-[#075985] text-gray-400 hover:bg-[#0f5c85]'}
@@ -199,7 +199,7 @@ const PredictorView = React.memo((props: {
                         onClick={props.onGetSignal}
                         disabled={props.isSignalActive || props.isLoading} // Locked when signal is active or loading
                         className={`
-                            flex-1 min-h-[64px] h-auto py-2 px-2 rounded-2xl flex items-center justify-center gap-2 font-russo text-2xl tracking-wide border-b-4 transition-all shadow-xl whitespace-normal break-words leading-tight text-center
+                            flex-1 min-h-[64px] h-auto py-2 px-2 rounded-2xl flex items-center justify-center gap-2 font-russo text-xl md:text-2xl tracking-wide border-b-4 transition-all shadow-xl whitespace-normal break-words leading-tight text-center
                             ${!props.isSignalActive && !props.isLoading
                                 ? 'bg-gradient-to-r from-[#4ade80] to-[#16a34a] border-[#14532d] text-[#064e3b] hover:brightness-110 active:border-b-0 active:translate-y-1'
                                 : 'bg-[#1e293b] border-[#0f172a] text-gray-500 cursor-not-allowed'}
