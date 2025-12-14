@@ -292,7 +292,11 @@ export const translations: any = {
       depositMessageSync: 'आपका खाता ऐप के साथ सिंक्रनाइज़ है।',
       depositMessageDeposit: 'सिग्नल एक्सेस करने के लिए, अपने खाते में कम से कम {{minDepositAmount}} या $10 जमा करें।',
       depositMessageAccess: 'सफलतापूर्वक खाता रिचार्ज करने के बाद, एक्सेस पाने के लिए फिर से अपनी प्लेयर आईडी दर्ज करें।',
-      depositAndGetAccess: 'जमा करें और एक्सेस प्राप्त करें'
+      depositAndGetAccess: 'जमा करें और एक्सेस प्राप्त करें',
+      back: 'वापस',
+      reDepositMessageTitle: 'भविष्यवाणी सीमा समाप्त',
+      reDepositMessageContinue: 'यह छोटी जमा राशि पुष्टि करती है कि आप एक सक्रिय उपयोगकर्ता हैं। {{minReDepositAmount}} या $5 जमा करने पर आपको और भविष्यवाणियां मिलेंगी।',
+      depositAgain: 'फिर से जमा करें'
   }),
   // 2. Bengali
   bn: createTranslation({ 
@@ -338,7 +342,11 @@ export const translations: any = {
       depositMessageSync: 'আপনার অ্যাকাউন্ট অ্যাপের সাথে সিঙ্ক্রোনাইজ করা হয়েছে।',
       depositMessageDeposit: 'সংকেত অ্যাক্সেস করতে, আপনার অ্যাকাউন্টে কমপক্ষে {{minDepositAmount}} বা $10 জমা দিন।',
       depositMessageAccess: 'সফলভাবে অ্যাকাউন্ট রিচার্জ করার পরে, অ্যাক্সেস পেতে আবার আপনার প্লেয়ার আইডি লিখুন।',
-      depositAndGetAccess: 'জমা দিন এবং অ্যাক্সেস পান'
+      depositAndGetAccess: 'জমা দিন এবং অ্যাক্সেস পান',
+      back: 'ফিরে যান',
+      reDepositMessageTitle: 'সীমা পৌঁছেছে',
+      reDepositMessageContinue: 'এটি নিশ্চিত করে যে আপনি একজন সক্রিয় ব্যবহারকারী। {{minReDepositAmount}} বা $5 জমা করলে আপনি আরও ভবিষ্যদ্বাণী পাবেন।',
+      depositAgain: 'আবার জমা দিন'
   }),
   // 3. Marathi
   mr: createTranslation({ 
@@ -384,7 +392,11 @@ export const translations: any = {
       depositMessageSync: 'तुमचे खाते ॲपशी सिंक्रोनाइझ केले आहे.',
       depositMessageDeposit: 'सिग्नल ऍक्सेस करण्यासाठी, तुमच्या खात्यात किमान {{minDepositAmount}} किंवा $10 जमा करा.',
       depositMessageAccess: 'यशस्वीरित्या खाते रिचार्ज केल्यानंतर, प्रवेश मिळविण्यासाठी पुन्हा तुमचा प्लेअर आयडी प्रविष्ट करा.',
-      depositAndGetAccess: 'जमा करा आणि प्रवेश मिळवा'
+      depositAndGetAccess: 'जमा करा आणि प्रवेश मिळवा',
+      back: 'मागे',
+      reDepositMessageTitle: 'मर्यादा गाठली',
+      reDepositMessageContinue: 'हे पुष्टी करते की आपण सक्रिय वापरकर्ता आहात. {{minReDepositAmount}} किंवा $5 जमा केल्यानंतर आपल्याला अधिक भविष्यवाण्या मिळतील.',
+      depositAgain: 'पुन्हा जमा करा'
   }),
   // 4. Gujarati
   gu: createTranslation({ 
@@ -430,7 +442,11 @@ export const translations: any = {
       depositMessageSync: 'તમારું એકાઉન્ટ એપ સાથે સિંક્રનાઇઝ થયેલું છે.',
       depositMessageDeposit: 'સિગ્નલ મેળવવા માટે, તમારા ખાતામાં ઓછામાં ઓછા {{minDepositAmount}} અથવા $10 જમા કરો.',
       depositMessageAccess: 'સફળતાપૂર્વક રિચાર્જ કર્યા પછી, ફરીથી તમારો પ્લેયર આઈડી દાખલ કરો.',
-      depositAndGetAccess: 'જમા કરો અને ઍક્સેસ મેળવો'
+      depositAndGetAccess: 'જમા કરો અને ઍક્સેસ મેળવો',
+      back: 'પાછા',
+      reDepositMessageTitle: 'મર્યાદા સમાપ્ત',
+      reDepositMessageContinue: 'આ ખાતરી કરે છે કે તમે સક્રિય વપરાશકર્તા છો. {{minReDepositAmount}} અથવા $5 જમા કર્યા પછી તમને વધુ આગાહીઓ મળશે.',
+      depositAgain: 'ફરીથી જમા કરો'
   }),
   // 5. Tamil
   ta: createTranslation({ 
@@ -476,7 +492,11 @@ export const translations: any = {
       depositMessageSync: 'உங்கள் கணக்கு பயன்பாட்டுடன் ஒத்திசைக்கப்பட்டுள்ளது.',
       depositMessageDeposit: 'சிக்னல்களைப் பெற, குறைந்தபட்சம் {{minDepositAmount}} அல்லது $10 டெபாசிட் செய்யவும்.',
       depositMessageAccess: 'வெற்றிகரமாக ரீசார்ஜ் செய்த பிறகு, அணுகலைப் பெற உங்கள் பிளேயர் ஐடியை மீண்டும் உள்ளிடவும்.',
-      depositAndGetAccess: 'டெபாசிட் செய்து அணுகலைப் பெறுங்கள்'
+      depositAndGetAccess: 'டெபாசிட் செய்து அணுகலைப் பெறுங்கள்',
+      back: 'பின்',
+      reDepositMessageTitle: 'வரம்பு முடிந்தது',
+      reDepositMessageContinue: 'நீங்கள் செயலில் உள்ள பயனர் என்பதை இது உறுதிப்படுத்துகிறது. {{minReDepositAmount}} அல்லது $5 டெபாசிட் செய்த பிறகு கூடுதல் கணிப்புகளைப் பெறுவீர்கள்.',
+      depositAgain: 'மீண்டும் டெபாசிட் செய்யவும்'
   }),
   // 6. Telugu
   te: createTranslation({ 
@@ -522,7 +542,11 @@ export const translations: any = {
       depositMessageSync: 'మీ ఖాతా యాప్‌తో సమకాలీకరించబడింది.',
       depositMessageDeposit: 'సిగ్నల్స్ పొందడానికి, కనీసం {{minDepositAmount}} లేదా $10 డిపాజిట్ చేయండి.',
       depositMessageAccess: 'విజయవంతంగా రీఛార్జ్ చేసిన తర్వాత, యాక్సెస్ పొందడానికి మీ ప్లేయర్ IDని మళ్లీ నమోదు చేయండి.',
-      depositAndGetAccess: 'డిపాజిట్ చేసి యాక్సెస్ పొందండి'
+      depositAndGetAccess: 'డిపాజిట్ చేసి యాక్సెస్ పొందండి',
+      back: 'వెనుకకు',
+      reDepositMessageTitle: 'పరిమితి ముగిసింది',
+      reDepositMessageContinue: 'ఇది మీరు సక్రియ వినియోగదారు అని నిర్ధారిస్తుంది. {{minReDepositAmount}} లేదా $5 డిపాజిట్ చేసిన తర్వాత మీరు మరిన్ని అంచనాలను అందుకుంటారు.',
+      depositAgain: 'మళ్ళీ డిపాజిట్ చేయండి'
   }),
   // 7. Kannada
   kn: createTranslation({ 
@@ -568,7 +592,11 @@ export const translations: any = {
       depositMessageSync: 'ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅಪ್ಲಿಕೇಶನ್‌ನೊಂದಿಗೆ ಸಿಂಕ್ರೊನೈಸ್ ಮಾಡಲಾಗಿದೆ.',
       depositMessageDeposit: 'ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಪಡೆಯಲು, ಕನಿಷ್ಠ {{minDepositAmount}} ಅಥವಾ $10 ಠೇವಣಿ ಮಾಡಿ.',
       depositMessageAccess: 'ಯಶಸ್ವಿಯಾಗಿ ರೀಚಾರ್ಜ್ ಮಾಡಿದ ನಂತರ, ಪ್ರವೇಶ ಪಡೆಯಲು ನಿಮ್ಮ ಪ್ಲೇಯರ್ ಐಡಿಯನ್ನು ಮತ್ತೆ ನಮೂದಿಸಿ.',
-      depositAndGetAccess: 'ಠೇವಣಿ ಮಾಡಿ ಮತ್ತು ಪ್ರವೇಶ ಪಡೆಯಿರಿ'
+      depositAndGetAccess: 'ಠೇವಣಿ ಮಾಡಿ ಮತ್ತು ಪ್ರವೇಶ ಪಡೆಯಿರಿ',
+      back: 'ಹಿಂದೆ',
+      reDepositMessageTitle: 'ಮಿತಿ ಮೀರಿದೆ',
+      reDepositMessageContinue: 'ನೀವು ಸಕ್ರಿಯ ಬಳಕೆದಾರ ಎಂದು ಇದು ಖಚಿತಪಡಿಸುತ್ತದೆ. {{minReDepositAmount}} ಅಥವಾ $5 ಠೇವಣಿ ಮಾಡಿದ ನಂತರ ನೀವು ಹೆಚ್ಚಿನ ಮುನ್ಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸುತ್ತೀರಿ.',
+      depositAgain: 'ಮತ್ತೆ ಠೇವಣಿ ಮಾಡಿ'
   }),
   // 8. Malayalam
   ml: createTranslation({ 
@@ -614,7 +642,11 @@ export const translations: any = {
       depositMessageSync: 'നിങ്ങളുടെ അക്കൗണ്ട് ആപ്പുമായി സമന്വയിപ്പിച്ചിരിക്കുന്നു.',
       depositMessageDeposit: 'സിഗ്നലുകൾ ലഭിക്കാൻ, കുറഞ്ഞത് {{minDepositAmount}} അല്ലെങ്കിൽ $10 നിക്ഷേപിക്കുക.',
       depositMessageAccess: 'വിജയകരമായി റീചാർജ് ചെയ്ത ശേഷം, ആക്സസ് ലഭിക്കാൻ നിങ്ങളുടെ പ്ലെയർ ഐഡി വീണ്ടും നൽകുക.',
-      depositAndGetAccess: 'നിക്ഷേപിച്ച് ആക്സസ് നേടുക'
+      depositAndGetAccess: 'നിക്ഷേപിച്ച് ആക്സസ് നേടുക',
+      back: 'തിരികെ',
+      reDepositMessageTitle: 'പരിധി കഴിഞ്ഞു',
+      reDepositMessageContinue: 'നിങ്ങളൊരു സജീവ ഉപയോക്താവാണെന്ന് ഇത് സ്ഥിരീകരിക്കുന്നു. {{minReDepositAmount}} അല്ലെങ്കിൽ $5 നിക്ഷേപിച്ച ശേഷം നിങ്ങൾക്ക് കൂടുതൽ പ്രവചനങ്ങൾ ലഭിക്കും.',
+      depositAgain: 'വീണ്ടും നിക്ഷേപിക്കുക'
   }),
   // 9. Punjabi
   pa: createTranslation({ 
@@ -660,7 +692,11 @@ export const translations: any = {
       depositMessageSync: 'ਤੁਹਾਡਾ ਖਾਤਾ ਐਪ ਨਾਲ ਸਿੰਕ੍ਰੋਨਾਈਜ਼ ਕੀਤਾ ਗਿਆ ਹੈ।',
       depositMessageDeposit: 'ਸਿਗਨਲ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ, ਘੱਟੋ-ਘੱਟ {{minDepositAmount}} ਜਾਂ $10 ਜਮ੍ਹਾਂ ਕਰੋ।',
       depositMessageAccess: 'ਸਫਲਤਾਪੂਰਵਕ ਰੀਚਾਰਜ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਪਹੁੰਚ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਆਪਣੀ ਪਲੇਅਰ ਆਈਡੀ ਦੁਬਾਰਾ ਦਰਜ ਕਰੋ।',
-      depositAndGetAccess: 'ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਪਹੁੰਚ ਪ੍ਰਾਪਤ ਕਰੋ'
+      depositAndGetAccess: 'ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਪਹੁੰਚ ਪ੍ਰਾਪਤ ਕਰੋ',
+      back: 'ਪਿੱਛੇ',
+      reDepositMessageTitle: 'ਸੀਮਾ ਪੂਰੀ',
+      reDepositMessageContinue: 'ਇਹ ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਇੱਕ ਕਿਰਿਆਸ਼ੀਲ ਉਪਭੋਗਤਾ ਹੋ। {{minReDepositAmount}} ਜਾਂ $5 ਜਮ੍ਹਾਂ ਕਰਨ ਤੋਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਹੋਰ ਭਵਿੱਖਬਾਣੀਆਂ ਮਿਲਣਗੀਆਂ।',
+      depositAgain: 'ਦੁਬਾਰਾ ਜਮ੍ਹਾਂ ਕਰੋ'
   }),
   // 10. Odia
   or: createTranslation({ 
@@ -706,7 +742,11 @@ export const translations: any = {
       depositMessageSync: 'ଆପଣଙ୍କର ଆକାଉଣ୍ଟ୍ ଆପ୍ ସହିତ ସିଙ୍କ୍ରୋନାଇଜ୍ ହୋଇଛି |',
       depositMessageDeposit: 'ସିଗନାଲ୍ ପାଇବାକୁ, ଅତିକମରେ {{minDepositAmount}} ବା $10 ଜମା କରନ୍ତୁ |',
       depositMessageAccess: 'ସଫଳତାର ସହିତ ରିଚାର୍ଜ କରିବା ପରେ, ପ୍ରବେଶ ପାଇବାକୁ ପୁଣି ଥରେ ପ୍ଲେୟାର୍ ଆଇଡି ପ୍ରବେଶ କରନ୍ତୁ |',
-      depositAndGetAccess: 'ଜମା କରନ୍ତୁ ଏବଂ ପ୍ରବେଶ କରନ୍ତୁ'
+      depositAndGetAccess: 'ଜମା କରନ୍ତୁ ଏବଂ ପ୍ରବେଶ କରନ୍ତୁ',
+      back: 'ଫେରନ୍ତୁ',
+      reDepositMessageTitle: 'ସୀମା ଶେଷ',
+      reDepositMessageContinue: 'ଏହା ନିଶ୍ଚିତ କରେ ଯେ ଆପଣ ଜଣେ ସକ୍ରିୟ ଉପଭୋକ୍ତା | {{minReDepositAmount}} ବା $5 ଜମା କରିବା ପରେ ଆପଣ ଅଧିକ ପୂର୍ବାନୁମାନ ପାଇବେ |',
+      depositAgain: 'ପୁନର୍ବାର ଜମା କରନ୍ତୁ'
   }),
   // 11. Assamese
   as: createTranslation({ 
@@ -752,7 +792,11 @@ export const translations: any = {
       depositMessageSync: 'আপোনাৰ একাউণ্ট এপৰ সৈতে সংমিশ্ৰিত কৰা হৈছে।',
       depositMessageDeposit: 'সংকেত পাবলৈ, কমেও {{minDepositAmount}} বা $10 জমা কৰক।',
       depositMessageAccess: 'সফলতাৰে ৰিচাৰ্জ কৰাৰ পিছত, প্ৰৱেশ পাবলৈ পুনৰ আপোনাৰ খেলুৱৈ আইডি প্ৰবিষ্ট কৰক।',
-      depositAndGetAccess: 'জমা কৰক আৰু প্ৰৱেশ কৰক'
+      depositAndGetAccess: 'জমা কৰক আৰু প্ৰৱেশ কৰক',
+      back: 'উভতি যাওক',
+      reDepositMessageTitle: 'সীমা পাৰ',
+      reDepositMessageContinue: 'ই নিশ্চিত কৰে যে আপুনি এজন সক্ৰিয় ব্যৱহাৰকাৰী। {{minReDepositAmount}} বা $5 জমা কৰাৰ পিছত আপুনি অধিক ভৱিষ্যদ্বাণী লাভ কৰিব।',
+      depositAgain: 'পুনৰ জমা কৰক'
   }),
   // 12. Bhojpuri
   bho: createTranslation({ 
@@ -798,7 +842,11 @@ export const translations: any = {
       depositMessageSync: 'रउआ खाता ऐप के साथ सिंक्रोनाइज बा।',
       depositMessageDeposit: 'सिग्नल पावे खातिर, कम से कम {{minDepositAmount}} या $10 जमा करीं।',
       depositMessageAccess: 'सफलतापूर्वक रिचार्ज कइला के बाद, फेर से आपन प्लेयर आईडी डालीं।',
-      depositAndGetAccess: 'जमा करीं आ एक्सेस पाईं'
+      depositAndGetAccess: 'जमा करीं आ एक्सेस पाईं',
+      back: 'वापस',
+      reDepositMessageTitle: 'सीमा खतम',
+      reDepositMessageContinue: 'ई पुष्टि करेला कि रउआ एगो सक्रिय उपयोगकर्ता बानी। {{minReDepositAmount}} या $5 जमा कइला के बाद रउआ के अउरी भविष्यवाणी मिली।',
+      depositAgain: 'फेर से जमा करीं'
   }),
   // 13. Urdu
   ur: createTranslation({ 
@@ -844,7 +892,11 @@ export const translations: any = {
       depositMessageSync: 'آپ کا اکاؤنٹ ایپ کے ساتھ مطابقت پذیر ہے۔',
       depositMessageDeposit: 'سگنلز حاصل کرنے کے لیے، کم از کم {{minDepositAmount}} یا $10 جمع کریں۔',
       depositMessageAccess: 'کامیابی سے ریچارج کرنے کے بعد، رسائی حاصل کرنے کے لیے اپنی پلیئر آئی ڈی دوبارہ درج کریں۔',
-      depositAndGetAccess: 'جمع کریں اور رسائی حاصل کریں'
+      depositAndGetAccess: 'جمع کریں اور رسائی حاصل کریں',
+      back: 'واپس',
+      reDepositMessageTitle: 'حد ختم',
+      reDepositMessageContinue: 'یہ تصدیق کرتا ہے کہ آپ ایک فعال صارف ہیں۔ {{minReDepositAmount}} یا $5 جمع کرنے کے بعد آپ کو مزید پیشین گوئیاں موصول ہوں گی۔',
+      depositAgain: 'دوبارہ جمع کریں'
   }),
   // 14. Arabic
   ar: createTranslation({ 
@@ -890,7 +942,11 @@ export const translations: any = {
       depositMessageSync: 'حسابك متزامن مع التطبيق.',
       depositMessageDeposit: 'للحصول على الإشارات، قم بإيداع ما لا يقل عن {{minDepositAmount}} أو 10 دولارات.',
       depositMessageAccess: 'بعد الشحن بنجاح، أدخل معرف اللاعب مرة أخرى للحصول على الوصول.',
-      depositAndGetAccess: 'إيداع والحصول على الوصول'
+      depositAndGetAccess: 'إيداع والحصول على الوصول',
+      back: 'عودة',
+      reDepositMessageTitle: 'الحد الأقصى',
+      reDepositMessageContinue: 'يؤكد هذا أنك مستخدم نشط. ستتلقى المزيد من التنبؤات بعد إيداع {{minReDepositAmount}} أو 5 دولارات.',
+      depositAgain: 'إيداع مرة أخرى'
   }),
   // 15. Spanish
   es: createTranslation({ 
@@ -936,7 +992,11 @@ export const translations: any = {
       depositMessageSync: 'Tu cuenta está sincronizada con la aplicación.',
       depositMessageDeposit: 'Para acceder a las señales, deposita al menos {{minDepositAmount}} o $10.',
       depositMessageAccess: 'Después de recargar con éxito, ingresa tu ID de jugador nuevamente para acceder.',
-      depositAndGetAccess: 'DEPOSITAR Y OBTENER ACCESO'
+      depositAndGetAccess: 'DEPOSITAR Y OBTENER ACCESO',
+      back: 'ATRÁS',
+      reDepositMessageTitle: 'Límite Alcanzado',
+      reDepositMessageContinue: 'Este pequeño depósito confirma que eres un usuario activo. Recibirás más predicciones tras depositar {{minReDepositAmount}} o $5.',
+      depositAgain: 'DEPOSITAR DE NUEVO'
   }),
   
   // 16. French
@@ -959,7 +1019,11 @@ export const translations: any = {
       depositMessageSync: 'Votre compte est synchronisé avec l\'application.',
       depositMessageDeposit: 'Pour accéder aux signaux, déposez au moins {{minDepositAmount}} ou 10 $.',
       depositMessageAccess: 'Après avoir rechargé avec succès, entrez à nouveau votre ID joueur pour accéder.',
-      depositAndGetAccess: 'DÉPOSER ET ACCÉDER'
+      depositAndGetAccess: 'DÉPOSER ET ACCÉDER',
+      back: 'RETOUR',
+      reDepositMessageTitle: 'Limite Atteinte',
+      reDepositMessageContinue: 'Déposez pour continuer.',
+      depositAgain: 'DÉPOSER À NOUVEAU'
   }),
   // 17. German
   de: createTranslation({ 
@@ -981,7 +1045,11 @@ export const translations: any = {
       depositMessageSync: 'Ihr Konto ist mit der App synchronisiert.',
       depositMessageDeposit: 'Um Zugang zu Signalen zu erhalten, zahlen Sie mindestens {{minDepositAmount}} oder 10 $ ein.',
       depositMessageAccess: 'Geben Sie nach erfolgreicher Aufladung Ihre Spieler-ID erneut ein.',
-      depositAndGetAccess: 'EINZAHLEN & ZUGANG'
+      depositAndGetAccess: 'EINZAHLEN & ZUGANG',
+      back: 'ZURÜCK',
+      reDepositMessageTitle: 'Limit Erreicht',
+      reDepositMessageContinue: 'Einzahlen um fortzufahren.',
+      depositAgain: 'ERNEUT EINZAHLEN'
   }),
   // 18. Italian
   it: createTranslation({
@@ -1003,7 +1071,11 @@ export const translations: any = {
       depositMessageSync: 'Il tuo account è sincronizzato con l\'App.',
       depositMessageDeposit: 'Per accedere ai segnali, deposita almeno {{minDepositAmount}} o 10 $.',
       depositMessageAccess: 'Dopo aver ricaricato, inserisci nuovamente il tuo ID giocatore.',
-      depositAndGetAccess: 'DEPOSITA E ACCEDI'
+      depositAndGetAccess: 'DEPOSITA E ACCEDI',
+      back: 'INDIETRO',
+      reDepositMessageTitle: 'Limite',
+      reDepositMessageContinue: 'Deposita per continuare.',
+      depositAgain: 'DEPOSITA DI NUOVO'
   }),
   // 19. Portuguese
   pt: createTranslation({
@@ -1025,7 +1097,11 @@ export const translations: any = {
       depositMessageSync: 'Sua conta está sincronizada com o aplicativo.',
       depositMessageDeposit: 'Para acessar sinais, deposite pelo menos {{minDepositAmount}} ou $ 10.',
       depositMessageAccess: 'Após recarregar, insira seu ID de jogador novamente.',
-      depositAndGetAccess: 'DEPOSITAR E ACESSAR'
+      depositAndGetAccess: 'DEPOSITAR E ACESSAR',
+      back: 'VOLTAR',
+      reDepositMessageTitle: 'Limite',
+      reDepositMessageContinue: 'Deposite para continuar.',
+      depositAgain: 'DEPOSITAR NOVAMENTE'
   }),
   // 20. Russian
   ru: createTranslation({
@@ -1047,7 +1123,11 @@ export const translations: any = {
       depositMessageSync: 'Ваш аккаунт синхронизирован с приложением.',
       depositMessageDeposit: 'Для доступа к сигналам пополните счет минимум на {{minDepositAmount}} или 10$.',
       depositMessageAccess: 'После пополнения введите ID игрока снова.',
-      depositAndGetAccess: 'ПОПОЛНИТЬ И ПОЛУЧИТЬ ДОСТУП'
+      depositAndGetAccess: 'ПОПОЛНИТЬ И ПОЛУЧИТЬ ДОСТУП',
+      back: 'НАЗАД',
+      reDepositMessageTitle: 'Лимит',
+      reDepositMessageContinue: 'Пополните, чтобы продолжить.',
+      depositAgain: 'ПОПОЛНИТЬ СНОВА'
   }),
   // 21. Chinese
   zh: createTranslation({
@@ -1069,7 +1149,11 @@ export const translations: any = {
       depositMessageSync: '您的帐户已与应用程序同步。',
       depositMessageDeposit: '要获取信号，请至少充值 {{minDepositAmount}} 或 10 美元。',
       depositMessageAccess: '充值成功后，再次输入玩家 ID 以获取访问权限。',
-      depositAndGetAccess: '充值并获取访问权限'
+      depositAndGetAccess: '充值并获取访问权限',
+      back: '返回',
+      reDepositMessageTitle: '限制',
+      reDepositMessageContinue: '存款以继续。',
+      depositAgain: '再次存款'
   }),
   // 22. Japanese
   ja: createTranslation({
@@ -1091,7 +1175,11 @@ export const translations: any = {
       depositMessageSync: 'アカウントがアプリと同期されました。',
       depositMessageDeposit: 'シグナルにアクセスするには、{{minDepositAmount}} または $10 以上を入金してください。',
       depositMessageAccess: '入金後、再度プレイヤーIDを入力してアクセスしてください。',
-      depositAndGetAccess: '入金してアクセス'
+      depositAndGetAccess: '入金してアクセス',
+      back: '戻る',
+      reDepositMessageTitle: '制限',
+      reDepositMessageContinue: '続行するには入金してください。',
+      depositAgain: '再入金'
   }),
   // 23. Korean
   ko: createTranslation({
@@ -1113,7 +1201,11 @@ export const translations: any = {
       depositMessageSync: '계정이 앱과 동기화되었습니다.',
       depositMessageDeposit: '신호를 받으려면 최소 {{minDepositAmount}} 또는 $10를 입금하세요.',
       depositMessageAccess: '입금 후 플레이어 ID를 다시 입력하여 액세스하세요.',
-      depositAndGetAccess: '입금 및 액세스'
+      depositAndGetAccess: '입금 및 액세스',
+      back: '뒤로',
+      reDepositMessageTitle: '한도',
+      reDepositMessageContinue: '계속하려면 입금하세요.',
+      depositAgain: '재입금'
   }),
   // 24. Indonesian
   id: createTranslation({
@@ -1135,7 +1227,11 @@ export const translations: any = {
       depositMessageSync: 'Akun Anda disinkronkan dengan Aplikasi.',
       depositMessageDeposit: 'Untuk mengakses sinyal, setor setidaknya {{minDepositAmount}} atau $10.',
       depositMessageAccess: 'Setelah berhasil mengisi ulang, masukkan ID Pemain lagi untuk akses.',
-      depositAndGetAccess: 'DEPOSIT & DAPATKAN AKSES'
+      depositAndGetAccess: 'DEPOSIT & DAPATKAN AKSES',
+      back: 'KEMBALI',
+      reDepositMessageTitle: 'Batas',
+      reDepositMessageContinue: 'Setoran untuk melanjutkan.',
+      depositAgain: 'DEPOSIT LAGI'
   }),
   // 25. Malay
   ms: createTranslation({
@@ -1157,7 +1253,11 @@ export const translations: any = {
       depositMessageSync: 'Akaun anda disegerakkan dengan Apl.',
       depositMessageDeposit: 'Untuk mengakses isyarat, deposit sekurang-kurangnya {{minDepositAmount}} atau $10.',
       depositMessageAccess: 'Selepas berjaya menambah nilai, masukkan ID Pemain anda sekali lagi.',
-      depositAndGetAccess: 'DEPOSIT & DAPATKAN AKSES'
+      depositAndGetAccess: 'DEPOSIT & DAPATKAN AKSES',
+      back: 'KEMBALI',
+      reDepositMessageTitle: 'Had',
+      reDepositMessageContinue: 'Deposit untuk diteruskan.',
+      depositAgain: 'DEPOSIT LAGI'
   }),
   // 26. Vietnamese
   vi: createTranslation({
@@ -1179,7 +1279,11 @@ export const translations: any = {
       depositMessageSync: 'Tài khoản của bạn đã được đồng bộ hóa với Ứng dụng.',
       depositMessageDeposit: 'Để truy cập tín hiệu, hãy nạp ít nhất {{minDepositAmount}} hoặc 10 đô la.',
       depositMessageAccess: 'Sau khi nạp tiền thành công, hãy nhập lại ID người chơi để truy cập.',
-      depositAndGetAccess: 'NẠP TIỀN & TRUY CẬP'
+      depositAndGetAccess: 'NẠP TIỀN & TRUY CẬP',
+      back: 'QUAY LẠI',
+      reDepositMessageTitle: 'Giới hạn',
+      reDepositMessageContinue: 'Nạp tiền để tiếp tục.',
+      depositAgain: 'NẠP LẠI'
   }),
   // 27. Thai
   th: createTranslation({
@@ -1201,7 +1305,11 @@ export const translations: any = {
       depositMessageSync: 'บัญชีของคุณซิงโครไนซ์กับแอปแล้ว',
       depositMessageDeposit: 'เพื่อเข้าถึงสัญญาณ ฝากเงินอย่างน้อย {{minDepositAmount}} หรือ $10',
       depositMessageAccess: 'หลังจากเติมเงินสำเร็จ ให้ใส่ ID ผู้เล่นอีกครั้งเพื่อเข้าใช้งาน',
-      depositAndGetAccess: 'ฝากเงินและเข้าใช้งาน'
+      depositAndGetAccess: 'ฝากเงินและเข้าใช้งาน',
+      back: 'กลับ',
+      reDepositMessageTitle: 'ขีดจำกัด',
+      reDepositMessageContinue: 'ฝากเงินเพื่อดำเนินการต่อ',
+      depositAgain: 'ฝากเงินอีกครั้ง'
   }),
   // 28. Turkish
   tr: createTranslation({
@@ -1223,7 +1331,11 @@ export const translations: any = {
       depositMessageSync: 'Hesabınız Uygulama ile senkronize edildi.',
       depositMessageDeposit: 'Sinyallere erişmek için en az {{minDepositAmount}} veya 10$ yatırın.',
       depositMessageAccess: 'Başarıyla yükleme yaptıktan sonra erişmek için Oyuncu ID\'nizi tekrar girin.',
-      depositAndGetAccess: 'YATIR VE ERİŞ'
+      depositAndGetAccess: 'YATIR VE ERİŞ',
+      back: 'GERİ',
+      reDepositMessageTitle: 'Sınır',
+      reDepositMessageContinue: 'Devam etmek için yatırın.',
+      depositAgain: 'TEKRAR YATIR'
   }),
   // 29. Polish
   pl: createTranslation({
@@ -1245,7 +1357,11 @@ export const translations: any = {
       depositMessageSync: 'Twoje konto jest zsynchronizowane z aplikacją.',
       depositMessageDeposit: 'Aby uzyskać dostęp, wpłać co najmniej {{minDepositAmount}} lub 10 USD.',
       depositMessageAccess: 'Po udanym doładowaniu wpisz ponownie swoje ID gracza.',
-      depositAndGetAccess: 'WPŁAĆ I UZYSKAJ DOSTĘP'
+      depositAndGetAccess: 'WPŁAĆ I UZYSKAJ DOSTĘP',
+      back: 'WRÓĆ',
+      reDepositMessageTitle: 'Limit',
+      reDepositMessageContinue: 'Wpłać, aby kontynuować.',
+      depositAgain: 'WPŁAĆ PONOWNIE'
   }),
   // 30-60 with standardized translated values for the key components
   ro: createTranslation({ 
@@ -1256,7 +1372,8 @@ export const translations: any = {
       playerIdStep1: 'Login 1win', playerIdStep2: 'Profil', playerIdStep3: 'Copiază ID', playerIdStep4: 'Lipește aici',
       gotIt: 'AM ÎNȚELES!', demo: 'Demo', getSignal: 'SEMNAL', depositNow: 'DEPUNE', language: 'Limbă', welcome: 'Bine ai venit', welcomeUser: 'Bine ai venit, {{playerId}}', demoLimitReached: 'Limita demo atinsă.',
       depositMessageTitle: 'Minunat, v-ați înregistrat cu succes!', depositMessageSync: 'Cont sincronizat.', depositMessageDeposit: 'Depuneți pentru acces.', depositMessageAccess: 'Introduceți ID-ul din nou după depunere.',
-      limitReachedTitle: 'Limită atinsă', limitReachedText: 'Depuneți pentru a continua.', 
+      limitReachedTitle: 'Limită atinsă', limitReachedText: 'Depuneți pentru a continua.',
+      back: 'ÎNAPOI', reDepositMessageTitle: 'Limită atinsă', reDepositMessageContinue: 'Depuneți pentru a continua.', depositAgain: 'DEPUNEȚI DIN NOU'
   }),
   nl: createTranslation({ 
       unlockPredictions: 'Ontgrendel', continue: 'LOG IN', dontHaveAccount: "GEEN ACCOUNT", registerHere: "REGISTREREN", notRegisteredError: '❌ ID mist!', 
@@ -1267,6 +1384,7 @@ export const translations: any = {
       gotIt: 'BEGREPEN!', demo: 'Demo', getSignal: 'SIGNAAL', depositNow: 'STORT', language: 'Taal', welcome: 'Welkom', welcomeUser: 'Welkom, {{playerId}}', demoLimitReached: 'Demo limiet bereikt.',
       depositMessageTitle: 'Geweldig, registratie voltooid!', depositMessageSync: 'Account gesynchroniseerd.', depositMessageDeposit: 'Stort voor toegang.', depositMessageAccess: 'Voer ID opnieuw in na storten.',
       limitReachedTitle: 'Limiet bereikt', limitReachedText: 'Stort om door te gaan.',
+      back: 'TERUG', reDepositMessageTitle: 'Limiet bereikt', reDepositMessageContinue: 'Stort om door te gaan.', depositAgain: 'OPNIEUW STORTEN'
   }),
   hu: createTranslation({ 
       unlockPredictions: 'Feloldás', continue: 'BELÉPÉS', dontHaveAccount: "NINCS FIÓKOM", registerHere: "REGISZTRÁCIÓ", notRegisteredError: '❌ ID hiányzik!', 
@@ -1277,6 +1395,7 @@ export const translations: any = {
       gotIt: 'ÉRTEM!', demo: 'Demo', getSignal: 'JEL', depositNow: 'BEFIZETÉS', language: 'Nyelv', welcome: 'Üdvözöljük', welcomeUser: 'Üdv, {{playerId}}', demoLimitReached: 'Demo korlát elérve.',
       depositMessageTitle: 'Remek, sikeres regisztráció!', depositMessageSync: 'Fiók szinkronizálva.', depositMessageDeposit: 'Fizessen be a hozzáférésért.', depositMessageAccess: 'Befizetés után adja meg újra az ID-t.',
       limitReachedTitle: 'Korlát elérve', limitReachedText: 'Fizessen be a folytatáshoz.',
+      back: 'VISSZA', reDepositMessageTitle: 'Korlát elérve', reDepositMessageContinue: 'Fizessen be a folytatáshoz.', depositAgain: 'ÚJBÓLI BEFIZETÉS'
   }),
   cs: createTranslation({ 
       unlockPredictions: 'Odemknout', continue: 'PŘIHLÁSIT', dontHaveAccount: "NEMÁM ÚČET", registerHere: "REGISTRACE", notRegisteredError: '❌ Chybí ID!', 
@@ -1287,6 +1406,7 @@ export const translations: any = {
       gotIt: 'ROZUMÍM!', demo: 'Demo', getSignal: 'SIGNÁL', depositNow: 'VLOŽIT', language: 'Jazyk', welcome: 'Vítejte', welcomeUser: 'Vítejte, {{playerId}}', demoLimitReached: 'Demo limit dosažen.',
       depositMessageTitle: 'Skvělé, registrace dokončena!', depositMessageSync: 'Účet synchronizován.', depositMessageDeposit: 'Vložte pro přístup.', depositMessageAccess: 'Po vložení zadejte ID znovu.',
       limitReachedTitle: 'Limit dosažen', limitReachedText: 'Vložte pro pokračování.',
+      back: 'ZPĚT', reDepositMessageTitle: 'Limit dosažen', reDepositMessageContinue: 'Vložte pro pokračování.', depositAgain: 'VLOŽIT ZNOVU'
   }),
   el: createTranslation({ 
       unlockPredictions: 'Ξεκλείδωμα', continue: 'ΕΙΣΟΔΟΣ', dontHaveAccount: "ΔΕΝ ΕΧΩ ΛΟΓΑΡΙΑΣΜΟ", registerHere: "ΕΓΓΡΑΦΗ", notRegisteredError: '❌ Λάθος ID!', 
@@ -1297,6 +1417,7 @@ export const translations: any = {
       gotIt: 'ΕΛΗΦΘΗ!', demo: 'Demo', getSignal: 'ΣΗΜΑ', depositNow: 'ΚΑΤΑΘΕΣΗ', language: 'Γλώσσα', welcome: 'Καλώς ήρθατε', welcomeUser: 'Γεια σου, {{playerId}}', demoLimitReached: 'Όριο επίδειξης.',
       depositMessageTitle: 'Τέλεια, εγγραφήκατε!', depositMessageSync: 'Ο λογαριασμός συγχρονίστηκε.', depositMessageDeposit: 'Κατάθεση για πρόσβαση.', depositMessageAccess: 'Εισάγετε ID ξανά μετά την κατάθεση.',
       limitReachedTitle: 'Όριο επετεύχθη', limitReachedText: 'Κατάθεση για συνέχεια.',
+      back: 'ΠΙΣΩ', reDepositMessageTitle: 'Όριο επετεύχθη', reDepositMessageContinue: 'Κατάθεση για συνέχεια.', depositAgain: 'ΚΑΤΑΘΕΣΗ ΞΑΝΑ'
   }),
   he: createTranslation({ 
       unlockPredictions: 'פתח', continue: 'התחבר', dontHaveAccount: "אין לי חשבון", registerHere: "הרשמה", notRegisteredError: '❌ מזהה חסר!', 
@@ -1307,29 +1428,30 @@ export const translations: any = {
       gotIt: 'הבנתי!', demo: 'הדגמה', getSignal: 'אות', depositNow: 'הפקד', language: 'שפה', welcome: 'ברוך הבא', welcomeUser: 'שלום, {{playerId}}', demoLimitReached: 'הגיע גבול הדגמה.',
       depositMessageTitle: 'מצוין, נרשמת בהצלחה!', depositMessageSync: 'החשבון סונכרן.', depositMessageDeposit: 'הפקד כדי לקבל גישה.', depositMessageAccess: 'הכנס מזהה שוב לאחר הפקדה.',
       limitReachedTitle: 'הגבל הגיע', limitReachedText: 'הפקד כדי להמשיך.',
+      back: 'חזור', reDepositMessageTitle: 'הגבל הגיע', reDepositMessageContinue: 'הפקד כדי להמשיך.', depositAgain: 'הפקד שוב'
   }),
-  da: createTranslation({ unlockPredictions: 'Lås op', continue: 'LOG IND', dontHaveAccount: 'INGEN KONTO', registerHere: 'REGISTRER', notRegisteredError: '❌ ID mangler!', enterPlayerIdToSync: 'Indtast Spiller ID.', howToGetAccess: 'Adgang?', predictorHome: 'Hjem', testPostback: 'Test', logout: 'Log ud', followStepsToUnlock: 'Følg trin.', guideStep1: 'Klik Registrer', guideStep2: 'Opret konto', guideStep3: 'Ny konto påkrævet', guideStep4: 'Rabatkode:', howToFindPlayerId: 'Find ID:', playerIdStep1: 'Login 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopier ID', playerIdStep4: 'Indsæt her', gotIt: 'FORSTÅET!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'INDBETAL', language: 'Sprog', welcome: 'Velkommen', welcomeUser: 'Hej, {{playerId}}', demoLimitReached: 'Demo grænse nået.', depositMessageTitle: 'Succes!', depositMessageSync: 'Konto synkroniseret.', depositMessageDeposit: 'Indbetal for adgang.', depositMessageAccess: 'Indtast ID igen.', limitReachedTitle: 'Grænse nået', limitReachedText: 'Indbetal for at fortsætte.' }),
-  fi: createTranslation({ unlockPredictions: 'Avaa', continue: 'KIRJAUDU', dontHaveAccount: 'EI TILIÄ', registerHere: 'REKISTERÖIDY', notRegisteredError: '❌ ID puuttuu!', enterPlayerIdToSync: 'Syötä Pelaaja ID.', howToGetAccess: 'Pääsy?', predictorHome: 'Koti', testPostback: 'Testi', logout: 'Ulos', followStepsToUnlock: 'Seuraa ohjeita.', guideStep1: 'Klikkaa Rekisteröidy', guideStep2: 'Luo tili', guideStep3: 'Uusi tili vaaditaan', guideStep4: 'Promokoodi:', howToFindPlayerId: 'Etsi ID:', playerIdStep1: 'Kirjaudu 1win', playerIdStep2: 'Profiili', playerIdStep3: 'Kopioi ID', playerIdStep4: 'Liitä tähän', gotIt: 'SELVÄ!', demo: 'Demo', getSignal: 'SIGNAALI', depositNow: 'TALLETA', language: 'Kieli', welcome: 'Tervetuloa', welcomeUser: 'Hei, {{playerId}}', demoLimitReached: 'Demo raja saavutettu.', depositMessageTitle: 'Onnistui!', depositMessageSync: 'Tili synkronoitu.', depositMessageDeposit: 'Talleta saadaksesi pääsy.', depositMessageAccess: 'Syötä ID uudelleen.', limitReachedTitle: 'Raja saavutettu', limitReachedText: 'Talleta jatkaaksesi.' }),
-  no: createTranslation({ unlockPredictions: 'Lås opp', continue: 'LOGG INN', dontHaveAccount: 'INGEN KONTO', registerHere: 'REGISTRER', notRegisteredError: '❌ ID mangler!', enterPlayerIdToSync: 'Skriv inn Spiller ID.', howToGetAccess: 'Tilgang?', predictorHome: 'Hjem', testPostback: 'Test', logout: 'Logg ut', followStepsToUnlock: 'Følg trinn.', guideStep1: 'Klikk Registrer', guideStep2: 'Lag konto', guideStep3: 'Ny konto kreves', guideStep4: 'Kampanjekode:', howToFindPlayerId: 'Finn ID:', playerIdStep1: 'Logg inn 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopier ID', playerIdStep4: 'Lim inn her', gotIt: 'SKJØNNER!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'INNSKUDD', language: 'Språk', welcome: 'Velkommen', welcomeUser: 'Hei, {{playerId}}', demoLimitReached: 'Demo grense nådd.', depositMessageTitle: 'Suksess!', depositMessageSync: 'Konto synkronisert.', depositMessageDeposit: 'Innskudd for tilgang.', depositMessageAccess: 'Skriv inn ID igjen.', limitReachedTitle: 'Grense nådd', limitReachedText: 'Sett inn for å fortsette.' }),
-  sv: createTranslation({ unlockPredictions: 'Lås upp', continue: 'LOGGA IN', dontHaveAccount: 'INGET KONTO', registerHere: 'REGISTRERA', notRegisteredError: '❌ ID saknas!', enterPlayerIdToSync: 'Ange Spelar-ID.', howToGetAccess: 'Åtkomst?', predictorHome: 'Hem', testPostback: 'Test', logout: 'Logga ut', followStepsToUnlock: 'Följ steg.', guideStep1: 'Klicka Registrera', guideStep2: 'Skapa konto', guideStep3: 'Nytt konto krävs', guideStep4: 'Kampanjkod:', howToFindPlayerId: 'Hitta ID:', playerIdStep1: 'Logga in 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopiera ID', playerIdStep4: 'Klistra in här', gotIt: 'FATTAR!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'INSÄTT', language: 'Språk', welcome: 'Välkommen', welcomeUser: 'Hej, {{playerId}}', demoLimitReached: 'Demo gräns nådd.', depositMessageTitle: 'Lyckat!', depositMessageSync: 'Konto synkroniserat.', depositMessageDeposit: 'Sätt in för åtkomst.', depositMessageAccess: 'Ange ID igen.', limitReachedTitle: 'Gräns nådd', limitReachedText: 'Sätt in för att fortsätta.' }),
-  uk: createTranslation({ unlockPredictions: 'Відкрити', continue: 'ВХІД', dontHaveAccount: 'НЕМАЄ АКАУНТУ', registerHere: 'РЕЄСТРАЦІЯ', notRegisteredError: '❌ ID відсутній!', enterPlayerIdToSync: 'Введіть ID гравця.', howToGetAccess: 'Доступ?', predictorHome: 'Головна', testPostback: 'Тест', logout: 'Вийти', followStepsToUnlock: 'Дотримуйтесь кроків.', guideStep1: 'Натисніть Реєстрація', guideStep2: 'Створіть акаунт', guideStep3: 'Потрібен новий акаунт', guideStep4: 'Промокод:', howToFindPlayerId: 'Знайти ID:', playerIdStep1: 'Вхід 1win', playerIdStep2: 'Профіль', playerIdStep3: 'Копіювати ID', playerIdStep4: 'Вставити тут', gotIt: 'ЗРОЗУМІЛО!', demo: 'Демо', getSignal: 'СИГНАЛ', depositNow: 'ДЕПОЗИТ', language: 'Мова', welcome: 'Ласкаво просимо', welcomeUser: 'Привіт, {{playerId}}', demoLimitReached: 'Ліміт демо вичерпано.', depositMessageTitle: 'Успішно!', depositMessageSync: 'Акаунт синхронізовано.', depositMessageDeposit: 'Поповніть для доступу.', depositMessageAccess: 'Введіть ID знову.', limitReachedTitle: 'Ліміт досягнуто', limitReachedText: 'Поповніть для продовження.' }),
-  bg: createTranslation({ unlockPredictions: 'Отключи', continue: 'ВХОД', dontHaveAccount: 'НЯМА АКАУНТ', registerHere: 'РЕГИСТРАЦИЯ', notRegisteredError: '❌ Няма ID!', enterPlayerIdToSync: 'Въведете ID.', howToGetAccess: 'Достъп?', predictorHome: 'Начало', testPostback: 'Тест', logout: 'Изход', followStepsToUnlock: 'Следвайте стъпките.', guideStep1: 'Кликнете Регистрация', guideStep2: 'Създайте акаунт', guideStep3: 'Нов акаунт задължителен', guideStep4: 'Промо код:', howToFindPlayerId: 'Намери ID:', playerIdStep1: 'Вход 1win', playerIdStep2: 'Профил', playerIdStep3: 'Копирай ID', playerIdStep4: 'Постави тук', gotIt: 'РАЗБРАХ!', demo: 'Демо', getSignal: 'СИГНАЛ', depositNow: 'ДЕПОЗИТ', language: 'Език', welcome: 'Добре дошли', welcomeUser: 'Здравей, {{playerId}}', demoLimitReached: 'Демо лимитът е достигнат.', depositMessageTitle: 'Успешно!', depositMessageSync: 'Акаунтът е синхронизиран.', depositMessageDeposit: 'Депозирайте за достъп.', depositMessageAccess: 'Въведете ID отново.', limitReachedTitle: 'Лимит достигнат', limitReachedText: 'Депозирайте за продължаване.' }),
-  hr: createTranslation({ unlockPredictions: 'Otključaj', continue: 'PRIJAVA', dontHaveAccount: 'NEMA RAČUNA', registerHere: 'REGISTRACIJA', notRegisteredError: '❌ Nema ID!', enterPlayerIdToSync: 'Unesi ID igrača.', howToGetAccess: 'Pristup?', predictorHome: 'Početna', testPostback: 'Test', logout: 'Odjava', followStepsToUnlock: 'Slijedi korake.', guideStep1: 'Klikni Registracija', guideStep2: 'Kreiraj račun', guideStep3: 'Novi račun obavezan', guideStep4: 'Promo kod:', howToFindPlayerId: 'Nađi ID:', playerIdStep1: 'Prijava 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopiraj ID', playerIdStep4: 'Zalijepi ovdje', gotIt: 'SHVAĆAM!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'UPLATI', language: 'Jezik', welcome: 'Dobrodošli', welcomeUser: 'Bok, {{playerId}}', demoLimitReached: 'Demo limit dosegnut.', depositMessageTitle: 'Uspjeh!', depositMessageSync: 'Račun sinkroniziran.', depositMessageDeposit: 'Uplatite za pristup.', depositMessageAccess: 'Unesite ID ponovno.', limitReachedTitle: 'Limit dosegnut', limitReachedText: 'Uplatite za nastavak.' }),
-  sk: createTranslation({ unlockPredictions: 'Odomknúť', continue: 'PRIHLÁSIŤ', dontHaveAccount: 'BEZ ÚČTU', registerHere: 'REGISTRÁCIA', notRegisteredError: '❌ Chýba ID!', enterPlayerIdToSync: 'Zadajte ID hráča.', howToGetAccess: 'Prístup?', predictorHome: 'Domov', testPostback: 'Test', logout: 'Odhlásiť', followStepsToUnlock: 'Nasledujte kroky.', guideStep1: 'Kliknite Registrácia', guideStep2: 'Vytvoriť účet', guideStep3: 'Nový účet nutný', guideStep4: 'Promo kód:', howToFindPlayerId: 'Nájsť ID:', playerIdStep1: 'Login 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopírovať ID', playerIdStep4: 'Vložiť sem', gotIt: 'ROZUMIEM!', demo: 'Demo', getSignal: 'SIGNÁL', depositNow: 'VLOŽIŤ', language: 'Jazyk', welcome: 'Vitajte', welcomeUser: 'Ahoj, {{playerId}}', demoLimitReached: 'Demo limit dosiahnutý.', depositMessageTitle: 'Úspech!', depositMessageSync: 'Účet synchronizovaný.', depositMessageDeposit: 'Vložte pre prístup.', depositMessageAccess: 'Zadajte ID znova.', limitReachedTitle: 'Limit dosiahnutý', limitReachedText: 'Vložte pre pokračovanie.' }),
-  sl: createTranslation({ unlockPredictions: 'Odkleni', continue: 'PRIJAVA', dontHaveAccount: 'BREZ RAČUNA', registerHere: 'REGISTRACIJA', notRegisteredError: '❌ Ni ID!', enterPlayerIdToSync: 'Vnesi ID igralca.', howToGetAccess: 'Dostop?', predictorHome: 'Domov', testPostback: 'Test', logout: 'Odjava', followStepsToUnlock: 'Sledi korakom.', guideStep1: 'Klikni Registracija', guideStep2: 'Ustvari račun', guideStep3: 'Nov račun obvezen', guideStep4: 'Promo koda:', howToFindPlayerId: 'Najdi ID:', playerIdStep1: 'Prijava 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopiraj ID', playerIdStep4: 'Prilepi tukaj', gotIt: 'RAZUMEM!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'NAKAŽI', language: 'Jezik', welcome: 'Dobrodošli', welcomeUser: 'Pozdravljen, {{playerId}}', demoLimitReached: 'Demo limit dosežen.', depositMessageTitle: 'Uspeh!', depositMessageSync: 'Račun sinhroniziran.', depositMessageDeposit: 'Nakažite za dostop.', depositMessageAccess: 'Ponovno vnesite ID.', limitReachedTitle: 'Limit dosežen', limitReachedText: 'Nakažite za nadaljevanje.' }),
-  sr: createTranslation({ unlockPredictions: 'Otključaj', continue: 'PRIJAVA', dontHaveAccount: 'НЕМА НАЛОГА', registerHere: 'REGISTRACIJA', notRegisteredError: '❌ Нема ИД!', enterPlayerIdToSync: 'Унеси ИД.', howToGetAccess: 'Приступ?', predictorHome: 'Почетна', testPostback: 'Тест', logout: 'Одјава', followStepsToUnlock: 'Следи кораке.', guideStep1: 'Кликни Регистрација', guideStep2: 'Креирај налог', guideStep3: 'Нови налог обавезан', guideStep4: 'Промо код:', howToFindPlayerId: 'Нађи ИД:', playerIdStep1: 'Пријава 1win', playerIdStep2: 'Профил', playerIdStep3: 'Копирај ИД', playerIdStep4: 'Залепи овде', gotIt: 'РАЗУМЕМ!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'UPLATI', language: 'Језик', welcome: 'Добродошли', welcomeUser: 'Здраво, {{playerId}}', demoLimitReached: 'Демо лимит достигнут.', depositMessageTitle: 'Успех!', depositMessageSync: 'Налог синхронизован.', depositMessageDeposit: 'Уплатите за приступ.', depositMessageAccess: 'Унесите ИД поново.', limitReachedTitle: 'Лимит достигнут', limitReachedText: 'Уплатите за наставак.' }),
-  lt: createTranslation({ unlockPredictions: 'Atrakinti', continue: 'PRISIJUNGTI', dontHaveAccount: 'NĖRA PASKYROS', registerHere: 'REGISTRUOTIS', notRegisteredError: '❌ Nėra ID!', enterPlayerIdToSync: 'Įveskite Žaidėjo ID.', howToGetAccess: 'Prieiga?', predictorHome: 'Pradžia', testPostback: 'Testas', logout: 'Atsijungti', followStepsToUnlock: 'Sekite žingsnius.', guideStep1: 'Spausk Registruotis', guideStep2: 'Sukurk paskyrą', guideStep3: 'Nauja paskyra būtina', guideStep4: 'Promo kodas:', howToFindPlayerId: 'Rasti ID:', playerIdStep1: 'Prisijungti 1win', playerIdStep2: 'Profilis', playerIdStep3: 'Kopijuoti ID', playerIdStep4: 'Įklijuoti čia', gotIt: 'SUPRATAU!', demo: 'Demo', getSignal: 'SIGNALAS', depositNow: 'ĮNEŠTI', language: 'Kalba', welcome: 'Sveiki', welcomeUser: 'Labas, {{playerId}}', demoLimitReached: 'Demo limitas pasiektas.', depositMessageTitle: 'Pavyko!', depositMessageSync: 'Paskyra sinchronizuota.', depositMessageDeposit: 'Įneškite, kad gautumėte prieigą.', depositMessageAccess: 'Įveskite ID dar kartą.', limitReachedTitle: 'Limitas pasiektas', limitReachedText: 'Įneškite, kad tęstumėte.' }),
-  lv: createTranslation({ unlockPredictions: 'Atbloķēt', continue: 'PIESLĒGTIES', dontHaveAccount: 'NAV KONTA', registerHere: 'REĢISTRĀCIJA', notRegisteredError: '❌ Nav ID!', enterPlayerIdToSync: 'Ievadiet Spēlētāja ID.', howToGetAccess: 'Piekļuve?', predictorHome: 'Sākums', testPostback: 'Tests', logout: 'Iziet', followStepsToUnlock: 'Sekojiet soļiem.', guideStep1: 'Klikšķini Reģistrēties', guideStep2: 'Izveidot kontu', guideStep3: 'Jauns konts obligāts', guideStep4: 'Promo kods:', howToFindPlayerId: 'Atrast ID:', playerIdStep1: 'Ielogoties 1win', playerIdStep2: 'Profils', playerIdStep3: 'Kopēt ID', playerIdStep4: 'Ielīmēt šeit', gotIt: 'SAPRATU!', demo: 'Demo', getSignal: 'SIGNĀLS', depositNow: 'IEMAKSĀT', language: 'Valoda', welcome: 'Sveicināti', welcomeUser: 'Sveiki, {{playerId}}', demoLimitReached: 'Demo limits sasniegts.', depositMessageTitle: 'Veiksmīgi!', depositMessageSync: 'Konts sinhronizēts.', depositMessageDeposit: 'Iemaksājiet piekļuvei.', depositMessageAccess: 'Ievadiet ID vēlreiz.', limitReachedTitle: 'Limits sasniegts', limitReachedText: 'Iemaksājiet, lai turpinātu.' }),
-  et: createTranslation({ unlockPredictions: 'Ava', continue: 'LOGI SISSE', dontHaveAccount: 'POLE KONTOT', registerHere: 'REGISTREERI', notRegisteredError: '❌ ID puudub!', enterPlayerIdToSync: 'Sisesta Mängija ID.', howToGetAccess: 'Ligipääs?', predictorHome: 'Kodu', testPostback: 'Test', logout: 'Logi välja', followStepsToUnlock: 'Järgi samme.', guideStep1: 'Kliki Registreeri', guideStep2: 'Loo konto', guideStep3: 'Uus konto nõutav', guideStep4: 'Promokood:', howToFindPlayerId: 'Leia ID:', playerIdStep1: 'Logi sisse 1win', playerIdStep2: 'Profiil', playerIdStep3: 'Kopeeri ID', playerIdStep4: 'Kleebi siia', gotIt: 'ARU SAADUD!', demo: 'Demo', getSignal: 'SIGNAAL', depositNow: 'SISESTA', language: 'Keel', welcome: 'Tere tulemast', welcomeUser: 'Tere, {{playerId}}', demoLimitReached: 'Demo limiit täis.', depositMessageTitle: 'Edukas!', depositMessageSync: 'Konto sünkroonitud.', depositMessageDeposit: 'Sisesta raha ligipääsuks.', depositMessageAccess: 'Sisesta ID uuesti.', limitReachedTitle: 'Limiit täis', limitReachedText: 'Sisesta raha jätkamiseks.' }),
-  af: createTranslation({ unlockPredictions: 'Ontsluit', continue: 'TEKEN AAN', dontHaveAccount: 'GEEN REKENING', registerHere: 'REGISTREER', notRegisteredError: '❌ Geen ID!', enterPlayerIdToSync: 'Voer Speler ID in.', howToGetAccess: 'Toegang?', predictorHome: 'Tuis', testPostback: 'Toets', logout: 'Teken uit', followStepsToUnlock: 'Volg stappe.', guideStep1: 'Klik Registreer', guideStep2: 'Skep rekening', guideStep3: 'Nuwe rekening vereis', guideStep4: 'Promokode:', howToFindPlayerId: 'Vind ID:', playerIdStep1: 'Teken aan 1win', playerIdStep2: 'Profiel', playerIdStep3: 'Kopieer ID', playerIdStep4: 'Plak hier', gotIt: 'VERSTAAN!', demo: 'Demo', getSignal: 'SEIN', depositNow: 'DEPOSITO', language: 'Taal', welcome: 'Welkom', welcomeUser: 'Hallo, {{playerId}}', demoLimitReached: 'Demo limiet bereik.', depositMessageTitle: 'Sukses!', depositMessageSync: 'Rekening gesinkroniseer.', depositMessageDeposit: 'Deponeer vir toegang.', depositMessageAccess: 'Voer ID weer in.', limitReachedTitle: 'Limiet bereik', limitReachedText: 'Deponeer om voort te gaan.' }),
-  sw: createTranslation({ unlockPredictions: 'Fungua', continue: 'INGIA', dontHaveAccount: 'HAKUNA AKAUNTI', registerHere: 'JISAJILI', notRegisteredError: '❌ Hakuna ID!', enterPlayerIdToSync: 'Weka ID ya Mchezaji.', howToGetAccess: 'Ufikiaji?', predictorHome: 'Nyumbani', testPostback: 'Jaribio', logout: 'Toka', followStepsToUnlock: 'Fuata hatua.', guideStep1: 'Bonyeza Jisajili', guideStep2: 'Unda akaunti', guideStep3: 'Akaunti mpya inahitajika', guideStep4: 'Msimbo wa ofa:', howToFindPlayerId: 'Tafuta ID:', playerIdStep1: 'Ingia 1win', playerIdStep2: 'Wasifu', playerIdStep3: 'Nakili ID', playerIdStep4: 'Bandika hapa', gotIt: 'NIELEWA!', demo: 'Demo', getSignal: 'ISHARA', depositNow: 'WEKA PESA', language: 'Lugha', welcome: 'Karibu', welcomeUser: 'Hujambo, {{playerId}}', demoLimitReached: 'Kikomo cha onyesho kimefikiwa.', depositMessageTitle: 'Imefaulu!', depositMessageSync: 'Akaunti imesawazishwa.', depositMessageDeposit: 'Weka pesa kwa ufikiaji.', depositMessageAccess: 'Weka kitambulisho tena.', limitReachedTitle: 'Kikomo kimefikiwa', limitReachedText: 'Weka pesa ili uendelee.' }),
-  tl: createTranslation({ unlockPredictions: 'I-unlock', continue: 'MAG-LOGIN', dontHaveAccount: 'WALA PANG ACCOUNT', registerHere: 'MAGREHISTRO', notRegisteredError: '❌ Walang ID!', enterPlayerIdToSync: 'Ilagay ang Player ID.', howToGetAccess: 'Paano?', predictorHome: 'Home', testPostback: 'Subukan', logout: 'Mag-logout', followStepsToUnlock: 'Sundin ang mga hakbang.', guideStep1: 'I-click ang Magrehistro', guideStep2: 'Gumawa ng account', guideStep3: 'Dapat bagong account', guideStep4: 'Promo code:', howToFindPlayerId: 'Hanapin ang ID:', playerIdStep1: 'Mag-login sa 1win', playerIdStep2: 'Profile', playerIdStep3: 'Kopyahin ang ID', playerIdStep4: 'I-paste dito', gotIt: 'KUHA KO!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'DEPOSIT NA', language: 'Wika', welcome: 'Maligayang pagdating', welcomeUser: 'Kumusta, {{playerId}}', demoLimitReached: 'Naabot na ang limitasyon ng demo.', depositMessageTitle: 'Tagumpay!', depositMessageSync: 'Naka-sync na ang account.', depositMessageDeposit: 'Mag-deposit para sa access.', depositMessageAccess: 'Ilagay muli ang ID.', limitReachedTitle: 'Limitasyon naabot', limitReachedText: 'Mag-deposit para magpatuloy.' }),
-  az: createTranslation({ unlockPredictions: 'Aç', continue: 'DAXİL OL', dontHaveAccount: 'HESAB YOXDUR', registerHere: 'QEYDİYYAT', notRegisteredError: '❌ ID yoxdur!', enterPlayerIdToSync: 'Oyunçu ID daxil edin.', howToGetAccess: 'Giriş?', predictorHome: 'Əsas', testPostback: 'Test', logout: 'Çıxış', followStepsToUnlock: 'Addımları izləyin.', guideStep1: 'Qeydiyyatdan keçin', guideStep2: 'Hesab yaradın', guideStep3: 'Yeni hesab lazımdır', guideStep4: 'Promo kod:', howToFindPlayerId: 'ID tapın:', playerIdStep1: '1win giriş', playerIdStep2: 'Profil', playerIdStep3: 'ID kopyala', playerIdStep4: 'Bura yapışdırın', gotIt: 'BAŞA DÜŞDÜM!', demo: 'Demo', getSignal: 'SİQNAL', depositNow: 'DEPOZİT', language: 'Dil', welcome: 'Xoş gəlmisiniz', welcomeUser: 'Salam, {{playerId}}', demoLimitReached: 'Demo limiti çatdı.', depositMessageTitle: 'Uğurlu!', depositMessageSync: 'Hesab sinxronlaşdırıldı.', depositMessageDeposit: 'Giriş üçün depozit edin.', depositMessageAccess: 'ID-ni yenidən daxil edin.', limitReachedTitle: 'Limit çatdı', limitReachedText: 'Davam etmək üçün depozit edin.' }),
-  ka: createTranslation({ unlockPredictions: 'განბლოკვა', continue: 'შესვლა', dontHaveAccount: 'არ გაქვთ ანგარიში', registerHere: 'რეგისტრაცია', notRegisteredError: '❌ ID არაა!', enterPlayerIdToSync: 'შეიყვანეთ ID.', howToGetAccess: 'წვდომა?', predictorHome: 'მთავარი', testPostback: 'ტესტი', logout: 'გასვლა', followStepsToUnlock: 'მიჰყევით ნაბიჯებს.', guideStep1: 'დააკლიკეთ რეგისტრაციას', guideStep2: 'შექმენით ანგარიში', guideStep3: 'ახალი ანგარიში სავალდებულოა', guideStep4: 'პრომო კოდი:', howToFindPlayerId: 'იპოვეთ ID:', playerIdStep1: 'შესვლა 1win', playerIdStep2: 'პროფილი', playerIdStep3: 'დააკოპირეთ ID', playerIdStep4: 'ჩასვით აქ', gotIt: 'გასაგებია!', demo: 'დემო', getSignal: 'სიგნალი', depositNow: 'დეპოზიტი', language: 'ენა', welcome: 'მოგესალმებით', welcomeUser: 'გამარჯობა, {{playerId}}', demoLimitReached: 'დემო ლიმიტი ამოწურულია.', depositMessageTitle: 'წარმატება!', depositMessageSync: 'ანგარიში სინქრონიზებულია.', depositMessageDeposit: 'შეიტანეთ დეპოზიტი.', depositMessageAccess: 'შეიყვანეთ ID ხელახლა.', limitReachedTitle: 'ლიმიტი მიღწეულია', limitReachedText: 'გააგრძელეთ დეპოზიტით.' }),
-  kk: createTranslation({ unlockPredictions: 'Ашу', continue: 'КІРУ', dontHaveAccount: 'ТІРКЕЛГІ ЖОҚ', registerHere: 'ТІРКЕЛУ', notRegisteredError: '❌ ID жоқ!', enterPlayerIdToSync: 'Ойыншы ID енгізіңіз.', howToGetAccess: 'Кіру?', predictorHome: 'Басты', testPostback: 'Сынақ', logout: 'Шығу', followStepsToUnlock: 'Қадамдарды орындаңыз.', guideStep1: 'Тіркелуді басыңыз', guideStep2: 'Тіркелгі жасаңыз', guideStep3: 'Жаңа тіркелгі қажет', guideStep4: 'Промокод:', howToFindPlayerId: 'ID табу:', playerIdStep1: '1win кіру', playerIdStep2: 'Профиль', playerIdStep3: 'ID көшіру', playerIdStep4: 'Осында қойыңыз', gotIt: 'ТҮСІНДІМ!', demo: 'Демо', getSignal: 'СИГНАЛ', depositNow: 'ДЕПОЗИТ', language: 'Тіл', welcome: 'Қош келдіңіз', welcomeUser: 'Сәлем, {{playerId}}', demoLimitReached: 'Демо шегіне жетті.', depositMessageTitle: 'Сәтті!', depositMessageSync: 'Тіркелгі синхрондалды.', depositMessageDeposit: 'Кіру үшін депозит салыңыз.', depositMessageAccess: 'ID қайта енгізіңіз.', limitReachedTitle: 'Шекке жетті', limitReachedText: 'Жалғастыру үшін депозит.' }),
-  uz: createTranslation({ unlockPredictions: 'Ochish', continue: 'KIRISH', dontHaveAccount: 'HISOB YO\'Q', registerHere: 'RO\'YXATDAN O\'TISH', notRegisteredError: '❌ ID yo\'q!', enterPlayerIdToSync: 'O\'yinchi ID kiriting.', howToGetAccess: 'Kirish?', predictorHome: 'Bosh Sahifa', testPostback: 'Sinov', logout: 'Chiqish', followStepsToUnlock: 'Qadamlarni bajaring.', guideStep1: 'Ro\'yxatdan o\'tish', guideStep2: 'Hisob yarating', guideStep3: 'Yangi hisob kerak', guideStep4: 'Promo kod:', howToFindPlayerId: 'ID topish:', playerIdStep1: '1win kirish', playerIdStep2: 'Profil', playerIdStep3: 'ID nusxalash', playerIdStep4: 'Bu yerga qo\'ying', gotIt: 'TUSHUNDIM!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'DEPOZIT', language: 'Til', welcome: 'Xush kelibsiz', welcomeUser: 'Salom, {{playerId}}', demoLimitReached: 'Demo limiti tugadi.', depositMessageTitle: 'Muvaffaqiyatli!', depositMessageSync: 'Hisob sinxronlandi.', depositMessageDeposit: 'Kirish uchun depozit qiling.', depositMessageAccess: 'ID ni qayta kiriting.', limitReachedTitle: 'Limit yetdi', limitReachedText: 'Davom etish uchun depozit.' }),
-  ne: createTranslation({ unlockPredictions: 'अनलक', continue: 'लग इन', dontHaveAccount: 'खाता छैन', registerHere: 'दर्ता', notRegisteredError: '❌ ID छैन!', enterPlayerIdToSync: 'प्लेयर आईडी प्रविष्ट गर्नुहोस्।', howToGetAccess: 'पहुँच?', predictorHome: 'गृह', testPostback: 'जाँच', logout: 'लग आउट', followStepsToUnlock: 'चरणहरू पालना गर्नुहोस्।', guideStep1: 'दर्ता गर्नुहोस्', guideStep2: 'खाता बनाउनुहोस्', guideStep3: 'नयाँ खाता आवश्यक', guideStep4: 'प्रोमो कोड:', howToFindPlayerId: 'आईडी फेला पार्नुहोस्:', playerIdStep1: '1win लगइन', playerIdStep2: 'प्रोफाइल', playerIdStep3: 'आईडी प्रतिलिपि गर्नुहोस्', playerIdStep4: 'यहाँ टाँस्नुहोस्', gotIt: 'बुझेँ!', demo: 'डेमो', getSignal: 'सङ्केत', depositNow: 'जम्मा', language: 'भाषा', welcome: 'स्वागत छ', welcomeUser: 'नमस्ते, {{playerId}}', demoLimitReached: 'डेमो सीमा पुग्यो।', depositMessageTitle: 'सफल!', depositMessageSync: 'खाता सिंक भयो।', depositMessageDeposit: 'पहुँचको लागि जम्मा गर्नुहोस्।', depositMessageAccess: 'फेरि आईडी प्रविष्ट गर्नुहोस्।', limitReachedTitle: 'सीमा पुग्यो', limitReachedText: 'जारी राख्न जम्मा गर्नुहोस्।' }),
-  si: createTranslation({ unlockPredictions: 'අගුළු හරින්න', continue: 'ඇතුල් වන්න', dontHaveAccount: 'ගිණුමක් නැත', registerHere: 'ලියාපදිංචි', notRegisteredError: '❌ ID නැත!', enterPlayerIdToSync: 'ක්‍රීඩක ID ඇතුලත් කරන්න.', howToGetAccess: 'ප්‍රවේශය?', predictorHome: 'මුල් පිටුව', testPostback: 'පරීක්ෂණය', logout: 'ඉවත් වන්න', followStepsToUnlock: 'පියවර අනුගමනය කරන්න.', guideStep1: 'ලියාපදිංචි වන්න', guideStep2: 'ගිණුමක් සාදන්න', guideStep3: 'නව ගිණුමක් අවශ්‍යයි', guideStep4: 'ප්‍රවර්ධන කේතය:', howToFindPlayerId: 'ID සොයන්න:', playerIdStep1: '1win ලොග් වන්න', playerIdStep2: 'පැතිකඩ', playerIdStep3: 'ID පිටපත් කරන්න', playerIdStep4: 'මෙහි අලවන්න', gotIt: 'තේරුණා!', demo: 'ආදර්ශනය', getSignal: 'සංඥාව', depositNow: 'තැන්පත්', language: 'භාෂාව', welcome: 'සාදරයෙන් පිළිගනිමු', welcomeUser: 'ආයුබෝවන්, {{playerId}}', demoLimitReached: 'ආදර්ශන සීමාව ඉක්මවා ඇත.', depositMessageTitle: 'සාර්ථකයි!', depositMessageSync: 'ගිණුම සමමුහුර්ත කර ඇත.', depositMessageDeposit: 'ප්‍රවේශය සඳහා තැන්පත් කරන්න.', depositMessageAccess: 'නැවත ID ඇතුලත් කරන්න.', limitReachedTitle: 'සීමාව ඉක්මවා ඇත', limitReachedText: 'ඉදිරියට යෑමට තැන්පත් කරන්න.' }),
-  my: createTranslation({ unlockPredictions: 'ဖွင့်ပါ', continue: 'ဝင်ရောက်ပါ', dontHaveAccount: 'အကောင့်မရှိ', registerHere: 'မှတ်ပုံတင်ပါ', notRegisteredError: '❌ ID မရှိပါ!', enterPlayerIdToSync: 'ကစားသမား ID ထည့်ပါ။', howToGetAccess: 'ဝင်ရောက်နည်း?', predictorHome: 'ပင်မ', testPostback: 'စမ်းသပ်မှု', logout: 'ထွက်ရန်', followStepsToUnlock: 'အဆင့်များကိုလိုက်နာပါ။', guideStep1: 'မှတ်ပုံတင်ပါ', guideStep2: 'အကောင့်ဖွင့်ပါ', guideStep3: 'အကောင့်သစ်လိုသည်', guideStep4: 'ပရိုမိုကုဒ်:', howToFindPlayerId: 'ID ရှာပါ:', playerIdStep1: '1win ဝင်ပါ', playerIdStep2: 'ပရိုဖိုင်', playerIdStep3: 'ID ကူးပါ', playerIdStep4: 'ဒီမှာထည့်ပါ', gotIt: 'နားလည်ပြီ!', demo: 'သရုပ်ပြ', getSignal: 'အချက်ပြ', depositNow: 'ငွေသွင်း', language: 'ဘာသာစကား', welcome: 'ကြိုဆိုပါတယ်', welcomeUser: 'မင်္ဂလာပါ, {{playerId}}', demoLimitReached: 'သရုပ်ပြ ကန့်သတ်ချက် ပြည့်သွားပါပြီ။', depositMessageTitle: 'အောင်မြင်သည်!', depositMessageSync: 'အကောင့်ချိန်ညှိပြီးပါပြီ။', depositMessageDeposit: 'ဝင်ရောက်ရန် ငွေသွင်းပါ။', depositMessageAccess: 'ID ပြန်ထည့်ပါ။', limitReachedTitle: 'ကန့်သတ်ချက်ပြည့်ပြီ', limitReachedText: 'ဆက်လက်ရန် ငွေသွင်းပါ။' }),
-  km: createTranslation({ unlockPredictions: 'ដោះសោ', continue: 'ចូល', dontHaveAccount: 'គ្មានគណនី', registerHere: 'ចុះឈ្មោះ', notRegisteredError: '❌ គ្មាន ID!', enterPlayerIdToSync: 'បញ្ចូលអត្តសញ្ញាណអ្នកលេង។', howToGetAccess: 'ចូលប្រើ?', predictorHome: 'ទំព័រដើម', testPostback: 'តេស្ត', logout: 'ចាកចេញ', followStepsToUnlock: 'អនុវត្តតាមជំហាន។', guideStep1: 'ចុះឈ្មោះ', guideStep2: 'បង្កើតគណនី', guideStep3: 'ត្រូវការគណនីថ្មី', guideStep4: 'លេខកូដប្រូម៉ូសិន:', howToFindPlayerId: 'ស្វែងរក ID:', playerIdStep1: 'ចូល 1win', playerIdStep2: 'ប្រវត្តិរូប', playerIdStep3: 'ចម្លង ID', playerIdStep4: 'បិទភ្ជាប់នៅទីនេះ', gotIt: 'យល់ហើយ!', demo: 'សាកល្បង', getSignal: 'សញ្ញា', depositNow: 'ដាក់ប្រាក់', language: 'ភាសា', welcome: 'សូមស្វាគមន៍', welcomeUser: 'សួស្តី, {{playerId}}', demoLimitReached: 'បានឈានដល់ដែនកំណត់សាកល្បង។', depositMessageTitle: 'ជោគជ័យ!', depositMessageSync: 'គណនីត្រូវបានធ្វើសមកាលកម្ម។', depositMessageDeposit: 'ដាក់ប្រាក់ដើម្បីចូលប្រើ។', depositMessageAccess: 'បញ្ចូល ID ម្តងទៀត។', limitReachedTitle: 'បានឈានដល់ដែនកំណត់', limitReachedText: 'ដាក់ប្រាក់ដើម្បីបន្ត។' }),
+  da: createTranslation({ unlockPredictions: 'Lås op', continue: 'LOG IND', dontHaveAccount: 'INGEN KONTO', registerHere: 'REGISTRER', notRegisteredError: '❌ ID mangler!', enterPlayerIdToSync: 'Indtast Spiller ID.', howToGetAccess: 'Adgang?', predictorHome: 'Hjem', testPostback: 'Test', logout: 'Log ud', followStepsToUnlock: 'Følg trin.', guideStep1: 'Klik Registrer', guideStep2: 'Opret konto', guideStep3: 'Ny konto påkrævet', guideStep4: 'Rabatkode:', howToFindPlayerId: 'Find ID:', playerIdStep1: 'Login 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopier ID', playerIdStep4: 'Indsæt her', gotIt: 'FORSTÅET!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'INDBETAL', language: 'Sprog', welcome: 'Velkommen', welcomeUser: 'Hej, {{playerId}}', demoLimitReached: 'Demo grænse nået.', depositMessageTitle: 'Succes!', depositMessageSync: 'Konto synkroniseret.', depositMessageDeposit: 'Indbetal for adgang.', depositMessageAccess: 'Indtast ID igen.', limitReachedTitle: 'Grænse nået', limitReachedText: 'Indbetal for at fortsætte.', back: 'TILBAGE', reDepositMessageTitle: 'Grænse nået', reDepositMessageContinue: 'Indbetal for at fortsætte.', depositAgain: 'INDBETAL IGEN' }),
+  fi: createTranslation({ unlockPredictions: 'Avaa', continue: 'KIRJAUDU', dontHaveAccount: 'EI TILIÄ', registerHere: 'REKISTERÖIDY', notRegisteredError: '❌ ID puuttuu!', enterPlayerIdToSync: 'Syötä Pelaaja ID.', howToGetAccess: 'Pääsy?', predictorHome: 'Koti', testPostback: 'Testi', logout: 'Ulos', followStepsToUnlock: 'Seuraa ohjeita.', guideStep1: 'Klikkaa Rekisteröidy', guideStep2: 'Luo tili', guideStep3: 'Uusi tili vaaditaan', guideStep4: 'Promokoodi:', howToFindPlayerId: 'Etsi ID:', playerIdStep1: 'Kirjaudu 1win', playerIdStep2: 'Profiili', playerIdStep3: 'Kopioi ID', playerIdStep4: 'Liitä tähän', gotIt: 'SELVÄ!', demo: 'Demo', getSignal: 'SIGNAALI', depositNow: 'TALLETA', language: 'Kieli', welcome: 'Tervetuloa', welcomeUser: 'Hei, {{playerId}}', demoLimitReached: 'Demo raja saavutettu.', depositMessageTitle: 'Onnistui!', depositMessageSync: 'Tili synkronoitu.', depositMessageDeposit: 'Talleta saadaksesi pääsy.', depositMessageAccess: 'Syötä ID uudelleen.', limitReachedTitle: 'Raja saavutettu', limitReachedText: 'Talleta jatkaaksesi.', back: 'TAKAISIN', reDepositMessageTitle: 'Raja saavutettu', reDepositMessageContinue: 'Talleta jatkaaksesi.', depositAgain: 'TALLETA UUDELLEEN' }),
+  no: createTranslation({ unlockPredictions: 'Lås opp', continue: 'LOGG INN', dontHaveAccount: 'INGEN KONTO', registerHere: 'REGISTRER', notRegisteredError: '❌ ID mangler!', enterPlayerIdToSync: 'Skriv inn Spiller ID.', howToGetAccess: 'Tilgang?', predictorHome: 'Hjem', testPostback: 'Test', logout: 'Logg ut', followStepsToUnlock: 'Følg trinn.', guideStep1: 'Klikk Registrer', guideStep2: 'Lag konto', guideStep3: 'Ny konto kreves', guideStep4: 'Kampanjekode:', howToFindPlayerId: 'Finn ID:', playerIdStep1: 'Logg inn 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopier ID', playerIdStep4: 'Lim inn her', gotIt: 'SKJØNNER!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'INNSKUDD', language: 'Språk', welcome: 'Velkommen', welcomeUser: 'Hei, {{playerId}}', demoLimitReached: 'Demo grense nådd.', depositMessageTitle: 'Suksess!', depositMessageSync: 'Konto synkronisert.', depositMessageDeposit: 'Innskudd for tilgang.', depositMessageAccess: 'Skriv inn ID igjen.', limitReachedTitle: 'Grense nådd', limitReachedText: 'Sett inn for å fortsette.', back: 'TILBAKE', reDepositMessageTitle: 'Grense nådd', reDepositMessageContinue: 'Sett inn for å fortsette.', depositAgain: 'SETT INN IGJEN' }),
+  sv: createTranslation({ unlockPredictions: 'Lås upp', continue: 'LOGGA IN', dontHaveAccount: 'INGET KONTO', registerHere: 'REGISTRERA', notRegisteredError: '❌ ID saknas!', enterPlayerIdToSync: 'Ange Spelar-ID.', howToGetAccess: 'Åtkomst?', predictorHome: 'Hem', testPostback: 'Test', logout: 'Logga ut', followStepsToUnlock: 'Följ steg.', guideStep1: 'Klicka Registrera', guideStep2: 'Skapa konto', guideStep3: 'Nytt konto krävs', guideStep4: 'Kampanjkod:', howToFindPlayerId: 'Hitta ID:', playerIdStep1: 'Logga in 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopiera ID', playerIdStep4: 'Klistra in här', gotIt: 'FATTAR!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'INSÄTT', language: 'Språk', welcome: 'Välkommen', welcomeUser: 'Hej, {{playerId}}', demoLimitReached: 'Demo gräns nådd.', depositMessageTitle: 'Lyckat!', depositMessageSync: 'Konto synkroniserat.', depositMessageDeposit: 'Sätt in för åtkomst.', depositMessageAccess: 'Ange ID igen.', limitReachedTitle: 'Gräns nådd', limitReachedText: 'Sätt in för att fortsätta.', back: 'TILLBAKA', reDepositMessageTitle: 'Gräns nådd', reDepositMessageContinue: 'Sätt in för att fortsätta.', depositAgain: 'SÄTT IN IGEN' }),
+  uk: createTranslation({ unlockPredictions: 'Відкрити', continue: 'ВХІД', dontHaveAccount: 'НЕМАЄ АКАУНТУ', registerHere: 'РЕЄСТРАЦІЯ', notRegisteredError: '❌ ID відсутній!', enterPlayerIdToSync: 'Введіть ID гравця.', howToGetAccess: 'Доступ?', predictorHome: 'Головна', testPostback: 'Тест', logout: 'Вийти', followStepsToUnlock: 'Дотримуйтесь кроків.', guideStep1: 'Натисніть Реєстрація', guideStep2: 'Створіть акаунт', guideStep3: 'Потрібен новий акаунт', guideStep4: 'Промокод:', howToFindPlayerId: 'Знайти ID:', playerIdStep1: 'Вхід 1win', playerIdStep2: 'Профіль', playerIdStep3: 'Копіювати ID', playerIdStep4: 'Вставити тут', gotIt: 'ЗРОЗУМІЛО!', demo: 'Демо', getSignal: 'СИГНАЛ', depositNow: 'ДЕПОЗИТ', language: 'Мова', welcome: 'Ласкаво просимо', welcomeUser: 'Привіт, {{playerId}}', demoLimitReached: 'Ліміт демо вичерпано.', depositMessageTitle: 'Успішно!', depositMessageSync: 'Акаунт синхронізовано.', depositMessageDeposit: 'Поповніть для доступу.', depositMessageAccess: 'Введіть ID знову.', limitReachedTitle: 'Ліміт досягнуто', limitReachedText: 'Поповніть для продовження.', back: 'НАЗАД', reDepositMessageTitle: 'Ліміт досягнуто', reDepositMessageContinue: 'Поповніть для продовження.', depositAgain: 'ПОПОВНИТИ ЗНОВУ' }),
+  bg: createTranslation({ unlockPredictions: 'Отключи', continue: 'ВХОД', dontHaveAccount: 'НЯМА АКАУНТ', registerHere: 'РЕГИСТРАЦИЯ', notRegisteredError: '❌ Няма ID!', enterPlayerIdToSync: 'Въведете ID.', howToGetAccess: 'Достъп?', predictorHome: 'Начало', testPostback: 'Тест', logout: 'Изход', followStepsToUnlock: 'Следвайте стъпките.', guideStep1: 'Кликнете Регистрация', guideStep2: 'Създайте акаунт', guideStep3: 'Нов акаунт задължителен', guideStep4: 'Промо код:', howToFindPlayerId: 'Намери ID:', playerIdStep1: 'Вход 1win', playerIdStep2: 'Профил', playerIdStep3: 'Копирай ID', playerIdStep4: 'Постави тук', gotIt: 'РАЗБРАХ!', demo: 'Демо', getSignal: 'СИГНАЛ', depositNow: 'ДЕПОЗИТ', language: 'Език', welcome: 'Добре дошли', welcomeUser: 'Здравей, {{playerId}}', demoLimitReached: 'Демо лимитът е достигнат.', depositMessageTitle: 'Успешно!', depositMessageSync: 'Акаунтът е синхронизиран.', depositMessageDeposit: 'Депозирайте за достъп.', depositMessageAccess: 'Въведете ID отново.', limitReachedTitle: 'Лимит достигнат', limitReachedText: 'Депозирайте за продължаване.', back: 'НАЗАД', reDepositMessageTitle: 'Лимит достигнат', reDepositMessageContinue: 'Депозирайте за продължаване.', depositAgain: 'ДЕПОЗИРАЙТЕ ОТНОВО' }),
+  hr: createTranslation({ unlockPredictions: 'Otključaj', continue: 'PRIJAVA', dontHaveAccount: 'NEMA RAČUNA', registerHere: 'REGISTRACIJA', notRegisteredError: '❌ Nema ID!', enterPlayerIdToSync: 'Unesi ID igrača.', howToGetAccess: 'Pristup?', predictorHome: 'Početna', testPostback: 'Test', logout: 'Odjava', followStepsToUnlock: 'Slijedi korake.', guideStep1: 'Klikni Registracija', guideStep2: 'Kreiraj račun', guideStep3: 'Novi račun obavezan', guideStep4: 'Promo kod:', howToFindPlayerId: 'Nađi ID:', playerIdStep1: 'Prijava 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopiraj ID', playerIdStep4: 'Zalijepi ovdje', gotIt: 'SHVAĆAM!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'UPLATI', language: 'Jezik', welcome: 'Dobrodošli', welcomeUser: 'Bok, {{playerId}}', demoLimitReached: 'Demo limit dosegnut.', depositMessageTitle: 'Uspjeh!', depositMessageSync: 'Račun sinkroniziran.', depositMessageDeposit: 'Uplatite za pristup.', depositMessageAccess: 'Unesite ID ponovno.', limitReachedTitle: 'Limit dosegnut', limitReachedText: 'Uplatite za nastavak.', back: 'NATRAG', reDepositMessageTitle: 'Limit dosegnut', reDepositMessageContinue: 'Uplatite za nastavak.', depositAgain: 'UPLATITE PONOVNO' }),
+  sk: createTranslation({ unlockPredictions: 'Odomknúť', continue: 'PRIHLÁSIŤ', dontHaveAccount: 'BEZ ÚČTU', registerHere: 'REGISTRÁCIA', notRegisteredError: '❌ Chýba ID!', enterPlayerIdToSync: 'Zadajte ID hráča.', howToGetAccess: 'Prístup?', predictorHome: 'Domov', testPostback: 'Test', logout: 'Odhlásiť', followStepsToUnlock: 'Nasledujte kroky.', guideStep1: 'Kliknite Registrácia', guideStep2: 'Vytvoriť účet', guideStep3: 'Nový účet nutný', guideStep4: 'Promo kód:', howToFindPlayerId: 'Nájsť ID:', playerIdStep1: 'Login 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopírovať ID', playerIdStep4: 'Vložiť sem', gotIt: 'ROZUMIEM!', demo: 'Demo', getSignal: 'SIGNÁL', depositNow: 'VLOŽIŤ', language: 'Jazyk', welcome: 'Vitajte', welcomeUser: 'Ahoj, {{playerId}}', demoLimitReached: 'Demo limit dosiahnutý.', depositMessageTitle: 'Úspech!', depositMessageSync: 'Účet synchronizovaný.', depositMessageDeposit: 'Vložte pre prístup.', depositMessageAccess: 'Zadajte ID znova.', limitReachedTitle: 'Limit dosiahnutý', limitReachedText: 'Vložte pre pokračovanie.', back: 'SPÄŤ', reDepositMessageTitle: 'Limit dosiahnutý', reDepositMessageContinue: 'Vložte pre pokračovanie.', depositAgain: 'VLOŽIŤ ZNOVA' }),
+  sl: createTranslation({ unlockPredictions: 'Odkleni', continue: 'PRIJAVA', dontHaveAccount: 'BREZ RAČUNA', registerHere: 'REGISTRACIJA', notRegisteredError: '❌ Ni ID!', enterPlayerIdToSync: 'Vnesi ID igralca.', howToGetAccess: 'Dostop?', predictorHome: 'Domov', testPostback: 'Test', logout: 'Odjava', followStepsToUnlock: 'Sledi korakom.', guideStep1: 'Klikni Registracija', guideStep2: 'Ustvari račun', guideStep3: 'Nov račun obvezen', guideStep4: 'Promo koda:', howToFindPlayerId: 'Najdi ID:', playerIdStep1: 'Prijava 1win', playerIdStep2: 'Profil', playerIdStep3: 'Kopiraj ID', playerIdStep4: 'Prilepi tukaj', gotIt: 'RAZUMEM!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'NAKAŽI', language: 'Jezik', welcome: 'Dobrodošli', welcomeUser: 'Pozdravljen, {{playerId}}', demoLimitReached: 'Demo limit dosežen.', depositMessageTitle: 'Uspeh!', depositMessageSync: 'Račun sinhroniziran.', depositMessageDeposit: 'Nakažite za dostop.', depositMessageAccess: 'Ponovno vnesite ID.', limitReachedTitle: 'Limit dosežen', limitReachedText: 'Nakažite za nadaljevanje.', back: 'NAZAJ', reDepositMessageTitle: 'Limit dosežen', reDepositMessageContinue: 'Nakažite za nadaljevanje.', depositAgain: 'PONOVNO NAKAŽI' }),
+  sr: createTranslation({ unlockPredictions: 'Otključaj', continue: 'PRIJAVA', dontHaveAccount: 'НЕМА НАЛОГА', registerHere: 'REGISTRACIJA', notRegisteredError: '❌ Нема ИД!', enterPlayerIdToSync: 'Унеси ИД.', howToGetAccess: 'Приступ?', predictorHome: 'Почетна', testPostback: 'Тест', logout: 'Одјава', followStepsToUnlock: 'Следи кораке.', guideStep1: 'Кликни Регистрација', guideStep2: 'Креирај налог', guideStep3: 'Нови налог обавезан', guideStep4: 'Промо код:', howToFindPlayerId: 'Нађи ИД:', playerIdStep1: 'Пријава 1win', playerIdStep2: 'Профил', playerIdStep3: 'Копирај ИД', playerIdStep4: 'Залепи овде', gotIt: 'РАЗУМЕМ!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'UPLATI', language: 'Језик', welcome: 'Добродошли', welcomeUser: 'Здраво, {{playerId}}', demoLimitReached: 'Демо лимит достигнут.', depositMessageTitle: 'Успех!', depositMessageSync: 'Налог синхронизован.', depositMessageDeposit: 'Уплатите за приступ.', depositMessageAccess: 'Унесите ИД поново.', limitReachedTitle: 'Лимит достигнут', limitReachedText: 'Уплатите за наставак.', back: 'НАЗАД', reDepositMessageTitle: 'Лимит достигнут', reDepositMessageContinue: 'Уплатите за наставак.', depositAgain: 'УПЛАТИТЕ ПОНОВО' }),
+  lt: createTranslation({ unlockPredictions: 'Atrakinti', continue: 'PRISIJUNGTI', dontHaveAccount: 'NĖRA PASKYROS', registerHere: 'REGISTRUOTIS', notRegisteredError: '❌ Nėra ID!', enterPlayerIdToSync: 'Įveskite Žaidėjo ID.', howToGetAccess: 'Prieiga?', predictorHome: 'Pradžia', testPostback: 'Testas', logout: 'Atsijungti', followStepsToUnlock: 'Sekite žingsnius.', guideStep1: 'Spausk Registruotis', guideStep2: 'Sukurk paskyrą', guideStep3: 'Nauja paskyra būtina', guideStep4: 'Promo kodas:', howToFindPlayerId: 'Rasti ID:', playerIdStep1: 'Prisijungti 1win', playerIdStep2: 'Profilis', playerIdStep3: 'Kopijuoti ID', playerIdStep4: 'Įklijuoti čia', gotIt: 'SUPRATAU!', demo: 'Demo', getSignal: 'SIGNALAS', depositNow: 'ĮNEŠTI', language: 'Kalba', welcome: 'Sveiki', welcomeUser: 'Labas, {{playerId}}', demoLimitReached: 'Demo limitas pasiektas.', depositMessageTitle: 'Pavyko!', depositMessageSync: 'Paskyra sinchronizuota.', depositMessageDeposit: 'Įneškite, kad gautumėte prieigą.', depositMessageAccess: 'Įveskite ID dar kartą.', limitReachedTitle: 'Limitas pasiektas', limitReachedText: 'Įneškite, kad tęstumėte.', back: 'ATGAL', reDepositMessageTitle: 'Limitas pasiektas', reDepositMessageContinue: 'Įneškite, kad tęstumėte.', depositAgain: 'ĮNEŠTI VĖL' }),
+  lv: createTranslation({ unlockPredictions: 'Atbloķēt', continue: 'PIESLĒGTIES', dontHaveAccount: 'NAV KONTA', registerHere: 'REĢISTRĀCIJA', notRegisteredError: '❌ Nav ID!', enterPlayerIdToSync: 'Ievadiet Spēlētāja ID.', howToGetAccess: 'Piekļuve?', predictorHome: 'Sākums', testPostback: 'Tests', logout: 'Iziet', followStepsToUnlock: 'Sekojiet soļiem.', guideStep1: 'Klikšķini Reģistrēties', guideStep2: 'Izveidot kontu', guideStep3: 'Jauns konts obligāts', guideStep4: 'Promo kods:', howToFindPlayerId: 'Atrast ID:', playerIdStep1: 'Ielogoties 1win', playerIdStep2: 'Profils', playerIdStep3: 'Kopēt ID', playerIdStep4: 'Ielīmēt šeit', gotIt: 'SAPRATU!', demo: 'Demo', getSignal: 'SIGNĀLS', depositNow: 'IEMAKSĀT', language: 'Valoda', welcome: 'Sveicināti', welcomeUser: 'Sveiki, {{playerId}}', demoLimitReached: 'Demo limits sasniegts.', depositMessageTitle: 'Veiksmīgi!', depositMessageSync: 'Konts sinhronizēts.', depositMessageDeposit: 'Iemaksājiet piekļuvei.', depositMessageAccess: 'Ievadiet ID vēlreiz.', limitReachedTitle: 'Limits sasniegts', limitReachedText: 'Iemaksājiet, lai turpinātu.', back: 'ATPAKAĻ', reDepositMessageTitle: 'Limits sasniegts', reDepositMessageContinue: 'Iemaksājiet, lai turpinātu.', depositAgain: 'IEMAKSĀT VĒLREIZ' }),
+  et: createTranslation({ unlockPredictions: 'Ava', continue: 'LOGI SISSE', dontHaveAccount: 'POLE KONTOT', registerHere: 'REGISTREERI', notRegisteredError: '❌ ID puudub!', enterPlayerIdToSync: 'Sisesta Mängija ID.', howToGetAccess: 'Ligipääs?', predictorHome: 'Kodu', testPostback: 'Test', logout: 'Logi välja', followStepsToUnlock: 'Järgi samme.', guideStep1: 'Kliki Registreeri', guideStep2: 'Loo konto', guideStep3: 'Uus konto nõutav', guideStep4: 'Promokood:', howToFindPlayerId: 'Leia ID:', playerIdStep1: 'Logi sisse 1win', playerIdStep2: 'Profiil', playerIdStep3: 'Kopeeri ID', playerIdStep4: 'Kleebi siia', gotIt: 'ARU SAADUD!', demo: 'Demo', getSignal: 'SIGNAAL', depositNow: 'SISESTA', language: 'Keel', welcome: 'Tere tulemast', welcomeUser: 'Tere, {{playerId}}', demoLimitReached: 'Demo limiit täis.', depositMessageTitle: 'Edukas!', depositMessageSync: 'Konto sünkroonitud.', depositMessageDeposit: 'Sisesta raha ligipääsuks.', depositMessageAccess: 'Sisesta ID uuesti.', limitReachedTitle: 'Limiit täis', limitReachedText: 'Sisesta raha jätkamiseks.', back: 'TAGASI', reDepositMessageTitle: 'Limiit täis', reDepositMessageContinue: 'Sisesta raha jätkamiseks.', depositAgain: 'SISESTA UUESTI' }),
+  af: createTranslation({ unlockPredictions: 'Ontsluit', continue: 'TEKEN AAN', dontHaveAccount: 'GEEN REKENING', registerHere: 'REGISTREER', notRegisteredError: '❌ Geen ID!', enterPlayerIdToSync: 'Voer Speler ID in.', howToGetAccess: 'Toegang?', predictorHome: 'Tuis', testPostback: 'Toets', logout: 'Teken uit', followStepsToUnlock: 'Volg stappe.', guideStep1: 'Klik Registreer', guideStep2: 'Skep rekening', guideStep3: 'Nuwe rekening vereis', guideStep4: 'Promokode:', howToFindPlayerId: 'Vind ID:', playerIdStep1: 'Teken aan 1win', playerIdStep2: 'Profiel', playerIdStep3: 'Kopieer ID', playerIdStep4: 'Plak hier', gotIt: 'VERSTAAN!', demo: 'Demo', getSignal: 'SEIN', depositNow: 'DEPOSITO', language: 'Taal', welcome: 'Welkom', welcomeUser: 'Hallo, {{playerId}}', demoLimitReached: 'Demo limiet bereik.', depositMessageTitle: 'Sukses!', depositMessageSync: 'Rekening gesinkroniseer.', depositMessageDeposit: 'Deponeer vir toegang.', depositMessageAccess: 'Voer ID weer in.', limitReachedTitle: 'Limiet bereik', limitReachedText: 'Deponeer om voort te gaan.', back: 'TERUG', reDepositMessageTitle: 'Limiet bereik', reDepositMessageContinue: 'Deponeer om voort te gaan.', depositAgain: 'DEPONEER WEER' }),
+  sw: createTranslation({ unlockPredictions: 'Fungua', continue: 'INGIA', dontHaveAccount: 'HAKUNA AKAUNTI', registerHere: 'JISAJILI', notRegisteredError: '❌ Hakuna ID!', enterPlayerIdToSync: 'Weka ID ya Mchezaji.', howToGetAccess: 'Ufikiaji?', predictorHome: 'Nyumbani', testPostback: 'Jaribio', logout: 'Toka', followStepsToUnlock: 'Fuata hatua.', guideStep1: 'Bonyeza Jisajili', guideStep2: 'Unda akaunti', guideStep3: 'Akaunti mpya inahitajika', guideStep4: 'Msimbo wa ofa:', howToFindPlayerId: 'Tafuta ID:', playerIdStep1: 'Ingia 1win', playerIdStep2: 'Wasifu', playerIdStep3: 'Nakili ID', playerIdStep4: 'Bandika hapa', gotIt: 'NIELEWA!', demo: 'Demo', getSignal: 'ISHARA', depositNow: 'WEKA PESA', language: 'Lugha', welcome: 'Karibu', welcomeUser: 'Hujambo, {{playerId}}', demoLimitReached: 'Kikomo cha onyesho kimefikiwa.', depositMessageTitle: 'Imefaulu!', depositMessageSync: 'Akaunti imesawazishwa.', depositMessageDeposit: 'Weka pesa kwa ufikiaji.', depositMessageAccess: 'Weka kitambulisho tena.', limitReachedTitle: 'Kikomo kimefikiwa', limitReachedText: 'Weka pesa ili uendelee.', back: 'NYUMA', reDepositMessageTitle: 'Kikomo kimefikiwa', reDepositMessageContinue: 'Weka pesa ili uendelee.', depositAgain: 'WEKA PESA TENA' }),
+  tl: createTranslation({ unlockPredictions: 'I-unlock', continue: 'MAG-LOGIN', dontHaveAccount: 'WALA PANG ACCOUNT', registerHere: 'MAGREHISTRO', notRegisteredError: '❌ Walang ID!', enterPlayerIdToSync: 'Ilagay ang Player ID.', howToGetAccess: 'Paano?', predictorHome: 'Home', testPostback: 'Subukan', logout: 'Mag-logout', followStepsToUnlock: 'Sundin ang mga hakbang.', guideStep1: 'I-click ang Magrehistro', guideStep2: 'Gumawa ng account', guideStep3: 'Dapat bagong account', guideStep4: 'Promo code:', howToFindPlayerId: 'Hanapin ang ID:', playerIdStep1: 'Mag-login sa 1win', playerIdStep2: 'Profile', playerIdStep3: 'Kopyahin ang ID', playerIdStep4: 'I-paste dito', gotIt: 'KUHA KO!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'DEPOSIT NA', language: 'Wika', welcome: 'Maligayang pagdating', welcomeUser: 'Kumusta, {{playerId}}', demoLimitReached: 'Naabot na ang limitasyon ng demo.', depositMessageTitle: 'Tagumpay!', depositMessageSync: 'Naka-sync na ang account.', depositMessageDeposit: 'Mag-deposit para sa access.', depositMessageAccess: 'Ilagay muli ang ID.', limitReachedTitle: 'Limitasyon naabot', limitReachedText: 'Mag-deposit para magpatuloy.', back: 'BUMALIK', reDepositMessageTitle: 'Limitasyon naabot', reDepositMessageContinue: 'Mag-deposit para magpatuloy.', depositAgain: 'MAG-DEPOSIT MULI' }),
+  az: createTranslation({ unlockPredictions: 'Aç', continue: 'DAXİL OL', dontHaveAccount: 'HESAB YOXDUR', registerHere: 'QEYDİYYAT', notRegisteredError: '❌ ID yoxdur!', enterPlayerIdToSync: 'Oyunçu ID daxil edin.', howToGetAccess: 'Giriş?', predictorHome: 'Əsas', testPostback: 'Test', logout: 'Çıxış', followStepsToUnlock: 'Addımları izləyin.', guideStep1: 'Qeydiyyatdan keçin', guideStep2: 'Hesab yaradın', guideStep3: 'Yeni hesab lazımdır', guideStep4: 'Promo kod:', howToFindPlayerId: 'ID tapın:', playerIdStep1: '1win giriş', playerIdStep2: 'Profil', playerIdStep3: 'ID kopyala', playerIdStep4: 'Bura yapışdırın', gotIt: 'BAŞA DÜŞDÜM!', demo: 'Demo', getSignal: 'SİQNAL', depositNow: 'DEPOZİT', language: 'Dil', welcome: 'Xoş gəlmisiniz', welcomeUser: 'Salam, {{playerId}}', demoLimitReached: 'Demo limiti çatdı.', depositMessageTitle: 'Uğurlu!', depositMessageSync: 'Hesab sinxronlaşdırıldı.', depositMessageDeposit: 'Giriş üçün depozit edin.', depositMessageAccess: 'ID-ni yenidən daxil edin.', limitReachedTitle: 'Limit çatdı', limitReachedText: 'Davam etmək üçün depozit edin.', back: 'GERİ', reDepositMessageTitle: 'Limit çatdı', reDepositMessageContinue: 'Davam etmək üçün depozit edin.', depositAgain: 'YENİDƏN DEPOZİT' }),
+  ka: createTranslation({ unlockPredictions: 'განბლოკვა', continue: 'შესვლა', dontHaveAccount: 'არ გაქვთ ანგარიში', registerHere: 'რეგისტრაცია', notRegisteredError: '❌ ID არაა!', enterPlayerIdToSync: 'შეიყვანეთ ID.', howToGetAccess: 'წვდომა?', predictorHome: 'მთავარი', testPostback: 'ტესტი', logout: 'გასვლა', followStepsToUnlock: 'მიჰყევით ნაბიჯებს.', guideStep1: 'დააკლიკეთ რეგისტრაციას', guideStep2: 'შექმენით ანგარიში', guideStep3: 'ახალი ანგარიში სავალდებულოა', guideStep4: 'პრომო კოდი:', howToFindPlayerId: 'იპოვეთ ID:', playerIdStep1: 'შესვლა 1win', playerIdStep2: 'პროფილი', playerIdStep3: 'დააკოპირეთ ID', playerIdStep4: 'ჩასვით აქ', gotIt: 'გასაგებია!', demo: 'დემო', getSignal: 'სიგნალი', depositNow: 'დეპოზიტი', language: 'ენა', welcome: 'მოგესალმებით', welcomeUser: 'გამარჯობა, {{playerId}}', demoLimitReached: 'დემო ლიმიტი ამოწურულია.', depositMessageTitle: 'წარმატება!', depositMessageSync: 'ანგარიში სინქრონიზებულია.', depositMessageDeposit: 'შეიტანეთ დეპოზიტი.', depositMessageAccess: 'შეიყვანეთ ID ხელახლა.', limitReachedTitle: 'ლიმიტი მიღწეულია', limitReachedText: 'გააგრძელეთ დეპოზიტით.', back: 'უკან', reDepositMessageTitle: 'ლიმიტი მიღწეულია', reDepositMessageContinue: 'გააგრძელეთ დეპოზიტით.', depositAgain: 'ხელახლა დეპოზიტი' }),
+  kk: createTranslation({ unlockPredictions: 'Ашу', continue: 'КІРУ', dontHaveAccount: 'ТІРКЕЛГІ ЖОҚ', registerHere: 'ТІРКЕЛУ', notRegisteredError: '❌ ID жоқ!', enterPlayerIdToSync: 'Ойыншы ID енгізіңіз.', howToGetAccess: 'Кіру?', predictorHome: 'Басты', testPostback: 'Сынақ', logout: 'Шығу', followStepsToUnlock: 'Қадамдарды орындаңыз.', guideStep1: 'Тіркелуді басыңыз', guideStep2: 'Тіркелгі жасаңыз', guideStep3: 'Жаңа тіркелгі қажет', guideStep4: 'Промокод:', howToFindPlayerId: 'ID табу:', playerIdStep1: '1win кіру', playerIdStep2: 'Профиль', playerIdStep3: 'ID көшіру', playerIdStep4: 'Осында қойыңыз', gotIt: 'ТҮСІНДІМ!', demo: 'Демо', getSignal: 'СИГНАЛ', depositNow: 'ДЕПОЗИТ', language: 'Тіл', welcome: 'Қош келдіңіз', welcomeUser: 'Сәлем, {{playerId}}', demoLimitReached: 'Демо шегіне жетті.', depositMessageTitle: 'Сәтті!', depositMessageSync: 'Тіркелгі синхрондалды.', depositMessageDeposit: 'Кіру үшін депозит салыңыз.', depositMessageAccess: 'ID қайта енгізіңіз.', limitReachedTitle: 'Шекке жетті', limitReachedText: 'Жалғастыру үшін депозит.', back: 'АРТҚА', reDepositMessageTitle: 'Шекке жетті', reDepositMessageContinue: 'Жалғастыру үшін депозит.', depositAgain: 'ҚАЙТА ДЕПОЗИТ' }),
+  uz: createTranslation({ unlockPredictions: 'Ochish', continue: 'KIRISH', dontHaveAccount: 'HISOB YO\'Q', registerHere: 'RO\'YXATDAN O\'TISH', notRegisteredError: '❌ ID yo\'q!', enterPlayerIdToSync: 'O\'yinchi ID kiriting.', howToGetAccess: 'Kirish?', predictorHome: 'Bosh Sahifa', testPostback: 'Sinov', logout: 'Chiqish', followStepsToUnlock: 'Qadamlarni bajaring.', guideStep1: 'Ro\'yxatdan o\'tish', guideStep2: 'Hisob yarating', guideStep3: 'Yangi hisob kerak', guideStep4: 'Promo kod:', howToFindPlayerId: 'ID topish:', playerIdStep1: '1win kirish', playerIdStep2: 'Profil', playerIdStep3: 'ID nusxalash', playerIdStep4: 'Bu yerga qo\'ying', gotIt: 'TUSHUNDIM!', demo: 'Demo', getSignal: 'SIGNAL', depositNow: 'DEPOZIT', language: 'Til', welcome: 'Xush kelibsiz', welcomeUser: 'Salom, {{playerId}}', demoLimitReached: 'Demo limiti tugadi.', depositMessageTitle: 'Muvaffaqiyatli!', depositMessageSync: 'Hisob sinxronlandi.', depositMessageDeposit: 'Kirish uchun depozit qiling.', depositMessageAccess: 'ID ni qayta kiriting.', limitReachedTitle: 'Limit yetdi', limitReachedText: 'Davom etish uchun depozit.', back: 'ORQAGA', reDepositMessageTitle: 'Limit yetdi', reDepositMessageContinue: 'Davom etish uchun depozit.', depositAgain: 'QAYTA DEPOZIT' }),
+  ne: createTranslation({ unlockPredictions: 'अनलक', continue: 'लग इन', dontHaveAccount: 'खाता छैन', registerHere: 'दर्ता', notRegisteredError: '❌ ID छैन!', enterPlayerIdToSync: 'प्लेयर आईडी प्रविष्ट गर्नुहोस्।', howToGetAccess: 'पहुँच?', predictorHome: 'गृह', testPostback: 'जाँच', logout: 'लग आउट', followStepsToUnlock: 'चरणहरू पालना गर्नुहोस्।', guideStep1: 'दर्ता गर्नुहोस्', guideStep2: 'खाता बनाउनुहोस्', guideStep3: 'नयाँ खाता आवश्यक', guideStep4: 'प्रोमो कोड:', howToFindPlayerId: 'आईडी फेला पार्नुहोस्:', playerIdStep1: '1win लगइन', playerIdStep2: 'प्रोफाइल', playerIdStep3: 'आईडी प्रतिलिपि गर्नुहोस्', playerIdStep4: 'यहाँ टाँस्नुहोस्', gotIt: 'बुझेँ!', demo: 'डेमो', getSignal: 'सङ्केत', depositNow: 'जम्मा', language: 'भाषा', welcome: 'स्वागत छ', welcomeUser: 'नमस्ते, {{playerId}}', demoLimitReached: 'डेमो सीमा पुग्यो।', depositMessageTitle: 'सफल!', depositMessageSync: 'खाता सिंक भयो।', depositMessageDeposit: 'पहुँचको लागि जम्मा गर्नुहोस्।', depositMessageAccess: 'फेरि आईडी प्रविष्ट गर्नुहोस्।', limitReachedTitle: 'सीमा पुग्यो', limitReachedText: 'जारी राख्न जम्मा गर्नुहोस्।', back: 'फिर्ता', reDepositMessageTitle: 'सीमा पुग्यो', reDepositMessageContinue: 'जारी राख्न जम्मा गर्नुहोस्।', depositAgain: 'फेरि जम्मा गर्नुहोस्' }),
+  si: createTranslation({ unlockPredictions: 'අගුළු හරින්න', continue: 'ඇතුල් වන්න', dontHaveAccount: 'ගිණුමක් නැත', registerHere: 'ලියාපදිංචි', notRegisteredError: '❌ ID නැත!', enterPlayerIdToSync: 'ක්‍රීඩක ID ඇතුලත් කරන්න.', howToGetAccess: 'ප්‍රවේශය?', predictorHome: 'මුල් පිටුව', testPostback: 'පරීක්ෂණය', logout: 'ඉවත් වන්න', followStepsToUnlock: 'පියවර අනුගමනය කරන්න.', guideStep1: 'ලියාපදිංචි වන්න', guideStep2: 'ගිණුමක් සාදන්න', guideStep3: 'නව ගිණුමක් අවශ්‍යයි', guideStep4: 'ප්‍රවර්ධන කේතය:', howToFindPlayerId: 'ID සොයන්න:', playerIdStep1: '1win ලොග් වන්න', playerIdStep2: 'පැතිකඩ', playerIdStep3: 'ID පිටපත් කරන්න', playerIdStep4: 'මෙහි අලවන්න', gotIt: 'තේරුණා!', demo: 'ආදර්ශනය', getSignal: 'සංඥාව', depositNow: 'තැන්පත්', language: 'භාෂාව', welcome: 'සාදරයෙන් පිළිගනිමු', welcomeUser: 'ආයුබෝවන්, {{playerId}}', demoLimitReached: 'ආදර්ශන සීමාව ඉක්මවා ඇත.', depositMessageTitle: 'සාර්ථකයි!', depositMessageSync: 'ගිණුම සමමුහුර්ත කර ඇත.', depositMessageDeposit: 'ප්‍රවේශය සඳහා තැන්පත් කරන්න.', depositMessageAccess: 'නැවත ID ඇතුලත් කරන්න.', limitReachedTitle: 'සීමාව ඉක්මවා ඇත', limitReachedText: 'ඉදිරියට යෑමට තැන්පත් කරන්න.', back: 'ආපසු', reDepositMessageTitle: 'සීමාව ඉක්මවා ඇත', reDepositMessageContinue: 'ඉදිරියට යෑමට තැන්පත් කරන්න.', depositAgain: 'නැවත තැන්පත් කරන්න' }),
+  my: createTranslation({ unlockPredictions: 'ဖွင့်ပါ', continue: 'ဝင်ရောက်ပါ', dontHaveAccount: 'အကောင့်မရှိ', registerHere: 'မှတ်ပုံတင်ပါ', notRegisteredError: '❌ ID မရှိပါ!', enterPlayerIdToSync: 'ကစားသမား ID ထည့်ပါ။', howToGetAccess: 'ဝင်ရောက်နည်း?', predictorHome: 'ပင်မ', testPostback: 'စမ်းသပ်မှု', logout: 'ထွက်ရန်', followStepsToUnlock: 'အဆင့်များကိုလိုက်နာပါ။', guideStep1: 'မှတ်ပုံတင်ပါ', guideStep2: 'အကောင့်ဖွင့်ပါ', guideStep3: 'အကောင့်သစ်လိုသည်', guideStep4: 'ပရိုမိုကုဒ်:', howToFindPlayerId: 'ID ရှာပါ:', playerIdStep1: '1win ဝင်ပါ', playerIdStep2: 'ပရိုဖိုင်', playerIdStep3: 'ID ကူးပါ', playerIdStep4: 'ဒီမှာထည့်ပါ', gotIt: 'နားလည်ပြီ!', demo: 'သရုပ်ပြ', getSignal: 'အချက်ပြ', depositNow: 'ငွေသွင်း', language: 'ဘာသာစကား', welcome: 'ကြိုဆိုပါတယ်', welcomeUser: 'မင်္ဂလာပါ, {{playerId}}', demoLimitReached: 'သရုပ်ပြ ကန့်သတ်ချက် ပြည့်သွားပါပြီ။', depositMessageTitle: 'အောင်မြင်သည်!', depositMessageSync: 'အကောင့်ချိန်ညှိပြီးပါပြီ။', depositMessageDeposit: 'ဝင်ရောက်ရန် ငွေသွင်းပါ။', depositMessageAccess: 'ID ပြန်ထည့်ပါ။', limitReachedTitle: 'ကန့်သတ်ချက်ပြည့်ပြီ', limitReachedText: 'ဆက်လက်ရန် ငွေသွင်းပါ။', back: 'နောက်သို့', reDepositMessageTitle: 'ကန့်သတ်ချက်ပြည့်ပြီ', reDepositMessageContinue: 'ဆက်လက်ရန် ငွေသွင်းပါ။', depositAgain: 'ထပ်မံငွေသွင်းပါ' }),
+  km: createTranslation({ unlockPredictions: 'ដោះសោ', continue: 'ចូល', dontHaveAccount: 'គ្មានគណនី', registerHere: 'ចុះឈ្មោះ', notRegisteredError: '❌ គ្មាន ID!', enterPlayerIdToSync: 'បញ្ចូលអត្តសញ្ញាណអ្នកលេង។', howToGetAccess: 'ចូលប្រើ?', predictorHome: 'ទំព័រដើម', testPostback: 'តេស្ត', logout: 'ចាកចេញ', followStepsToUnlock: 'អនុវត្តតាមជំហាន។', guideStep1: 'ចុះឈ្មោះ', guideStep2: 'បង្កើតគណនី', guideStep3: 'ត្រូវការគណនីថ្មី', guideStep4: 'លេខកូដប្រូម៉ូសិន:', howToFindPlayerId: 'ស្វែងរក ID:', playerIdStep1: 'ចូល 1win', playerIdStep2: 'ប្រវត្តិរូប', playerIdStep3: 'ចម្លង ID', playerIdStep4: 'បិទភ្ជាប់នៅទីនេះ', gotIt: 'យល់ហើយ!', demo: 'សាកល្បង', getSignal: 'សញ្ញា', depositNow: 'ដាក់ប្រាក់', language: 'ភាសា', welcome: 'សូមស្វាគមន៍', welcomeUser: 'សួស្តី, {{playerId}}', demoLimitReached: 'បានឈានដល់ដែនកំណត់សាកល្បង។', depositMessageTitle: 'ជោគជ័យ!', depositMessageSync: 'គណនីត្រូវបានធ្វើសមកាលកម្ម។', depositMessageDeposit: 'ដាក់ប្រាក់ដើម្បីចូលប្រើ។', depositMessageAccess: 'បញ្ចូល ID ម្តងទៀត។', limitReachedTitle: 'បានឈានដល់ដែនកំណត់', limitReachedText: 'ដាក់ប្រាក់ដើម្បីបន្ត។', back: 'ត្រឡប់ក្រោយ', reDepositMessageTitle: 'បានឈានដល់ដែនកំណត់', reDepositMessageContinue: 'ដាក់ប្រាក់ដើម្បីបន្ត។', depositAgain: 'ដាក់ប្រាក់ម្តងទៀត' }),
 };
